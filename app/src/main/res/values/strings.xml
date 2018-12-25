@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Android Muzej</string>
+    <string name="muzej_vuka_i_dositeja">МУЗЕЈ ВУКА И ДОСИТЕЈА</string>
+    <string name="navigacija">navigacija</string>
+    <string name="dugmeSrpski">српски</string>
+    <string name="dugmeEngleski">english</string>
+    <string name="dugmeTurski">türk</string>
+    <string name="dugmeFrancuski">français</string>
+    <string name="dugmeRuski">русский</string>
+    <string name="dugmeNemacki">deutsch</string>
+</resources>
