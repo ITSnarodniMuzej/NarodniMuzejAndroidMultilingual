@@ -43,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
                         getBaseContext().getResources().updateConfiguration(config,
                                 getBaseContext().getResources().getDisplayMetrics());
                         startActivity(i);
+                        //TEst
 
                     }
                 }
