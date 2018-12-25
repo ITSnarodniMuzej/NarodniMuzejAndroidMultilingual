@@ -7,6 +7,7 @@ import android.content.res.Configuration;
 import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -43,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
                         getBaseContext().getResources().updateConfiguration(config,
                                 getBaseContext().getResources().getDisplayMetrics());
                         startActivity(i);
+                        Log.i("test", "test");
 
                     }
                 }
