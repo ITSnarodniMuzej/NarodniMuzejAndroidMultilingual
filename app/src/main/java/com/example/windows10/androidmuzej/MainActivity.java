@@ -1,15 +1,10 @@
 package com.example.windows10.androidmuzej;
 
-import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.content.res.Configuration;
-import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
@@ -25,8 +20,8 @@ public class MainActivity extends AppCompatActivity {
         TextView tvNaslov = (TextView) findViewById(R.id.tvNaslov);
 
         //DODELA VREDNOSTI ImageButton OBJEKTU
-        ImageButton buttonSrpski = findViewById(R.id.buttonSrpski);
-        ImageButton buttonEngleski = findViewById(R.id.buttonEngleski);
+        ImageButton buttonSrpski = findViewById(R.id.btnSrpski);
+        ImageButton buttonEngleski = findViewById(R.id.btnEngleski);
 
         //EVENT LISTENER ZA DUGME
         buttonSrpski.setOnClickListener(
@@ -44,7 +39,6 @@ public class MainActivity extends AppCompatActivity {
                         getBaseContext().getResources().updateConfiguration(config,
                                 getBaseContext().getResources().getDisplayMetrics());
                         startActivity(i);
-                        Log.i("test", "test");
 
                     }
                 }
