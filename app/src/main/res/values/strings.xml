@@ -2,10 +2,22 @@
     <string name="app_name">Android Muzej</string>
     <string name="muzej_vuka_i_dositeja">МУЗЕЈ ВУКА И ДОСИТЕЈА</string>
     <string name="navigacija">navigacija</string>
-    <string name="dugmeSrpski">српски</string>
-    <string name="dugmeEngleski">english</string>
-    <string name="dugmeTurski">türk</string>
-    <string name="dugmeFrancuski">français</string>
-    <string name="dugmeRuski">русский</string>
-    <string name="dugmeNemacki">deutsch</string>
+    <string name="btnSrpski">српски</string>
+    <string name="btnEngleski">english</string>
+    <string name="btnTurski">türk</string>
+    <string name="btnFrancuski">français</string>
+    <string name="btnRuski">русский</string>
+    <string name="btnNemacki">deutsch</string>
+
+    <!--<editor-fold desc="Localization codes">-->
+    <string name="Sr">sr</string>
+    <string name="En">en</string>
+    <string name="Tr">tr</string>
+    <string name="Fr">fr</string>
+    <string name="Ru">ru</string>
+    <string name="De">de</string>
+    <string name="title_activity_choose_room">ChooseRoomActivity</string>
+    <!--</editor-fold>-->
+
+
 </resources>
