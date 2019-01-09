@@ -21,7 +21,7 @@
         <activity
             android:name=".ChooseRoomActivity"
             android:label="@string/title_activity_choose_room"
-            android:theme="@style/AppTheme"></activity>
+            android:theme="@style/AppTheme" />
     </application>
 
 </manifest>

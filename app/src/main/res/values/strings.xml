@@ -1,23 +1,25 @@
 <resources>
     <string name="app_name">Android Muzej</string>
     <string name="muzej_vuka_i_dositeja">МУЗЕЈ ВУКА И ДОСИТЕЈА</string>
-    <string name="navigacija">navigacija</string>
-    <string name="btnSrpski">српски</string>
-    <string name="btnEngleski">english</string>
-    <string name="btnTurski">türk</string>
-    <string name="btnFrancuski">français</string>
-    <string name="btnRuski">русский</string>
-    <string name="btnNemacki">deutsch</string>
 
-    <!--<editor-fold desc="Localization codes">-->
-    <string name="Sr">sr</string>
-    <string name="En">en</string>
-    <string name="Tr">tr</string>
-    <string name="Fr">fr</string>
-    <string name="Ru">ru</string>
-    <string name="De">de</string>
-    <string name="title_activity_choose_room">ChooseRoomActivity</string>
+    <!--<editor-fold desc="Language button text">-->
+    <string name="btnSerbian">српски</string>
+    <string name="btnEnglish">english</string>
+    <string name="btnTurkish">türk</string>
+    <string name="btnFrench">français</string>
+    <string name="btnRussian">русский</string>
+    <string name="btnGerman">deutsch</string>
     <!--</editor-fold>-->
 
+    <!--<editor-fold desc="Localization codes">-->
+    <string name="Sr" translatable="false">sr</string>
+    <string name="En" translatable="false">en</string>
+    <string name="Tr" translatable="false">tr</string>
+    <string name="Fr" translatable="false">fr</string>
+    <string name="Ru" translatable="false">ru</string>
+    <string name="De" translatable="false">de</string>
+    <!--</editor-fold>-->
+
+    <string name="title_activity_choose_room">ChooseRoomActivity</string>
 
 </resources>
