@@ -49,7 +49,7 @@
             app:layout_constraintEnd_toStartOf="@+id/lvPageImages"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@mipmap/page_image_arrow" />
+            app:srcCompat="@drawable/page_image_arrow" />
 
         <android.support.v7.widget.RecyclerView
             android:id="@+id/lvPageImages"
@@ -72,6 +72,6 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/lvPageImages"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@mipmap/page_image_arrow" />
+            app:srcCompat="@drawable/page_image_arrow" />
     </android.support.constraint.ConstraintLayout>
 </android.support.constraint.ConstraintLayout>

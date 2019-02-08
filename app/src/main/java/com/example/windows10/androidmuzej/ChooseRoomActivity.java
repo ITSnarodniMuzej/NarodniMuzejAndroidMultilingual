@@ -1,5 +1,6 @@
 package com.example.windows10.androidmuzej;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.constraint.ConstraintLayout;
 import android.support.v7.app.AppCompatActivity;
@@ -79,9 +80,9 @@ public class ChooseRoomActivity extends AppCompatActivity implements View.OnClic
         else
         {
             Log.i("Room number", roomNumber);
-//            Intent intent = new Intent(ChooseRoomActivity.this, RoomActivity.class);
-//            intent.putExtra("roomNumber", roomNumber);
-//            startActivity(intent);
+            Intent intent = new Intent(ChooseRoomActivity.this, RoomActivity.class);
+            intent.putExtra("roomNumber", roomNumber);
+            startActivity(intent);
         }
     }
 }
