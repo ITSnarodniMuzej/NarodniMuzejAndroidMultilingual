@@ -1,58 +1,45 @@
 package com.example.windows10.androidmuzej;
 
+import android.content.Context;
+import android.graphics.drawable.Drawable;
+
+import java.util.ArrayList;
+
 public class Room {
 
-    int id;
-    String title;
-    String text;
-    String image;
-    String audio;
+    private int id;
+    private String title = "";
+    private String text = "";
+    private Drawable logo;
+    private ArrayList<Drawable> image = new ArrayList<>();
 
-    public Room(int id, String title, String text, String image, String audio) {
+    private Context context;
+
+    public Room(Context context, int id)
+    {
+        this.context = context;
         this.id = id;
-        this.title = title;
-        this.text = text;
-        this.image = image;
-        this.audio = audio;
+
+        createRoom(id);
     }
 
-    public int getId() {
-        return id;
+    private void createRoom(int id)
+    {
+        switch (id)
+        {
+            case 1:
+                createRoom1();
+                break;
+        }
     }
 
-    public void setId(int id) {
-        this.id = id;
-    }
+    private void createRoom1()
+    {
+        this.title = context.getString(R.string.app_name);
+        this.text = context.getString(R.string.app_name);
+        this.logo = context.getDrawable(R.drawable.logo);
 
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public String getText() {
-        return text;
-    }
-
-    public void setText(String text) {
-        this.text = text;
-    }
-
-    public String getImage() {
-        return image;
-    }
-
-    public void setImage(String image) {
-        this.image = image;
-    }
-
-    public String getAudio() {
-        return audio;
-    }
-
-    public void setAudio(String audio) {
-        this.audio = audio;
+        Drawable image1 = context.getDrawable(R.drawable.logo);
+        this.image.add(image1);
     }
 }

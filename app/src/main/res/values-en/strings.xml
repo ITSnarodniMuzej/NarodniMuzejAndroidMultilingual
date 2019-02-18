@@ -2,4 +2,6 @@
 <resources>
     <string name="app_name">Android Museum</string>
     <string name="muzej_vuka_i_dositeja">МУЗЕЈ ВУКА И ДОСИТЕЈА</string>
+    <string name="second_floor_text">second floor</string>
+    <string name="first_floor_text">first floor</string>
 </resources>

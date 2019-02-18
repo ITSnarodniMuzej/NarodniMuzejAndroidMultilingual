@@ -3,12 +3,12 @@
     <string name="muzej_vuka_i_dositeja">МУЗЕЈ ВУКА И ДОСИТЕЈА</string>
 
     <!--<editor-fold desc="Language button text">-->
-    <string name="btnSerbian">српски</string>
-    <string name="btnEnglish">english</string>
-    <string name="btnTurkish">türk</string>
-    <string name="btnFrench">français</string>
-    <string name="btnRussian">русский</string>
-    <string name="btnGerman">deutsch</string>
+    <string name="btnSerbian" translatable="false">српски</string>
+    <string name="btnEnglish" translatable="false">english</string>
+    <string name="btnTurkish" translatable="false">türk</string>
+    <string name="btnFrench" translatable="false">français</string>
+    <string name="btnRussian" translatable="false">русский</string>
+    <string name="btnGerman" translatable="false">deutsch</string>
     <!--</editor-fold>-->
 
     <!--<editor-fold desc="Localization codes">-->
@@ -20,6 +20,7 @@
     <string name="De" translatable="false">de</string>
     <!--</editor-fold>-->
 
-    <string name="title_activity_choose_room">ChooseRoomActivity</string>
+    <string name="second_floor_text">спрат</string>
+    <string name="first_floor_text">приземље</string>
 
 </resources>
