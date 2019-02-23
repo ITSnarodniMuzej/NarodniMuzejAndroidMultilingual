@@ -2,6 +2,7 @@
 <resources>
     <string name="app_name">Android Muzej</string>
     <string name="muzej_vuka_i_dositeja">МУЗЕЈ ВУКА И ДОСИТЕЈА</string>
+<<<<<<< HEAD
     <string name="navigacija">Навигација</string>
 
     <room1>
@@ -87,4 +88,8 @@
             Зато, дражајши ученици, будите благонаравни и послушни учитељем вашим, учите се и просвештаваје се у науками и добродетели и бићемо сви
         </string>
     </room2>
+=======
+    <string name="second_floor_text">спрат</string>
+    <string name="first_floor_text">приземље</string>
+>>>>>>> develop
 </resources>

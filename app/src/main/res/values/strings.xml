@@ -1,23 +1,61 @@
 <resources>
     <string name="app_name">Android Muzej</string>
     <string name="muzej_vuka_i_dositeja">МУЗЕЈ ВУКА И ДОСИТЕЈА</string>
-    <string name="navigacija">navigacija</string>
-    <string name="btnSrpski">српски</string>
-    <string name="btnEngleski">english</string>
-    <string name="btnTurski">türk</string>
-    <string name="btnFrancuski">français</string>
-    <string name="btnRuski">русский</string>
-    <string name="btnNemacki">deutsch</string>
 
-    <!--<editor-fold desc="Localization codes">-->
-    <string name="Sr">sr</string>
-    <string name="En">en</string>
-    <string name="Tr">tr</string>
-    <string name="Fr">fr</string>
-    <string name="Ru">ru</string>
-    <string name="De">de</string>
-    <string name="title_activity_choose_room">ChooseRoomActivity</string>
+    <!--<editor-fold desc="Language button text">-->
+    <string name="btnSerbian" translatable="false">српски</string>
+    <string name="btnEnglish" translatable="false">english</string>
+    <string name="btnTurkish" translatable="false">türk</string>
+    <string name="btnFrench" translatable="false">français</string>
+    <string name="btnRussian" translatable="false">русский</string>
+    <string name="btnGerman" translatable="false">deutsch</string>
     <!--</editor-fold>-->
 
+    <!--<editor-fold desc="Localization codes">-->
+    <string name="Sr" translatable="false">sr</string>
+    <string name="En" translatable="false">en</string>
+    <string name="Tr" translatable="false">tr</string>
+    <string name="Fr" translatable="false">fr</string>
+    <string name="Ru" translatable="false">ru</string>
+    <string name="De" translatable="false">de</string>
+    <!--</editor-fold>-->
+
+    <string name="second_floor_text">спрат</string>
+    <string name="first_floor_text">приземље</string>
+
+
+    <string-array name="room1Text">
+        <item>Text for room 1 page 1</item>
+        <item>Text for room 1 page 2</item>
+    </string-array>
+
+
+    <string-array name="room1Page1Images">
+        <item>deni_didro</item>
+        <item>deni_didro</item>
+        <item>deni_didro</item>
+        <item>deni_didro</item>
+        <item>deni_didro</item>
+    </string-array>
+
+    <string-array name="room1Page1ImagesTitles">
+        <item>Deni Didro</item>
+        <item>Image</item>
+        <item>ImageTitle1</item>
+        <item>ImageTitle1</item>
+        <item>ImageTitle1</item>
+    </string-array>
+
+    <string-array name="room1Page2Images">
+        <item>deni_didro</item>
+        <item>deni_didro</item>
+        <item>deni_didro</item>
+    </string-array>
+
+    <string-array name="room1Page2ImagesTitles">
+        <item>Deni Didro</item>
+        <item>ImageTitle</item>
+        <item>ImageTitle1</item>
+    </string-array>
 
 </resources>
