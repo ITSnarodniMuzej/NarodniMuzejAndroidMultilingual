@@ -23,4 +23,39 @@
     <string name="second_floor_text">спрат</string>
     <string name="first_floor_text">приземље</string>
 
+
+    <string-array name="room1Text">
+        <item>Text for room 1 page 1</item>
+        <item>Text for room 1 page 2</item>
+    </string-array>
+
+
+    <string-array name="room1Page1Images">
+        <item>deni_didro</item>
+        <item>deni_didro</item>
+        <item>deni_didro</item>
+        <item>deni_didro</item>
+        <item>deni_didro</item>
+    </string-array>
+
+    <string-array name="room1Page1ImagesTitles">
+        <item>Deni Didro</item>
+        <item>Image</item>
+        <item>ImageTitle1</item>
+        <item>ImageTitle1</item>
+        <item>ImageTitle1</item>
+    </string-array>
+
+    <string-array name="room1Page2Images">
+        <item>deni_didro</item>
+        <item>deni_didro</item>
+        <item>deni_didro</item>
+    </string-array>
+
+    <string-array name="room1Page2ImagesTitles">
+        <item>Deni Didro</item>
+        <item>ImageTitle</item>
+        <item>ImageTitle1</item>
+    </string-array>
+
 </resources>

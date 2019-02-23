@@ -1,4 +1,4 @@
-package com.example.windows10.androidmuzej;
+package com.example.windows10.androidmuzej.Activities;
 
 import android.content.Intent;
 import android.content.res.Configuration;
@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.view.View;
 import android.widget.ImageButton;
+
+import com.example.windows10.androidmuzej.R;
 
 import java.util.Locale;
 

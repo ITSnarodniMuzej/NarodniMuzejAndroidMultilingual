@@ -2,44 +2,52 @@ package com.example.windows10.androidmuzej;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
+import android.widget.ListView;
 
 import java.util.ArrayList;
 
 public class Room {
 
-    private int id;
+    private int roomNumber;
     private String title = "";
-    private String text = "";
     private Drawable logo;
-    private ArrayList<Drawable> image = new ArrayList<>();
+    private ArrayList<Page> pages = new ArrayList<>();
 
-    private Context context;
 
-    public Room(Context context, int id)
+    public Room(int roomNumber)
     {
-        this.context = context;
-        this.id = id;
-
-        createRoom(id);
+        this.roomNumber = roomNumber;
     }
 
-    private void createRoom(int id)
-    {
-        switch (id)
-        {
-            case 1:
-                createRoom1();
-                break;
-        }
+    public int getRoomNumber() {
+        return roomNumber;
     }
 
-    private void createRoom1()
-    {
-        this.title = context.getString(R.string.app_name);
-        this.text = context.getString(R.string.app_name);
-        this.logo = context.getDrawable(R.drawable.logo);
+    public void setRoomNumber(int roomNumber) {
+        this.roomNumber = roomNumber;
+    }
 
-        Drawable image1 = context.getDrawable(R.drawable.logo);
-        this.image.add(image1);
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public Drawable getLogo() {
+        return logo;
+    }
+
+    public void setLogo(Drawable logo) {
+        this.logo = logo;
+    }
+
+    public ArrayList<Page> getPages() {
+        return pages;
+    }
+
+    public void setPages(ArrayList<Page> pages) {
+        this.pages = pages;
     }
 }

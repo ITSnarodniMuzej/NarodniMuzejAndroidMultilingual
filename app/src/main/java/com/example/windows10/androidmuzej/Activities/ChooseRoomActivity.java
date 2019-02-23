@@ -1,4 +1,4 @@
-package com.example.windows10.androidmuzej;
+package com.example.windows10.androidmuzej.Activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,6 +7,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
+
+import com.example.windows10.androidmuzej.R;
 
 public class ChooseRoomActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -64,7 +66,7 @@ public class ChooseRoomActivity extends AppCompatActivity implements View.OnClic
 
         if(roomNumber.equals("stairs"))
         {
-            Log.i("Room number", "Second floor");
+            Log.i("Room number", "Floor change");
 
             ConstraintLayout firstFloor = findViewById(R.id.firstFloorLayout);
             ConstraintLayout secondFloor = findViewById(R.id.secondFloorLayout);
@@ -79,7 +81,6 @@ public class ChooseRoomActivity extends AppCompatActivity implements View.OnClic
         }
         else
         {
-            Log.i("Room number", roomNumber);
             Intent intent = new Intent(ChooseRoomActivity.this, RoomActivity.class);
             intent.putExtra("roomNumber", roomNumber);
             startActivity(intent);
