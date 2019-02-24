@@ -1,5 +1,7 @@
 package com.example.windows10.androidmuzej.Activities;
 
+import android.content.Context;
+import android.content.Intent;
 import android.content.res.XmlResourceParser;
 import android.graphics.drawable.Drawable;
 import android.support.annotation.NonNull;
@@ -33,13 +35,12 @@ public class RoomActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_room);
 
-//        Intent intent = getIntent();
-//        int roomNumber = intent.getIntExtra("roomNumber", -1);
-//        Log.i("Room number", roomNumber+"");
+        Intent intent = getIntent();
+        //int roomNumber = intent.getIntExtra("roomNumber",-1);
+        String rNumber = intent.getStringExtra("roomNumber");
+        int roomNumber = Integer.parseInt(rNumber.trim());
 
-        final int roomNumber = 2;
-
-        room = setupRoom1();
+        room = setupRoom(roomNumber);
 
         setLogo(room);
 
@@ -191,20 +192,151 @@ public class RoomActivity extends AppCompatActivity {
         tvPageCounter.setText(pagesCounter);
     }
 
-    private Room setupRoom1()
+    private Room setupRoom(int roomNumber)
     {
-        Room room = new Room(1);
+        Room room;
+        switch (roomNumber)
+        {
+            case 1:
+                room = createRoom1(roomNumber);
+                break;
+            case 2:
+                room = createRoom2(roomNumber);
+                break;
+            case 3:
+                room = createRoom3(roomNumber);
+                break;
+            case 4:
+                room = createRoom4(roomNumber);
+                break;
+            case 5:
+                room = createRoom5(roomNumber);
+                break;
+            case 6:
+                room = createRoom6(roomNumber);
+                break;
+            case 7:
+                room = createRoom7(roomNumber);
+                break;
+            case 8:
+                room = createRoom8(roomNumber);
+                break;
+            case 9:
+                room = createRoom9(roomNumber);
+                break;
+            default:
+                throw new IllegalArgumentException("Soba ne postoji " + roomNumber);
+        }
+       return room;
+    }
 
-        room.setLogo(getDrawable(R.drawable.logo));
+    private Room createRoom1(int roomNumber)
+    {
+        room = new Room(roomNumber);
+        room.setLogo(getDrawable(R.drawable.room1logo));
         room.setTitle(getString(R.string.app_name));
+
         String[] pagesText = getResources().getStringArray(R.array.room1Text);
-
-        ArrayList<Page> pages = createPages(room.getRoomNumber(), pagesText);
-
+        ArrayList<Page> pages = createPages(roomNumber, pagesText);
         room.setPages(pages);
 
         return room;
     }
+    private Room createRoom2(int roomNumber) {
+        room = new Room(roomNumber);
+        room.setLogo(getDrawable(R.drawable.logo));
+        room.setTitle(getString(R.string.app_name));
+
+        String[] pagesText = getResources().getStringArray(R.array.room2Text);
+        ArrayList<Page> pages = createPages(roomNumber, pagesText);
+        room.setPages(pages);
+
+        return room;    }
+
+    private Room createRoom3(int roomNumber) {
+        room = new Room(roomNumber);
+        room.setLogo(getDrawable(R.drawable.logo));
+        room.setTitle(getString(R.string.app_name));
+
+        String[] pagesText = getResources().getStringArray(R.array.room3Text);
+        ArrayList<Page> pages = createPages(roomNumber, pagesText);
+        room.setPages(pages);
+
+        return room;
+    }
+
+    private Room createRoom4(int roomNumber) {
+        room = new Room(roomNumber);
+        room.setLogo(getDrawable(R.drawable.logo));
+        room.setTitle(getString(R.string.app_name));
+
+        String[] pagesText = getResources().getStringArray(R.array.room4Text);
+        ArrayList<Page> pages = createPages(roomNumber, pagesText);
+        room.setPages(pages);
+
+        return room;
+    }
+
+    private Room createRoom5(int roomNumber) {
+        room = new Room(roomNumber);
+        room.setLogo(getDrawable(R.drawable.logo));
+        room.setTitle(getString(R.string.app_name));
+
+        String[] pagesText = getResources().getStringArray(R.array.room5Text);
+        ArrayList<Page> pages = createPages(roomNumber, pagesText);
+        room.setPages(pages);
+
+        return room;
+    }
+
+    private Room createRoom6(int roomNumber) {
+        room = new Room(roomNumber);
+        room.setLogo(getDrawable(R.drawable.logo));
+        room.setTitle(getString(R.string.app_name));
+
+        String[] pagesText = getResources().getStringArray(R.array.room6Text);
+        ArrayList<Page> pages = createPages(roomNumber, pagesText);
+        room.setPages(pages);
+
+        return room;
+    }
+
+    private Room createRoom7(int roomNumber) {
+        room = new Room(roomNumber);
+        room.setLogo(getDrawable(R.drawable.logo));
+        room.setTitle(getString(R.string.app_name));
+
+        String[] pagesText = getResources().getStringArray(R.array.room7Text);
+        ArrayList<Page> pages = createPages(roomNumber, pagesText);
+        room.setPages(pages);
+
+        return room;
+    }
+
+    private Room createRoom8(int roomNumber) {
+        room = new Room(roomNumber);
+        room.setLogo(getDrawable(R.drawable.logo));
+        room.setTitle(getString(R.string.app_name));
+
+        String[] pagesText = getResources().getStringArray(R.array.room8Text);
+        ArrayList<Page> pages = createPages(roomNumber, pagesText);
+        room.setPages(pages);
+
+        return room;
+    }
+
+    private Room createRoom9(int roomNumber) {
+        room = new Room(roomNumber);
+        room.setLogo(getDrawable(R.drawable.logo));
+        room.setTitle(getString(R.string.app_name));
+
+        String[] pagesText = getResources().getStringArray(R.array.room9Text);
+        ArrayList<Page> pages = createPages(roomNumber, pagesText);
+        room.setPages(pages);
+
+        return room;
+    }
+
 
     private ArrayList<Page> createPages(int roomNumber, String[] pagesText)
     {

@@ -23,7 +23,7 @@
     <string name="second_floor_text">спрат</string>
     <string name="first_floor_text">приземље</string>
 
-
+//room1
     <string-array name="room1Text">
         <item>Text for room 1 page 1</item>
         <item>Text for room 1 page 2</item>
@@ -57,5 +57,269 @@
         <item>ImageTitle</item>
         <item>ImageTitle1</item>
     </string-array>
+//room2
+    <string-array name="room2Text">
+        <item>Text for room 2 page 1</item>
+        <item>Text for room 2 page 2</item>
+    </string-array>
 
+    <string-array name="room2Page1Images">
+        <item>deni_didro</item>
+        <item>deni_didro</item>
+        <item>deni_didro</item>
+        <item>deni_didro</item>
+        <item>deni_didro</item>
+    </string-array>
+
+    <string-array name="room2Page1ImagesTitles">
+        <item>Deni Didro</item>
+        <item>Image</item>
+        <item>ImageTitle1</item>
+        <item>ImageTitle1</item>
+        <item>ImageTitle1</item>
+    </string-array>
+
+    <string-array name="room2Page2Images">
+        <item>deni_didro</item>
+        <item>deni_didro</item>
+        <item>deni_didro</item>
+    </string-array>
+
+    <string-array name="room2Page2ImagesTitles">
+        <item>Deni Didro</item>
+        <item>ImageTitle</item>
+        <item>ImageTitle1</item>
+    </string-array>
+//room3
+    <string-array name="room3Text">
+        <item>Text for room 3 page 1</item>
+        <item>Text for room 3 page 2</item>
+    </string-array>
+
+
+    <string-array name="room3Page1Images">
+        <item>deni_didro</item>
+        <item>deni_didro</item>
+        <item>deni_didro</item>
+        <item>deni_didro</item>
+        <item>deni_didro</item>
+    </string-array>
+
+    <string-array name="room3Page1ImagesTitles">
+        <item>Deni Didro</item>
+        <item>Image</item>
+        <item>ImageTitle1</item>
+        <item>ImageTitle1</item>
+        <item>ImageTitle1</item>
+    </string-array>
+
+    <string-array name="room3Page2Images">
+        <item>deni_didro</item>
+        <item>deni_didro</item>
+        <item>deni_didro</item>
+    </string-array>
+
+    <string-array name="room3Page2ImagesTitles">
+        <item>Deni Didro</item>
+        <item>ImageTitle</item>
+        <item>ImageTitle1</item>
+    </string-array>
+//room4
+    <string-array name="room4Text">
+        <item>Text for room 4 page 1</item>
+        <item>Text for room 4 page 2</item>
+    </string-array>
+
+    <string-array name="room4Page1Images">
+        <item>deni_didro</item>
+        <item>deni_didro</item>
+        <item>deni_didro</item>
+        <item>deni_didro</item>
+        <item>deni_didro</item>
+    </string-array>
+
+    <string-array name="room4Page1ImagesTitles">
+        <item>Deni Didro</item>
+        <item>Image</item>
+        <item>ImageTitle1</item>
+        <item>ImageTitle1</item>
+        <item>ImageTitle1</item>
+    </string-array>
+
+    <string-array name="room4Page2Images">
+        <item>deni_didro</item>
+        <item>deni_didro</item>
+        <item>deni_didro</item>
+    </string-array>
+
+    <string-array name="room4Page2ImagesTitles">
+        <item>Deni Didro</item>
+        <item>ImageTitle</item>
+        <item>ImageTitle1</item>
+    </string-array>
+//room5
+    <string-array name="room5Text">
+        <item>Text for room 5 page 1</item>
+        <item>Text for room 5 page 2</item>
+    </string-array>
+
+    <string-array name="room5Page1Images">
+        <item>deni_didro</item>
+        <item>deni_didro</item>
+        <item>deni_didro</item>
+        <item>deni_didro</item>
+        <item>deni_didro</item>
+    </string-array>
+
+    <string-array name="room5Page1ImagesTitles">
+        <item>Deni Didro</item>
+        <item>Image</item>
+        <item>ImageTitle1</item>
+        <item>ImageTitle1</item>
+        <item>ImageTitle1</item>
+    </string-array>
+
+    <string-array name="room5Page2Images">
+        <item>deni_didro</item>
+        <item>deni_didro</item>
+        <item>deni_didro</item>
+    </string-array>
+
+    <string-array name="room5Page2ImagesTitles">
+        <item>Deni Didro</item>
+        <item>ImageTitle</item>
+        <item>ImageTitle1</item>
+    </string-array>
+//room6
+    <string-array name="room6Text">
+        <item>Text for room 6 page 1</item>
+        <item>Text for room 6 page 2</item>
+    </string-array>
+
+    <string-array name="room6Page1Images">
+        <item>deni_didro</item>
+        <item>deni_didro</item>
+        <item>deni_didro</item>
+        <item>deni_didro</item>
+        <item>deni_didro</item>
+    </string-array>
+
+    <string-array name="room6Page1ImagesTitles">
+        <item>Deni Didro</item>
+        <item>Image</item>
+        <item>ImageTitle1</item>
+        <item>ImageTitle1</item>
+        <item>ImageTitle1</item>
+    </string-array>
+
+    <string-array name="room6Page2Images">
+        <item>deni_didro</item>
+        <item>deni_didro</item>
+        <item>deni_didro</item>
+    </string-array>
+
+    <string-array name="room6Page2ImagesTitles">
+        <item>Deni Didro</item>
+        <item>ImageTitle</item>
+        <item>ImageTitle1</item>
+    </string-array>
+//room7
+    <string-array name="room7Text">
+        <item>Text for room 7 page 1</item>
+        <item>Text for room 7 page 2</item>
+    </string-array>
+
+    <string-array name="room7Page1Images">
+        <item>deni_didro</item>
+        <item>deni_didro</item>
+        <item>deni_didro</item>
+        <item>deni_didro</item>
+        <item>deni_didro</item>
+    </string-array>
+
+    <string-array name="room7Page1ImagesTitles">
+        <item>Deni Didro</item>
+        <item>Image</item>
+        <item>ImageTitle1</item>
+        <item>ImageTitle1</item>
+        <item>ImageTitle1</item>
+    </string-array>
+
+    <string-array name="room7Page2Images">
+        <item>deni_didro</item>
+        <item>deni_didro</item>
+        <item>deni_didro</item>
+    </string-array>
+
+    <string-array name="room7Page2ImagesTitles">
+        <item>Deni Didro</item>
+        <item>ImageTitle</item>
+        <item>ImageTitle1</item>
+    </string-array>
+//room8
+    <string-array name="room8Text">
+        <item>Text for room 8 page 1</item>
+        <item>Text for room 8 page 2</item>
+    </string-array>
+
+    <string-array name="room8Page1Images">
+        <item>deni_didro</item>
+        <item>deni_didro</item>
+        <item>deni_didro</item>
+        <item>deni_didro</item>
+        <item>deni_didro</item>
+    </string-array>
+
+    <string-array name="room8Page1ImagesTitles">
+        <item>Deni Didro</item>
+        <item>Image</item>
+        <item>ImageTitle1</item>
+        <item>ImageTitle1</item>
+        <item>ImageTitle1</item>
+    </string-array>
+
+    <string-array name="room8Page2Images">
+        <item>deni_didro</item>
+        <item>deni_didro</item>
+        <item>deni_didro</item>
+    </string-array>
+
+    <string-array name="room8Page2ImagesTitles">
+        <item>Deni Didro</item>
+        <item>ImageTitle</item>
+        <item>ImageTitle1</item>
+    </string-array>
+//room9
+    <string-array name="room9Text">
+        <item>Text for room 9 page 1</item>
+        <item>Text for room 9 page 2</item>
+    </string-array>
+
+    <string-array name="room9Page1Images">
+        <item>deni_didro</item>
+        <item>deni_didro</item>
+        <item>deni_didro</item>
+        <item>deni_didro</item>
+        <item>deni_didro</item>
+    </string-array>
+
+    <string-array name="room9Page1ImagesTitles">
+        <item>Deni Didro</item>
+        <item>Image</item>
+        <item>ImageTitle1</item>
+        <item>ImageTitle1</item>
+        <item>ImageTitle1</item>
+    </string-array>
+
+    <string-array name="room9Page2Images">
+        <item>deni_didro</item>
+        <item>deni_didro</item>
+        <item>deni_didro</item>
+    </string-array>
+
+    <string-array name="room9Page2ImagesTitles">
+        <item>Deni Didro</item>
+        <item>ImageTitle</item>
+        <item>ImageTitle1</item>
+    </string-array>
 </resources>

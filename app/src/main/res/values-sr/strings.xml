@@ -2,7 +2,6 @@
 <resources>
     <string name="app_name">Android Muzej</string>
     <string name="muzej_vuka_i_dositeja">МУЗЕЈ ВУКА И ДОСИТЕЈА</string>
-<<<<<<< HEAD
     <string name="navigacija">Навигација</string>
 
     <string-array name="room1Text">
@@ -52,7 +51,7 @@
             потписао акт односно налог окружним начелствима да прикупљају старине
             за &quot;Народни музеум&quot; при већ постојећој Народној библиотеци.
         </item>
-    </>
+    </string-array>
 
     <string-array name="room2Text">
         <item name="room2page1Title">ЗГРАДА МУЗЕЈА И ВЕЛИКА ШКОЛА</item>
@@ -88,8 +87,6 @@
             Зато, дражајши ученици, будите благонаравни и послушни учитељем вашим, учите се и просвештаваје се у науками и добродетели и бићемо сви
         </item>
     </string-array>
-=======
     <string name="second_floor_text">спрат</string>
     <string name="first_floor_text">приземље</string>
->>>>>>> develop
 </resources>
