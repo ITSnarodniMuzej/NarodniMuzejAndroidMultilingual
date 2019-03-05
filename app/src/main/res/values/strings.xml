@@ -25,6 +25,7 @@
     <string name="navigacija" translatable="false">Навигација</string>
 //room1
 
+    <string name="room1Title" >Догађаји у Европи и Србији крајем 18. и почетком 19 века</string>
     <string name="room1page1Title" translatable="false">Историјске околности</string>
 
     <string-array name="room1Text">
@@ -76,43 +77,39 @@
     </string-array>
 
     <string-array name="room1Page1Images">
+        <item>sarl_monteskje</item>
         <item>deni_didro</item>
-        <item>deni_didro</item>
-        <item>deni_didro</item>
-        <item>deni_didro</item>
-        <item>deni_didro</item>
+        <item>fransoa_volter</item>
+        <item>zan_zak_ruso</item>
+        <item>dogadjaji_u_evropi</item>
     </string-array>
 
     <string-array name="room1Page1ImagesTitles">
-        <item>Deni Didro</item>
-        <item>Image</item>
-        <item>ImageTitle1</item>
-        <item>ImageTitle1</item>
-        <item>ImageTitle1</item>
+        <item>Шарл Монтескје</item>
+        <item>Дени Дидро</item>
+        <item>Франсоа Волтер</item>
+        <item>Жан Жак Русо</item>
+        <item>"слобода предводи народ"</item>
     </string-array>
 
     <string-array name="room1Page2Images">
-        <item>deni_didro</item>
-        <item>deni_didro</item>
-        <item>deni_didro</item>
+        <item>narodno_pozoriste</item>
+        <item>narodni_muzej</item>
+        <item>karadjordje</item>
+        <item>prvi_srpski_ustanak</item>
     </string-array>
 
     <string-array name="room1Page2ImagesTitles">
-        <item>Deni Didro</item>
-        <item>Image</item>
-        <item>ImageTitle1</item>
+        <item>Народно позориште</item>
+        <item>Народни муѕеј</item>
+        <item>Ђорђе Петровић Карађорђе</item>
+        <item>Први српски устанак</item>
     </string-array>
 
     <string-array name="room1Page3Images">
-        <item>deni_didro</item>
-        <item>deni_didro</item>
-        <item>deni_didro</item>
     </string-array>
 
     <string-array name="room1Page3ImagesTitles">
-        <item>Deni Didro</item>
-        <item>ImageTitle</item>
-        <item>ImageTitle1</item>
     </string-array>
 //room2
     <string name="room2page1Title" translatable="false">ЗГРАДА МУЗЕЈА И ВЕЛИКА ШКОЛА</string>
@@ -152,68 +149,46 @@
 
 
     <string-array name="room2Page1Images">
-        <item>deni_didro</item>
-        <item>deni_didro</item>
-        <item>deni_didro</item>
-        <item>deni_didro</item>
-        <item>deni_didro</item>
+        <item>maketa_zgrade</item>
+        <item>franta_mali_tusem</item>
     </string-array>
 
     <string-array name="room2Page1ImagesTitles">
-        <item>Deni Didro</item>
-        <item>Image</item>
-        <item>ImageTitle1</item>
-        <item>ImageTitle1</item>
-        <item>ImageTitle1</item>
+        <item>Макета Музеја</item>
+        <item>Франта Мали тушем</item>
     </string-array>
 
     <string-array name="room2Page2Images">
-        <item>deni_didro</item>
-        <item>deni_didro</item>
-        <item>deni_didro</item>
+
     </string-array>
 
 
     <string-array name="room2Page2ImagesTitles">
-        <item>Deni Didro</item>
-        <item>Image</item>
-        <item>ImageTitle1</item>
+
     </string-array>
 
     <string-array name="room2Page3Images">
-        <item>deni_didro</item>
-        <item>deni_didro</item>
-        <item>deni_didro</item>
+
     </string-array>
 
     <string-array name="room2Page3ImagesTitles">
-        <item>Deni Didro</item>
-        <item>Image</item>
-        <item>ImageTitle1</item>
+
     </string-array>
 
     <string-array name="room2Page4Images">
-        <item>deni_didro</item>
-        <item>deni_didro</item>
-        <item>deni_didro</item>
+
     </string-array>
 
     <string-array name="room2Page4ImagesTitles">
-        <item>Deni Didro</item>
-        <item>Image</item>
-        <item>ImageTitle1</item>
+
     </string-array>
 
     <string-array name="room2Page5Images">
-        <item>deni_didro</item>
-        <item>deni_didro</item>
-        <item>deni_didro</item>
+
     </string-array>
 
     <string-array name="room2Page5ImagesTitles">
-        <item>Deni Didro</item>
-        <item>ImageTitle</item>
-        <item>ImageTitle1</item>
+
     </string-array>
 //room3
     <string-array name="room3Text">
@@ -273,43 +248,34 @@
 
 
     <string-array name="room3Page1Images">
-        <item>deni_didro</item>
-        <item>deni_didro</item>
-        <item>deni_didro</item>
-        <item>deni_didro</item>
-        <item>deni_didro</item>
+        <item>rudolf_valec</item>
+
     </string-array>
 
     <string-array name="room3Page1ImagesTitles">
-        <item>Deni Didro</item>
-        <item>Image</item>
-        <item>ImageTitle1</item>
-        <item>ImageTitle1</item>
-        <item>ImageTitle1</item>
+        <item>Рудолф Валец</item>
     </string-array>
 
     <string-array name="room3Page2Images">
-        <item>deni_didro</item>
-        <item>deni_didro</item>
-        <item>deni_didro</item>
+        <item>manastir_hopovo</item>
+        <item>mapa_dositejevih_putovanja</item>
+        <item>pismo_haralampiju</item>
     </string-array>
 
     <string-array name="room3Page2ImagesTitles">
-        <item>Deni Didro</item>
-        <item>ImageTitle</item>
-        <item>ImageTitle1</item>
+        <item>Манастир Хопово</item>
+        <item>Мапа Доситејевих путовања</item>
+        <item>Писмо Харалампију</item>
     </string-array>
 
     <string-array name="room3Page3Images">
-        <item>deni_didro</item>
-        <item>deni_didro</item>
-        <item>deni_didro</item>
+        <item>dositej_obradovic</item>
+        <item>zivot_prikljucenija</item>
     </string-array>
 
     <string-array name="room3Page3ImagesTitles">
-        <item>Deni Didro</item>
-        <item>ImageTitle</item>
-        <item>ImageTitle1</item>
+        <item>Доситеј Обрадовић</item>
+        <item>Живот и Прикљученија</item>
     </string-array>
 //room4
     <string-array name="room4Text">
@@ -377,43 +343,36 @@
     </string-array>
 
     <string-array name="room4Page1Images">
-        <item>deni_didro</item>
-        <item>deni_didro</item>
-        <item>deni_didro</item>
-        <item>deni_didro</item>
-        <item>deni_didro</item>
+        <item>vuk_karadzic_bronza</item>
+        <item>stap_stula</item>
+
     </string-array>
 
     <string-array name="room4Page1ImagesTitles">
-        <item>Deni Didro</item>
-        <item>Image</item>
-        <item>ImageTitle1</item>
-        <item>ImageTitle1</item>
-        <item>ImageTitle1</item>
+        <item>Вук Караџић бронзана биста</item>
+        <item>Штап,Штула,Штака</item>
     </string-array>
 
     <string-array name="room4Page2Images">
-        <item>deni_didro</item>
-        <item>deni_didro</item>
-        <item>deni_didro</item>
+
     </string-array>
 
     <string-array name="room4Page2ImagesTitles">
-        <item>Deni Didro</item>
-        <item>ImageTitle</item>
-        <item>ImageTitle1</item>
+
     </string-array>
 
     <string-array name="room4Page3Images">
-        <item>deni_didro</item>
-        <item>deni_didro</item>
-        <item>deni_didro</item>
+        <item>vukova_diploma</item>
+        <item>putna_torba</item>
+        <item>crvena_coka</item>
+        <item>mladi_vuk</item>
     </string-array>
 
     <string-array name="room4Page3ImagesTitles">
-        <item>Deni Didro</item>
-        <item>ImageTitle</item>
-        <item>ImageTitle1</item>
+        <item>Вукова диплома Московског универзитета</item>
+        <item>Путна торба, кожа и дрво</item>
+        <item>фес, црвена чоха са кићанком</item>
+        <item>Млади Вук уље на платну</item>
     </string-array>
 //room5
     <string-array name="room5Text">
