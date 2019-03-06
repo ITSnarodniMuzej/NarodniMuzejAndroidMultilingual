@@ -251,7 +251,8 @@ public class RoomActivity extends AppCompatActivity {
         ArrayList<Page> pages = createPages(roomNumber, pagesText);
         room.setPages(pages);
 
-        return room;    }
+        return room;
+    }
 
     private Room createRoom3(int roomNumber) {
         room = new Room(roomNumber);
@@ -366,8 +367,6 @@ public class RoomActivity extends AppCompatActivity {
         pageNumber += 1;
 
         String imageLocation = "room"+roomNumber+"Page"+pageNumber+"Images";
-
-        Log.i("ImageLocation", imageLocation);
 
         int pageImagesId = getResources().getIdentifier(imageLocation, "array", getPackageName());
         String[] pageImagesLocation = getResources().getStringArray(pageImagesId);

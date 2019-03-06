@@ -10,12 +10,7 @@ public class PageImage {
     {
         this.image = image;
     }
-
-    public PageImage(String imageTitle, Drawable image) {
-        this.imageTitle = imageTitle;
-        this.image = image;
-    }
-
+    
     public void setImageTitle(String imageTitle) {
         this.imageTitle = imageTitle;
     }

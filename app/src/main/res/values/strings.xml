@@ -23,8 +23,8 @@
     <string name="second_floor_text">спрат</string>
     <string name="first_floor_text">приземље</string>
     <string name="navigacija" translatable="false">Навигација</string>
-//room1
 
+    <!--<editor-fold desc="Room1">-->
     <string name="room1Title" >Догађаји у Европи и Србији крајем 18. и почетком 19 века</string>
     <string name="room1page1Title" translatable="false">Историјске околности</string>
 
@@ -76,6 +76,7 @@
         </item>
     </string-array>
 
+    <!--<editor-fold desc="Page1">-->
     <string-array name="room1Page1Images">
         <item>sarl_monteskje</item>
         <item>deni_didro</item>
@@ -91,7 +92,9 @@
         <item>Жан Жак Русо</item>
         <item>"слобода предводи народ"</item>
     </string-array>
+    <!--</editor-fold>-->
 
+    <!--<editor-fold desc="Page2">-->
     <string-array name="room1Page2Images">
         <item>narodno_pozoriste</item>
         <item>narodni_muzej</item>
@@ -105,13 +108,19 @@
         <item>Ђорђе Петровић Карађорђе</item>
         <item>Први српски устанак</item>
     </string-array>
+    <!--</editor-fold>-->
 
+    <!--<editor-fold desc="Page3">-->
     <string-array name="room1Page3Images">
     </string-array>
 
     <string-array name="room1Page3ImagesTitles">
     </string-array>
-//room2
+    <!--</editor-fold>-->
+
+    <!--</editor-fold>-->
+
+    <!--<editor-fold desc="Room2">-->
     <string name="room2page1Title" translatable="false">ЗГРАДА МУЗЕЈА И ВЕЛИКА ШКОЛА</string>
     <string name="room2page4Title" translatable="false">Велика школа </string>
     <string name="room2page5Title" translatable="false">Говор Доситеја Обрадовића при отварању Велике школе у Београду 1808. године:</string>
@@ -148,6 +157,7 @@
     </string-array>
 
 
+    <!--<editor-fold desc="Page1">-->
     <string-array name="room2Page1Images">
         <item>maketa_zgrade</item>
         <item>franta_mali_tusem</item>
@@ -157,7 +167,9 @@
         <item>Макета Музеја</item>
         <item>Франта Мали тушем</item>
     </string-array>
+    <!--</editor-fold>-->
 
+    <!--<editor-fold desc="Page2">-->
     <string-array name="room2Page2Images">
 
     </string-array>
@@ -166,7 +178,9 @@
     <string-array name="room2Page2ImagesTitles">
 
     </string-array>
+    <!--</editor-fold>-->
 
+    <!--<editor-fold desc="Page3">-->
     <string-array name="room2Page3Images">
 
     </string-array>
@@ -174,7 +188,9 @@
     <string-array name="room2Page3ImagesTitles">
 
     </string-array>
+    <!--</editor-fold>-->
 
+    <!--<editor-fold desc="Page4">-->
     <string-array name="room2Page4Images">
 
     </string-array>
@@ -182,7 +198,9 @@
     <string-array name="room2Page4ImagesTitles">
 
     </string-array>
+    <!--</editor-fold>-->
 
+    <!--<editor-fold desc="Page5">-->
     <string-array name="room2Page5Images">
 
     </string-array>
@@ -190,7 +208,11 @@
     <string-array name="room2Page5ImagesTitles">
 
     </string-array>
-//room3
+    <!--</editor-fold>-->
+
+    <!--</editor-fold>-->
+
+    <!--<editor-fold desc="Room3">-->
     <string-array name="room3Text">
         <item>У приземљу Музеја налази се мања скулптура – скица за споменик Доситеју
                 Обрадовићу који се данас налази у Студенском парку, у непосредној близини
@@ -246,7 +268,7 @@
         </item>
     </string-array>
 
-
+    <!--<editor-fold desc="Page1">-->
     <string-array name="room3Page1Images">
         <item>rudolf_valec</item>
 
@@ -255,7 +277,9 @@
     <string-array name="room3Page1ImagesTitles">
         <item>Рудолф Валец</item>
     </string-array>
+    <!--</editor-fold>-->
 
+    <!--<editor-fold desc="Page2">-->
     <string-array name="room3Page2Images">
         <item>manastir_hopovo</item>
         <item>mapa_dositejevih_putovanja</item>
@@ -267,7 +291,9 @@
         <item>Мапа Доситејевих путовања</item>
         <item>Писмо Харалампију</item>
     </string-array>
+    <!--</editor-fold>-->
 
+    <!--<editor-fold desc="Page3">-->
     <string-array name="room3Page3Images">
         <item>dositej_obradovic</item>
         <item>zivot_prikljucenija</item>
@@ -277,7 +303,11 @@
         <item>Доситеј Обрадовић</item>
         <item>Живот и Прикљученија</item>
     </string-array>
-//room4
+    <!--</editor-fold>-->
+
+    <!--</editor-fold>-->
+
+    <!--<editor-fold desc="Room4">-->
     <string-array name="room4Text">
         <item>Испред Вукове собе постављено је попрсје израђено у бронзи вајара Суров –
             Везилића на којој је Вук представљен као зрео човек обучен у европско одело
@@ -342,6 +372,7 @@
         </item>
     </string-array>
 
+    <!--<editor-fold desc="Page1">-->
     <string-array name="room4Page1Images">
         <item>vuk_karadzic_bronza</item>
         <item>stap_stula</item>
@@ -352,7 +383,9 @@
         <item>Вук Караџић бронзана биста</item>
         <item>Штап,Штула,Штака</item>
     </string-array>
+    <!--</editor-fold>-->
 
+    <!--<editor-fold desc="Page2">-->
     <string-array name="room4Page2Images">
 
     </string-array>
@@ -360,7 +393,9 @@
     <string-array name="room4Page2ImagesTitles">
 
     </string-array>
+    <!--</editor-fold>-->
 
+    <!--<editor-fold desc="Page3">-->
     <string-array name="room4Page3Images">
         <item>vukova_diploma</item>
         <item>putna_torba</item>
@@ -374,12 +409,17 @@
         <item>фес, црвена чоха са кићанком</item>
         <item>Млади Вук уље на платну</item>
     </string-array>
-//room5
+    <!--</editor-fold>-->
+
+    <!--</editor-fold>-->
+
+    <!--<editor-fold desc="Room5">-->
     <string-array name="room5Text">
         <item>Text for room 5 page 1</item>
         <item>Text for room 5 page 2</item>
     </string-array>
 
+    <!--<editor-fold desc="Page1">-->
     <string-array name="room5Page1Images">
         <item>deni_didro</item>
         <item>deni_didro</item>
@@ -395,7 +435,9 @@
         <item>ImageTitle1</item>
         <item>ImageTitle1</item>
     </string-array>
+    <!--</editor-fold>-->
 
+    <!--<editor-fold desc="Page2">-->
     <string-array name="room5Page2Images">
         <item>deni_didro</item>
         <item>deni_didro</item>
@@ -407,12 +449,17 @@
         <item>ImageTitle</item>
         <item>ImageTitle1</item>
     </string-array>
-//room6
+    <!--</editor-fold>-->
+
+    <!--</editor-fold>-->
+
+    <!--<editor-fold desc="Room6">-->
     <string-array name="room6Text">
         <item>Text for room 6 page 1</item>
         <item>Text for room 6 page 2</item>
     </string-array>
 
+    <!--<editor-fold desc="Page1">-->
     <string-array name="room6Page1Images">
         <item>deni_didro</item>
         <item>deni_didro</item>
@@ -428,7 +475,9 @@
         <item>ImageTitle1</item>
         <item>ImageTitle1</item>
     </string-array>
+    <!--</editor-fold>-->
 
+    <!--<editor-fold desc="Page2">-->
     <string-array name="room6Page2Images">
         <item>deni_didro</item>
         <item>deni_didro</item>
@@ -440,12 +489,17 @@
         <item>ImageTitle</item>
         <item>ImageTitle1</item>
     </string-array>
-//room7
+    <!--</editor-fold>-->
+
+    <!--</editor-fold>-->
+
+    <!--<editor-fold desc="Room7">-->
     <string-array name="room7Text">
         <item>Text for room 7 page 1</item>
         <item>Text for room 7 page 2</item>
     </string-array>
 
+    <!--<editor-fold desc="Page1">-->
     <string-array name="room7Page1Images">
         <item>deni_didro</item>
         <item>deni_didro</item>
@@ -461,7 +515,9 @@
         <item>ImageTitle1</item>
         <item>ImageTitle1</item>
     </string-array>
+    <!--</editor-fold>-->
 
+    <!--<editor-fold desc="Page2">-->
     <string-array name="room7Page2Images">
         <item>deni_didro</item>
         <item>deni_didro</item>
@@ -473,12 +529,17 @@
         <item>ImageTitle</item>
         <item>ImageTitle1</item>
     </string-array>
-//room8
+    <!--</editor-fold>-->
+
+    <!--</editor-fold>-->
+
+    <!--<editor-fold desc="Room8">-->
     <string-array name="room8Text">
         <item>Text for room 8 page 1</item>
         <item>Text for room 8 page 2</item>
     </string-array>
 
+    <!--<editor-fold desc="Page1">-->
     <string-array name="room8Page1Images">
         <item>deni_didro</item>
         <item>deni_didro</item>
@@ -494,7 +555,9 @@
         <item>ImageTitle1</item>
         <item>ImageTitle1</item>
     </string-array>
+    <!--</editor-fold>-->
 
+    <!--<editor-fold desc="Page2">-->
     <string-array name="room8Page2Images">
         <item>deni_didro</item>
         <item>deni_didro</item>
@@ -506,12 +569,17 @@
         <item>ImageTitle</item>
         <item>ImageTitle1</item>
     </string-array>
-//room9
+    <!--</editor-fold>-->
+
+    <!--</editor-fold>-->
+
+    <!--<editor-fold desc="Room9">-->
     <string-array name="room9Text">
         <item>Text for room 9 page 1</item>
         <item>Text for room 9 page 2</item>
     </string-array>
 
+    <!--<editor-fold desc="Page1">-->
     <string-array name="room9Page1Images">
         <item>deni_didro</item>
         <item>deni_didro</item>
@@ -527,7 +595,9 @@
         <item>ImageTitle1</item>
         <item>ImageTitle1</item>
     </string-array>
+    <!--</editor-fold>-->
 
+    <!--<editor-fold desc="Page2">-->
     <string-array name="room9Page2Images">
         <item>deni_didro</item>
         <item>deni_didro</item>
@@ -539,4 +609,8 @@
         <item>ImageTitle</item>
         <item>ImageTitle1</item>
     </string-array>
+    <!--</editor-fold>-->
+
+    <!--</editor-fold>-->
+
 </resources>
