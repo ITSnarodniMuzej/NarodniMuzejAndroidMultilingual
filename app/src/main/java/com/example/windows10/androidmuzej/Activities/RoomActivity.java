@@ -198,31 +198,31 @@ public class RoomActivity extends AppCompatActivity {
         switch (roomNumber)
         {
             case 1:
-                room = createRoom1(roomNumber);
+                room = createRoom(roomNumber);
                 break;
             case 2:
-                room = createRoom2(roomNumber);
+                room = createRoom(roomNumber);
                 break;
             case 3:
-                room = createRoom3(roomNumber);
+                room = createRoom(roomNumber);
                 break;
             case 4:
-                room = createRoom4(roomNumber);
+                room = createRoom(roomNumber);
                 break;
             case 5:
-                room = createRoom5(roomNumber);
+                room = createRoom(roomNumber);
                 break;
             case 6:
-                room = createRoom6(roomNumber);
+                room = createRoom(roomNumber);
                 break;
             case 7:
-                room = createRoom7(roomNumber);
+                room = createRoom(roomNumber);
                 break;
             case 8:
-                room = createRoom8(roomNumber);
+                room = createRoom(roomNumber);
                 break;
             case 9:
-                room = createRoom9(roomNumber);
+                room = createRoom(roomNumber);
                 break;
             default:
                 throw new IllegalArgumentException("Soba ne postoji " + roomNumber);
@@ -230,113 +230,19 @@ public class RoomActivity extends AppCompatActivity {
        return room;
     }
 
-    private Room createRoom1(int roomNumber)
-    {
-        room = new Room(roomNumber);
-        room.setLogo(getDrawable(R.drawable.room1logo));
-        room.setTitle(getString(R.string.app_name));
+        private Room createRoom(int roomNumber) {
+            room = new Room(roomNumber);
+            room.setLogo(getDrawable(R.drawable.logo));
+            room.setTitle(getString(R.string.app_name));
 
-        String[] pagesText = getResources().getStringArray(R.array.room1Text);
-        ArrayList<Page> pages = createPages(roomNumber, pagesText);
-        room.setPages(pages);
+            String mainText = "room"+roomNumber+"Text";
+            int pagesTextId = getResources().getIdentifier(mainText, "array", getPackageName());
+            String[] pagesText = getResources().getStringArray(pagesTextId);
+            ArrayList<Page> pages = createPages(roomNumber, pagesText);
+            room.setPages(pages);
 
-        return room;
-    }
-    private Room createRoom2(int roomNumber) {
-        room = new Room(roomNumber);
-        room.setLogo(getDrawable(R.drawable.logo));
-        room.setTitle(getString(R.string.app_name));
-
-        String[] pagesText = getResources().getStringArray(R.array.room2Text);
-        ArrayList<Page> pages = createPages(roomNumber, pagesText);
-        room.setPages(pages);
-
-        return room;
-    }
-
-    private Room createRoom3(int roomNumber) {
-        room = new Room(roomNumber);
-        room.setLogo(getDrawable(R.drawable.logo));
-        room.setTitle(getString(R.string.app_name));
-
-        String[] pagesText = getResources().getStringArray(R.array.room3Text);
-        ArrayList<Page> pages = createPages(roomNumber, pagesText);
-        room.setPages(pages);
-
-        return room;
-    }
-
-    private Room createRoom4(int roomNumber) {
-        room = new Room(roomNumber);
-        room.setLogo(getDrawable(R.drawable.logo));
-        room.setTitle(getString(R.string.app_name));
-
-        String[] pagesText = getResources().getStringArray(R.array.room4Text);
-        ArrayList<Page> pages = createPages(roomNumber, pagesText);
-        room.setPages(pages);
-
-        return room;
-    }
-
-    private Room createRoom5(int roomNumber) {
-        room = new Room(roomNumber);
-        room.setLogo(getDrawable(R.drawable.logo));
-        room.setTitle(getString(R.string.app_name));
-
-        String[] pagesText = getResources().getStringArray(R.array.room5Text);
-        ArrayList<Page> pages = createPages(roomNumber, pagesText);
-        room.setPages(pages);
-
-        return room;
-    }
-
-    private Room createRoom6(int roomNumber) {
-        room = new Room(roomNumber);
-        room.setLogo(getDrawable(R.drawable.logo));
-        room.setTitle(getString(R.string.app_name));
-
-        String[] pagesText = getResources().getStringArray(R.array.room6Text);
-        ArrayList<Page> pages = createPages(roomNumber, pagesText);
-        room.setPages(pages);
-
-        return room;
-    }
-
-    private Room createRoom7(int roomNumber) {
-        room = new Room(roomNumber);
-        room.setLogo(getDrawable(R.drawable.logo));
-        room.setTitle(getString(R.string.app_name));
-
-        String[] pagesText = getResources().getStringArray(R.array.room7Text);
-        ArrayList<Page> pages = createPages(roomNumber, pagesText);
-        room.setPages(pages);
-
-        return room;
-    }
-
-    private Room createRoom8(int roomNumber) {
-        room = new Room(roomNumber);
-        room.setLogo(getDrawable(R.drawable.logo));
-        room.setTitle(getString(R.string.app_name));
-
-        String[] pagesText = getResources().getStringArray(R.array.room8Text);
-        ArrayList<Page> pages = createPages(roomNumber, pagesText);
-        room.setPages(pages);
-
-        return room;
-    }
-
-    private Room createRoom9(int roomNumber) {
-        room = new Room(roomNumber);
-        room.setLogo(getDrawable(R.drawable.logo));
-        room.setTitle(getString(R.string.app_name));
-
-        String[] pagesText = getResources().getStringArray(R.array.room9Text);
-        ArrayList<Page> pages = createPages(roomNumber, pagesText);
-        room.setPages(pages);
-
-        return room;
-    }
+            return room;
+        }
 
 
     private ArrayList<Page> createPages(int roomNumber, String[] pagesText)
