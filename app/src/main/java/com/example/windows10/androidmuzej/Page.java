@@ -4,10 +4,31 @@ import java.util.ArrayList;
 
 public class Page {
 
-    private String text;
+    private int pageNumber;
+    private String title = "";
+    private String text = "";
     private ArrayList<PageImage> pageImages = new ArrayList<>();
 
-    public Page(){}
+    public Page(int pageNumber)
+    {
+        this.pageNumber = pageNumber;
+    }
+
+    public int getPageNumber() {
+        return pageNumber;
+    }
+
+    public void setPageNumber(int pageNumber) {
+        this.pageNumber = pageNumber;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
 
     public void setText(String text) {
         this.text = text;

@@ -21,42 +21,42 @@ public class ChooseRoomActivity extends AppCompatActivity implements View.OnClic
         //First floor
         ImageButton btnRoom1Up = findViewById(R.id.btnRoom1Up);
         ImageButton btnRoom1Down = findViewById(R.id.btnRoom1Down);
-        ImageButton btnRoom2 = findViewById(R.id.btnRoom2);
+        ImageButton btnRoom2Up = findViewById(R.id.btnRoom2Up);
+        ImageButton btnRoom2Down = findViewById(R.id.btnRoom2Down);
         ImageButton btnRoom3 = findViewById(R.id.btnRoom3);
-        ImageButton btnRoom4Up = findViewById(R.id.btnRoom4Up);
-        ImageButton btnRoom4Down = findViewById(R.id.btnRoom4Down);
+        ImageButton btnRoom4 = findViewById(R.id.btnRoom4);
         ImageButton btnUp = findViewById(R.id.btnUp);
 
         //Second floor
         ImageButton btnDown = findViewById(R.id.btnDown);
         ImageButton btnRoom5Up = findViewById(R.id.btnRoom5Up);
         ImageButton btnRoom5Down = findViewById(R.id.btnRoom5Down);
-        ImageButton btnRoom6 = findViewById(R.id.btnRoom6);
+        ImageButton btnRoom6Up = findViewById(R.id.btnRoom6Up);
+        ImageButton btnRoom6Down = findViewById(R.id.btnRoom6Down);
         ImageButton btnRoom7 = findViewById(R.id.btnRoom7);
         ImageButton btnRoom8 = findViewById(R.id.btnRoom8);
-        ImageButton btnRoom9Up = findViewById(R.id.btnRoom9Up );
-        ImageButton btnRoom9Down = findViewById(R.id.btnRoom9Down);
+        ImageButton btnRoom9 = findViewById(R.id.btnRoom9);
         //</editor-fold>
 
         //<editor-fold desc="Setting listener">
         //First floor
         btnRoom1Up.setOnClickListener(this);
         btnRoom1Down.setOnClickListener(this);
-        btnRoom2.setOnClickListener(this);
+        btnRoom4.setOnClickListener(this);
         btnRoom3.setOnClickListener(this);
-        btnRoom4Up.setOnClickListener(this);
-        btnRoom4Down.setOnClickListener(this);
+        btnRoom2Up.setOnClickListener(this);
+        btnRoom2Down.setOnClickListener(this);
         btnUp.setOnClickListener(this);
 
         //Second floor
         btnDown.setOnClickListener(this);
         btnRoom5Up.setOnClickListener(this);
         btnRoom5Down.setOnClickListener(this);
-        btnRoom6.setOnClickListener(this);
+        btnRoom6Up.setOnClickListener(this);
+        btnRoom6Down.setOnClickListener(this);
         btnRoom7.setOnClickListener(this);
         btnRoom8.setOnClickListener(this);
-        btnRoom9Up.setOnClickListener(this);
-        btnRoom9Down.setOnClickListener(this);
+//        btnRoom9.setOnClickListener(this);
         //</editor-fold>
     }
 
@@ -66,8 +66,6 @@ public class ChooseRoomActivity extends AppCompatActivity implements View.OnClic
 
         if(roomNumber.equals("stairs"))
         {
-            Log.i("Room number", "Floor change");
-
             ConstraintLayout firstFloor = findViewById(R.id.firstFloorLayout);
             ConstraintLayout secondFloor = findViewById(R.id.secondFloorLayout);
 
@@ -81,9 +79,18 @@ public class ChooseRoomActivity extends AppCompatActivity implements View.OnClic
         }
         else
         {
-            Intent intent = new Intent(ChooseRoomActivity.this, RoomActivity.class);
-            intent.putExtra("roomNumber", roomNumber);
-            startActivity(intent);
+            try {
+                int roomNum = Integer.parseInt(roomNumber);
+
+                Intent intent = new Intent(ChooseRoomActivity.this, RoomActivity.class);
+                intent.putExtra("roomNumber", roomNumber);
+                startActivity(intent);
+
+            } catch (NumberFormatException e) {
+                Log.e(getClass().getSimpleName(), e.getMessage());
+            }
+
+
         }
     }
 }

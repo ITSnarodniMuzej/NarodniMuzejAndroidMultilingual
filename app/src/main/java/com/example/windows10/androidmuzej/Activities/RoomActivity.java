@@ -1,8 +1,7 @@
 package com.example.windows10.androidmuzej.Activities;
 
-import android.content.Context;
 import android.content.Intent;
-import android.content.res.XmlResourceParser;
+import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
 import android.support.annotation.NonNull;
 import android.support.constraint.ConstraintLayout;
@@ -22,7 +21,6 @@ import com.example.windows10.androidmuzej.PageImageAdapter;
 import com.example.windows10.androidmuzej.R;
 import com.example.windows10.androidmuzej.Room;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class RoomActivity extends AppCompatActivity {
@@ -36,49 +34,219 @@ public class RoomActivity extends AppCompatActivity {
         setContentView(R.layout.activity_room);
 
         Intent intent = getIntent();
-        //int roomNumber = intent.getIntExtra("roomNumber",-1);
+
         String rNumber = intent.getStringExtra("roomNumber");
         int roomNumber = Integer.parseInt(rNumber.trim());
 
-        room = setupRoom(roomNumber);
+        room = new Room(roomNumber);
 
-        setLogo(room);
+        getRoomLogo();
+        setRoomLogo();
 
-        setTitle(room);
+        getRoomTitle();
+        setRoomTitle();
 
-        setPageNavigationButtons();
+        getRoomPages();
 
         setPageCounter(currentPage);
 
         fillPage(currentPage);
+
+        setPageNavigationButtons();
     }
 
-    private void setTitle(Room room)
+    private void getRoomLogo()
     {
-        TextView tvRoomTitle = findViewById(R.id.tvRoomTitle);
-        tvRoomTitle.setText(room.getTitle());
+        try {
+            //Get name of logo from string.xml
+            String logoString = "room"+room.getRoomNumber()+"Logo";
+            int logoStringId = getResources().getIdentifier(logoString, "string", getPackageName());
+
+            //Get drawable with name from string.xml
+            String logoName = getString(logoStringId);
+            int drawableId = getResources().getIdentifier(logoName, "drawable", getPackageName());
+
+            room.setLogo(getDrawable(drawableId));
+
+        } catch (Exception e)
+        {
+            //Default logo
+            room.setLogo(getDrawable(R.drawable.logo));
+        }
     }
 
-    private void setLogo(Room room)
+    private void setRoomLogo()
     {
         ImageView ivRoomLogo = findViewById(R.id.ivRoomLogo);
         ivRoomLogo.setImageDrawable(room.getLogo());
     }
 
-    void fillPage(int pageId)
+    private void getRoomTitle()
+    {
+        try {
+            String titleString = "room"+room.getRoomNumber()+"Title";
+            int titleStringId = getResources().getIdentifier(titleString, "string", getPackageName());
+
+            room.setTitle(getString(titleStringId));
+        } catch (Exception e) {
+            Log.e(getClass().getSimpleName(), e.getMessage());
+        }
+    }
+
+    private void setRoomTitle()
+    {
+        TextView tvRoomTitle = findViewById(R.id.tvRoomTitle);
+        tvRoomTitle.setText(room.getTitle());
+    }
+
+    private void getRoomPages()
+    {
+        ArrayList<Page> pages = new ArrayList<>();
+
+        int roomNumber = room.getRoomNumber();
+
+        try {
+            String pageText = "room"+roomNumber+"Text";
+            int pagesTextId = getResources().getIdentifier(pageText, "array", getPackageName());
+            String[] pagesText = getResources().getStringArray(pagesTextId);
+
+            for(int i = 0; i < pagesText.length; i++)
+            {
+                int pageNumber = i + 1;
+
+                Page page = new Page(pageNumber);
+
+                getPageTitle(page);
+
+                page.setText(pagesText[i]);
+
+                ArrayList<PageImage> pageImages = new ArrayList<>();
+
+                getPageImages(i, pageImages);
+
+                getPageImageTitles(i, pageImages);
+
+                page.setPageImages(pageImages);
+
+                pages.add(page);
+            }
+        } catch (Resources.NotFoundException e) {
+            Log.e(getClass().getSimpleName(), e.getMessage());
+        }
+
+        room.setPages(pages);
+    }
+
+    private void getPageTitle(Page page)
+    {
+        try {
+            int roomNumber = room.getRoomNumber();
+            int pageNumber = page.getPageNumber();
+
+            String pageTitle = "room"+roomNumber+"Page"+pageNumber+"Title";
+            int pageTitleId = getResources().getIdentifier(pageTitle, "string", getPackageName());
+
+            page.setTitle(getString(pageTitleId));
+
+        } catch (Exception e) {
+            Log.e(getClass().getSimpleName(), e.getMessage());
+        }
+    }
+
+    private void getPageImages(int pageNumber, ArrayList<PageImage> pageImages)
+    {
+        int roomNumber = room.getRoomNumber();
+
+        pageNumber += 1;
+
+        String imageLocation = "room"+roomNumber+"Page"+pageNumber+"Images";
+
+        try {
+            int pageImagesId = getResources().getIdentifier(imageLocation, "array", getPackageName());
+            String[] pageImagesLocation = getResources().getStringArray(pageImagesId);
+
+            //Adding images to page
+            for (String location : pageImagesLocation) {
+                //Get drawable id from string
+                int drawableId = getResources().getIdentifier(location, "drawable", getPackageName());
+
+                Drawable imageDrawable = getDrawable(drawableId);
+
+                PageImage pageImage = new PageImage(imageDrawable);
+
+                pageImages.add(pageImage);
+            }
+        } catch (Resources.NotFoundException e) {
+            Log.e(getClass().getSimpleName(), e.getMessage());
+        }
+    }
+
+    private void getPageImageTitles(int pageNumber, ArrayList<PageImage> pageImages)
+    {
+        int roomNumber = room.getRoomNumber();
+
+        pageNumber += 1;
+
+        try {
+            String imageTitleLocation = "room"+roomNumber+"Page"+pageNumber+"ImagesTitles";
+
+            int pageImagesTitleId = getResources().getIdentifier(imageTitleLocation, "array", getPackageName());
+            String[] pageImagesTitle = getResources().getStringArray(pageImagesTitleId);
+
+            //Adding image titles to page images
+            for(int j = 0; j < pageImagesTitle.length; j++)
+            {
+                String title = pageImagesTitle[j];
+                pageImages.get(j).setImageTitle(title);
+            }
+        } catch (Resources.NotFoundException e) {
+            Log.e(getClass().getSimpleName(), e.getMessage());
+        }
+
+    }
+
+    private void setPageCounter(int currentPage)
+    {
+        TextView tvPageCounter = findViewById(R.id.tvRoomPageCount);
+
+        int totalPages = room.getPages().size();
+        String pagesCounter = currentPage+"/"+totalPages;
+
+        tvPageCounter.setText(pagesCounter);
+    }
+
+    private void fillPage(int pageId)
     {
         //argument pageId start at 1
         //we need it to start from 0
         pageId--;
 
+        Page page = room.getPages().get(pageId);
+
+        //Setting page title
+        TextView tvPageTitle = findViewById(R.id.pageTitle);
+        tvPageTitle.setText(page.getTitle());
+
+        //if page has no title
+        //Hide title layout
+        ConstraintLayout titleLayout = findViewById(R.id.titleLayout);
+        if(page.getTitle() == null)
+        {
+            titleLayout.setVisibility(View.GONE);
+        }
+        else
+        {
+            titleLayout.setVisibility(View.VISIBLE);
+        }
+
         //Setting page text
-        TextView textView = findViewById(R.id.tvPageTitle);
-        textView.setText(room.getPages().get(pageId).getText());
+        TextView textView = findViewById(R.id.tvPageText);
+        textView.setText(page.getText());
 
         //if page has no images
         //Hide imagesListView
         ConstraintLayout imagesLayout = findViewById(R.id.imagesLayout);
-        if(room.getPages().get(pageId).getPageImages().isEmpty())
+        if(page.getPageImages().isEmpty())
         {
             imagesLayout.setVisibility(View.GONE);
             return;
@@ -180,133 +348,5 @@ public class RoomActivity extends AppCompatActivity {
                 setPageCounter(currentPage);
             }
         });
-    }
-
-    private void setPageCounter(int currentPage)
-    {
-        TextView tvPageCounter = findViewById(R.id.tvRoomPageCount);
-
-        int totalPages = room.getPages().size();
-        String pagesCounter = currentPage+"/"+totalPages;
-
-        tvPageCounter.setText(pagesCounter);
-    }
-
-    private Room setupRoom(int roomNumber)
-    {
-        Room room;
-        switch (roomNumber)
-        {
-            case 1:
-                room = createRoom(roomNumber);
-                break;
-            case 2:
-                room = createRoom(roomNumber);
-                break;
-            case 3:
-                room = createRoom(roomNumber);
-                break;
-            case 4:
-                room = createRoom(roomNumber);
-                break;
-            case 5:
-                room = createRoom(roomNumber);
-                break;
-            case 6:
-                room = createRoom(roomNumber);
-                break;
-            case 7:
-                room = createRoom(roomNumber);
-                break;
-            case 8:
-                room = createRoom(roomNumber);
-                break;
-            case 9:
-                room = createRoom(roomNumber);
-                break;
-            default:
-                throw new IllegalArgumentException("Soba ne postoji " + roomNumber);
-        }
-       return room;
-    }
-
-        private Room createRoom(int roomNumber) {
-            room = new Room(roomNumber);
-            room.setLogo(getDrawable(R.drawable.logo));
-            room.setTitle(getString(R.string.app_name));
-
-            String mainText = "room"+roomNumber+"Text";
-            int pagesTextId = getResources().getIdentifier(mainText, "array", getPackageName());
-            String[] pagesText = getResources().getStringArray(pagesTextId);
-            ArrayList<Page> pages = createPages(roomNumber, pagesText);
-            room.setPages(pages);
-
-            return room;
-        }
-
-
-    private ArrayList<Page> createPages(int roomNumber, String[] pagesText)
-    {
-        ArrayList<Page> pages = new ArrayList<>();
-        for(int i = 0; i < pagesText.length; i++)
-        {
-            Page page = new Page();
-
-            page.setText(pagesText[i]);
-
-            ArrayList<PageImage> pageImages = new ArrayList<>();
-
-            getPageImages(roomNumber, i, pageImages);
-
-            getPageImageTitles(roomNumber, i, pageImages);
-
-            page.setPageImages(pageImages);
-
-            pages.add(page);
-        }
-
-        return pages;
-    }
-
-    private ArrayList<PageImage> getPageImages(int roomNumber, int pageNumber, ArrayList<PageImage> pageImages)
-    {
-        pageNumber += 1;
-
-        String imageLocation = "room"+roomNumber+"Page"+pageNumber+"Images";
-
-        int pageImagesId = getResources().getIdentifier(imageLocation, "array", getPackageName());
-        String[] pageImagesLocation = getResources().getStringArray(pageImagesId);
-
-        //Adding images to page
-        for (String location : pageImagesLocation) {
-            //Get drawable id from string
-            int drawableId = getResources().getIdentifier(location, "drawable", getPackageName());
-
-            Drawable imageDrawable = getDrawable(drawableId);
-
-            PageImage pageImage = new PageImage(imageDrawable);
-
-            pageImages.add(pageImage);
-        }
-        return pageImages;
-    }
-
-    private ArrayList<PageImage> getPageImageTitles(int roomNumber, int pageNumber, ArrayList<PageImage> pageImages)
-    {
-        pageNumber += 1;
-
-        String imageTitleLocation = "room"+roomNumber+"Page"+pageNumber+"ImagesTitles";
-
-        int pageImagesTitleId = getResources().getIdentifier(imageTitleLocation, "array", getPackageName());
-        String[] pageImagesTitle = getResources().getStringArray(pageImagesTitleId);
-
-        //Adding image titles to page images
-        for(int j = 0; j < pageImagesTitle.length; j++)
-        {
-            String title = pageImagesTitle[j];
-            pageImages.get(j).setImageTitle(title);
-        }
-
-        return pageImages;
     }
 }

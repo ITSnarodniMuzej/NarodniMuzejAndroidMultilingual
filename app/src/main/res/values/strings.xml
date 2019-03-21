@@ -24,9 +24,10 @@
     <string name="first_floor_text">приземље</string>
     <string name="navigacija" translatable="false">Навигација</string>
 
+    //Dogadjaji kod nas i u svetu
     <!--<editor-fold desc="Room1">-->
-    <string name="room1Title" >Догађаји у Европи и Србији крајем 18. и почетком 19 века</string>
-    <string name="room1page1Title" translatable="false">Историјске околности</string>
+    <string name="room1Title" >Догађаји у Европи и Србији крајем\n18. и почетком 19 века</string>
+    <string name="room1Logo" translatable="false">logo</string>
 
     <string-array name="room1Text">
         <item>Историју Европе 18. века су обележиле Револуције и преврати. Те промене се
@@ -77,6 +78,7 @@
     </string-array>
 
     <!--<editor-fold desc="Page1">-->
+    <string name="room1Page1Title" translatable="false">Историјске околности</string>
     <string-array name="room1Page1Images">
         <item>sarl_monteskje</item>
         <item>deni_didro</item>
@@ -111,15 +113,12 @@
     <!--</editor-fold>-->
 
     <!--<editor-fold desc="Page3">-->
-    <string-array name="room1Page3Images">
-    </string-array>
 
-    <string-array name="room1Page3ImagesTitles">
-    </string-array>
     <!--</editor-fold>-->
 
     <!--</editor-fold>-->
 
+    //Beogradska velika skola
     <!--<editor-fold desc="Room2">-->
     <string name="room2page1Title" translatable="false">ЗГРАДА МУЗЕЈА И ВЕЛИКА ШКОЛА</string>
     <string name="room2page4Title" translatable="false">Велика школа </string>
@@ -170,46 +169,24 @@
     <!--</editor-fold>-->
 
     <!--<editor-fold desc="Page2">-->
-    <string-array name="room2Page2Images">
-    </string-array>
 
-
-    <string-array name="room2Page2ImagesTitles">
-    </string-array>
     <!--</editor-fold>-->
 
     <!--<editor-fold desc="Page3">-->
-    <string-array name="room2Page3Images">
-
-    </string-array>
-
-    <string-array name="room2Page3ImagesTitles">
-    </string-array>
 
     <!--</editor-fold>-->
 
     <!--<editor-fold desc="Page4">-->
-    <string-array name="room2Page4Images">
-    </string-array>
-
-    <string-array name="room2Page4ImagesTitles">
-    </string-array>
 
     <!--</editor-fold>-->
 
     <!--<editor-fold desc="Page5">-->
-    <string-array name="room2Page5Images">
-    </string-array>
-
-    <string-array name="room2Page5ImagesTitles">
-
-    </string-array>
-
 
     <!--</editor-fold>-->
 
     <!--</editor-fold>-->
 
+    //Dositej Obradovic
     <!--<editor-fold desc="Room3">-->
     <string-array name="room3Text">
         <item>У приземљу Музеја налази се мања скулптура – скица за споменик Доситеју
@@ -307,6 +284,7 @@
 
     <!--</editor-fold>-->
 
+    Vuk Stefanovic Karadzic
     <!--<editor-fold desc="Room4">-->
     <string-array name="room4Text">
         <item>Испред Вукове собе постављено је попрсје израђено у бронзи вајара Суров –
@@ -375,7 +353,6 @@
     <string-array name="room4Page1Images">
         <item>vuk_karadzic_bronza</item>
         <item>stap_stula</item>
-
     </string-array>
 
     <string-array name="room4Page1ImagesTitles">
@@ -385,13 +362,7 @@
     <!--</editor-fold>-->
 
     <!--<editor-fold desc="Page2">-->
-    <string-array name="room4Page2Images">
 
-    </string-array>
-
-    <string-array name="room4Page2ImagesTitles">
-
-    </string-array>
     <!--</editor-fold>-->
 
     <!--<editor-fold desc="Page3">-->
@@ -412,6 +383,7 @@
 
     <!--</editor-fold>-->
 
+    //Vukovo delo
     <!--<editor-fold desc="Room5">-->
     <string-array name="room5Text">
         <item>После пропасти Првог српског устанка, млади Вук отишао је у Беч. Написао је
@@ -551,11 +523,7 @@
     <!--</editor-fold>-->
 
     <!--<editor-fold desc="Page4">-->
-    <string-array name="room5Page4Images">
-    </string-array>
 
-    <string-array name="room5Page4ImagesTitles">
-    </string-array>
     <!--</editor-fold>-->
 
     <!--<editor-fold desc="Page5">-->
@@ -575,15 +543,12 @@
     <!--</editor-fold>-->
 
     <!--<editor-fold desc="Page6">-->
-    <string-array name="room5Page6Images">
-    </string-array>
 
-    <string-array name="room5Page6ImagesTitles">
-    </string-array>
     <!--</editor-fold>-->
 
     <!--</editor-fold>-->
 
+    //Dositejevo delo
     <!--<editor-fold desc="Room6">-->
     <string-array name="room6Text">
         <item>
@@ -650,6 +615,7 @@
 
     <!--</editor-fold>-->
 
+    //Vukova porodica
     <!--<editor-fold desc="Room7">-->
     <string-array name="room7Text">
         <item>
@@ -748,7 +714,6 @@
     <string-array name="room7Page1Images">
         <item>vuk_ana</item>
         <item>igracke</item>
-
     </string-array>
 
     <string-array name="room7Page1ImagesTitles">
@@ -782,11 +747,7 @@
     <!--</editor-fold>-->
 
     <!--<editor-fold desc="Page4">-->
-    <string-array name="room7Page4Images">
-    </string-array>
 
-    <string-array name="room7Page4ImagesTitles">
-    </string-array>
     <!--</editor-fold>-->
 
     <!--<editor-fold desc="Page5">-->
@@ -801,6 +762,7 @@
 
     <!--</editor-fold>-->
 
+    //Divanhana
     <!--<editor-fold desc="Room8">-->
     <string-array name="room8Text">
         <item>
