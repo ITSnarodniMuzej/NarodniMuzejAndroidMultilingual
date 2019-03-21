@@ -522,89 +522,63 @@
 
     <!--<editor-fold desc="Page1">-->
     <string-array name="room5Page1Images">
-        <item>deni_didro</item>
-        <item>deni_didro</item>
-        <item>deni_didro</item>
-        <item>deni_didro</item>
-        <item>deni_didro</item>
+        <item>pismenica</item>
     </string-array>
 
     <string-array name="room5Page1ImagesTitles">
-        <item>Deni Didro</item>
-        <item>Image</item>
-        <item>ImageTitle1</item>
-        <item>ImageTitle1</item>
-        <item>ImageTitle1</item>
+        <item>Писменица сербскога језика</item>
     </string-array>
     <!--</editor-fold>-->
 
     <!--<editor-fold desc="Page2">-->
     <string-array name="room5Page2Images">
-        <item>deni_didro</item>
-        <item>deni_didro</item>
-        <item>deni_didro</item>
+        <item>pjesnarica</item>
     </string-array>
 
     <string-array name="room5Page2ImagesTitles">
-        <item>Deni Didro</item>
-        <item>ImageTitle</item>
-        <item>ImageTitle1</item>
+        <item>Народна сербска песнарица</item>
     </string-array>
     <!--</editor-fold>-->
 
     <!--<editor-fold desc="Page3">-->
     <string-array name="room5Page3Images">
-        <item>deni_didro</item>
-        <item>deni_didro</item>
-        <item>deni_didro</item>
+        <item>srpski_rjecnik</item>
     </string-array>
 
     <string-array name="room5Page3ImagesTitles">
-        <item>Deni Didro</item>
-        <item>ImageTitle</item>
-        <item>ImageTitle1</item>
+        <item>Вук С. Караџић Српски рјечник</item>
     </string-array>
     <!--</editor-fold>-->
 
     <!--<editor-fold desc="Page4">-->
     <string-array name="room5Page4Images">
-        <item>deni_didro</item>
-        <item>deni_didro</item>
-        <item>deni_didro</item>
     </string-array>
 
     <string-array name="room5Page4ImagesTitles">
-        <item>Deni Didro</item>
-        <item>ImageTitle</item>
-        <item>ImageTitle1</item>
     </string-array>
     <!--</editor-fold>-->
 
     <!--<editor-fold desc="Page5">-->
     <string-array name="room5Page5Images">
-        <item>deni_didro</item>
-        <item>deni_didro</item>
-        <item>deni_didro</item>
+        <item>djura_danicic</item>
+        <item>gorski_venac</item>
+        <item>branko_radicevic</item>
+        <item>novi_zavet</item>
     </string-array>
 
     <string-array name="room5Page5ImagesTitles">
-        <item>Deni Didro</item>
-        <item>ImageTitle</item>
-        <item>ImageTitle1</item>
+        <item>Дјура Даничић</item>
+        <item>Горски Вијенац</item>
+        <item>Бранко Радичевић</item>
+        <item>Нови Завет</item>
     </string-array>
     <!--</editor-fold>-->
 
     <!--<editor-fold desc="Page6">-->
     <string-array name="room5Page6Images">
-        <item>deni_didro</item>
-        <item>deni_didro</item>
-        <item>deni_didro</item>
     </string-array>
 
     <string-array name="room5Page6ImagesTitles">
-        <item>Deni Didro</item>
-        <item>ImageTitle</item>
-        <item>ImageTitle1</item>
     </string-array>
     <!--</editor-fold>-->
 
@@ -652,33 +626,25 @@
 
     <!--<editor-fold desc="Page1">-->
     <string-array name="room6Page1Images">
-        <item>deni_didro</item>
-        <item>deni_didro</item>
-        <item>deni_didro</item>
-        <item>deni_didro</item>
-        <item>deni_didro</item>
+        <item>sovjeti</item>
+        <item>basne</item>
     </string-array>
 
     <string-array name="room6Page1ImagesTitles">
-        <item>Deni Didro</item>
-        <item>Image</item>
-        <item>ImageTitle1</item>
-        <item>ImageTitle1</item>
-        <item>ImageTitle1</item>
+        <item>Совјети зддравог разума,Лајпциг,1784</item>
+        <item>Басне,Лајпциг,1788</item>
     </string-array>
     <!--</editor-fold>-->
 
     <!--<editor-fold desc="Page2">-->
     <string-array name="room6Page2Images">
-        <item>deni_didro</item>
-        <item>deni_didro</item>
-        <item>deni_didro</item>
+        <item>sobranie</item>
+        <item>etika</item>
     </string-array>
 
     <string-array name="room6Page2ImagesTitles">
-        <item>Deni Didro</item>
-        <item>ImageTitle</item>
-        <item>ImageTitle1</item>
+        <item>Собраније,Беч,1793.</item>
+        <item>Етика,Венеција,1803.</item>
     </string-array>
     <!--</editor-fold>-->
 
@@ -780,75 +746,56 @@
 
     <!--<editor-fold desc="Page1">-->
     <string-array name="room7Page1Images">
-        <item>deni_didro</item>
-        <item>deni_didro</item>
-        <item>deni_didro</item>
-        <item>deni_didro</item>
-        <item>deni_didro</item>
+        <item>vuk_ana</item>
+        <item>igracke</item>
+
     </string-array>
 
     <string-array name="room7Page1ImagesTitles">
-        <item>Deni Didro</item>
-        <item>Image</item>
-        <item>ImageTitle1</item>
-        <item>ImageTitle1</item>
-        <item>ImageTitle1</item>
+        <item>Вук и Ана Караџић</item>
+        <item>Играчке,Беч,19.век</item>
     </string-array>
     <!--</editor-fold>-->
 
     <!--<editor-fold desc="Page2">-->
     <string-array name="room7Page2Images">
-        <item>deni_didro</item>
-        <item>deni_didro</item>
-        <item>deni_didro</item>
+        <item>mina_sin</item>
+        <item>dimitrije_karadzic</item>
     </string-array>
 
     <string-array name="room7Page2ImagesTitles">
-        <item>Deni Didro</item>
-        <item>ImageTitle</item>
-        <item>ImageTitle1</item>
+        <item>Мина са сином Јанком</item>
+        <item>Димитрије Караџић,1958.</item>
     </string-array>
     <!--</editor-fold>-->
 
     <!--<editor-fold desc="Page3">-->
     <string-array name="room7Page3Images">
-        <item>deni_didro</item>
-        <item>deni_didro</item>
-        <item>deni_didro</item>
+        <item>mina_karadzic</item>
+        <item>branko_radicevic</item>
     </string-array>
 
     <string-array name="room7Page3ImagesTitles">
-        <item>Deni Didro</item>
-        <item>ImageTitle</item>
-        <item>ImageTitle1</item>
+        <item>Мина Караџић</item>
+        <item>Бранко Радичевић</item>
     </string-array>
     <!--</editor-fold>-->
 
     <!--<editor-fold desc="Page4">-->
     <string-array name="room7Page4Images">
-        <item>deni_didro</item>
-        <item>deni_didro</item>
-        <item>deni_didro</item>
     </string-array>
 
     <string-array name="room7Page4ImagesTitles">
-        <item>Deni Didro</item>
-        <item>ImageTitle</item>
-        <item>ImageTitle1</item>
     </string-array>
     <!--</editor-fold>-->
 
     <!--<editor-fold desc="Page5">-->
     <string-array name="room7Page5Images">
-        <item>deni_didro</item>
-        <item>deni_didro</item>
-        <item>deni_didro</item>
+        <item>dimitrije_karadzic</item>
     </string-array>
 
     <string-array name="room7Page5ImagesTitles">
-        <item>Deni Didro</item>
-        <item>ImageTitle</item>
-        <item>ImageTitle1</item>
+        <item>Димитрије Караџић,1958.</item>
     </string-array>
     <!--</editor-fold>-->
 
@@ -882,19 +829,13 @@
 
     <!--<editor-fold desc="Page1">-->
     <string-array name="room8Page1Images">
-        <item>deni_didro</item>
-        <item>deni_didro</item>
-        <item>deni_didro</item>
-        <item>deni_didro</item>
-        <item>deni_didro</item>
+        <item>divanhana</item>
+        <item>divanhana2</item>
+        <item>divanhana3</item>
+        <item>divanhana4</item>
     </string-array>
 
     <string-array name="room8Page1ImagesTitles">
-        <item>Deni Didro</item>
-        <item>Image</item>
-        <item>ImageTitle1</item>
-        <item>ImageTitle1</item>
-        <item>ImageTitle1</item>
     </string-array>
     <!--</editor-fold>-->
 
