@@ -27,7 +27,7 @@
     //Dogadjaji kod nas i u svetu
     <!--<editor-fold desc="Room1">-->
     <string name="room1Title" >Догађаји у Европи и Србији крајем\n18. и почетком 19 века</string>
-    <string name="room1Logo" translatable="false">logo</string>
+    <string name="room1Logo" translatable="false">logo1</string>
 
     <string-array name="room1Text">
         <item>Историју Европе 18. века су обележиле Револуције и преврати. Те промене се
@@ -120,6 +120,8 @@
 
     //Beogradska velika skola
     <!--<editor-fold desc="Room2">-->
+    <string name="room2Title" translatable="false">Зграда музеја и Велика школа</string>
+    <string name="room2Logo" translatable="false">logo2</string>
     <string name="room2page1Title" translatable="false">ЗГРАДА МУЗЕЈА И ВЕЛИКА ШКОЛА</string>
     <string name="room2page4Title" translatable="false">Велика школа </string>
     <string name="room2page5Title" translatable="false">Говор Доситеја Обрадовића при отварању Велике школе у Београду 1808. године:</string>
@@ -155,7 +157,8 @@
         </item>
     </string-array>
 
-
+    <string name="room2Page4Title" translatable="false">Велика школа</string>
+    <string name="room2Page5Title" translatable="false">Говор Доситеја Обрадовића при отварању Велике школе у Београду 1808. године:</string>
     <!--<editor-fold desc="Page1">-->
     <string-array name="room2Page1Images">
         <item>maketa_zgrade</item>
@@ -188,8 +191,11 @@
 
     //Dositej Obradovic
     <!--<editor-fold desc="Room3">-->
+    <string name="room3Title" translatable="false">Доситеј Обрадовић</string>
+    <string name="room3Logo" translatable="false">logo3</string>
     <string-array name="room3Text">
-        <item>У приземљу Музеја налази се мања скулптура – скица за споменик Доситеју
+        <item>
+            У приземљу Музеја налази се мања скулптура – скица за споменик Доситеју
                 Обрадовићу који се данас налази у Студенском парку, у непосредној близини
                 музејске зграде. Скулптура је била поручена поводом обележавања
                 стогодишњице од Доситејеве смрти, 1911. године. С обзиром да вајар, Рудолф
@@ -247,7 +253,6 @@
     <!--<editor-fold desc="Page1">-->
     <string-array name="room3Page1Images">
         <item>rudolf_valec</item>
-
     </string-array>
 
 
@@ -286,6 +291,8 @@
 
     Vuk Stefanovic Karadzic
     <!--<editor-fold desc="Room4">-->
+    <string name="room4Title" translatable="false">Вук Стефановић Караџић</string>
+    <string name="room4Logo" translatable="false">logo4</string>
     <string-array name="room4Text">
         <item>Испред Вукове собе постављено је попрсје израђено у бронзи вајара Суров –
             Везилића на којој је Вук представљен као зрео човек обучен у европско одело
@@ -385,6 +392,8 @@
 
     //Vukovo delo
     <!--<editor-fold desc="Room5">-->
+    <string name="room5Title" translatable="false">Вуково дело</string>
+    <string name="room5Logo" translatable="false">logo5</string>
     <string-array name="room5Text">
         <item>После пропасти Првог српског устанка, млади Вук отишао је у Беч. Написао је
             спис о пропасти Устанка, што се учинило интересантним Јернеју Копитару,
@@ -550,6 +559,8 @@
 
     //Dositejevo delo
     <!--<editor-fold desc="Room6">-->
+    <string name="room6Title" translatable="false">Доситејево дело</string>
+    <string name="room6Logo" translatable="false">logo6</string>
     <string-array name="room6Text">
         <item>
             Након објављивања Писма Харалампију и аутобиографског дела Живот и
@@ -617,6 +628,8 @@
 
     //Vukova porodica
     <!--<editor-fold desc="Room7">-->
+    <string name="room7Title" translatable="false">Вукова породица</string>
+    <string name="room7Logo" translatable="false">logo7</string>
     <string-array name="room7Text">
         <item>
             Доласком у Беч, Вук се оженио ћерком своје станодавке, аустријанком Ана
@@ -764,6 +777,7 @@
 
     //Divanhana
     <!--<editor-fold desc="Room8">-->
+    <string name="room8Title" translatable="false">Диванхана</string>
     <string-array name="room8Text">
         <item>
             Традиционални начин градње домова у Отоманском царству јасно је
@@ -805,6 +819,8 @@
     <!--</editor-fold>-->
 
     <!--<editor-fold desc="Room9">-->
+    <string name="room9Title" translatable="false">Догађаји у Европи и Србији крајем\n18. и почетком 19 века</string>
+    <string name="room9Logo" translatable="false">logo</string>
     <string-array name="room9Text">
         <item>Text for room 9 page 1</item>
         <item>Text for room 9 page 2</item>
