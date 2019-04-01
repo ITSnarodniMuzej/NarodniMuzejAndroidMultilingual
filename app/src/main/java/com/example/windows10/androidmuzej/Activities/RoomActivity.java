@@ -25,8 +25,7 @@ import java.util.ArrayList;
 
 public class RoomActivity extends AppCompatActivity {
 
-    Room room;
-    int currentPage = 1;
+    private int currentPage = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,24 +37,26 @@ public class RoomActivity extends AppCompatActivity {
         String rNumber = intent.getStringExtra("roomNumber");
         int roomNumber = Integer.parseInt(rNumber.trim());
 
-        room = new Room(roomNumber);
+        Room room = new Room(roomNumber);
 
-        getRoomLogo();
-        setRoomLogo();
+        getRoomLogo(room);
+        setRoomLogo(room);
 
-        getRoomTitle();
-        setRoomTitle();
+        getRoomTitle(room);
+        setRoomTitle(room);
 
-        getRoomPages();
+        getRoomPages(room);
 
-        setPageCounter(currentPage);
+        setPageCounter(room, currentPage);
 
-        fillPage(currentPage);
+        fillPage(room, currentPage);
 
-        setPageNavigationButtons();
+        setPageNavigationButtons(room);
+
+        setImageNavigationButtons();
     }
 
-    private void getRoomLogo()
+    private void getRoomLogo(Room room)
     {
         try {
             //Get name of logo from string.xml
@@ -70,18 +71,17 @@ public class RoomActivity extends AppCompatActivity {
 
         } catch (Exception e)
         {
-            //Default logo
-            room.setLogo(getDrawable(R.drawable.logo));
+            Log.e("getRoomLogo", "Logo not found.");
         }
     }
 
-    private void setRoomLogo()
+    private void setRoomLogo(Room room)
     {
         ImageView ivRoomLogo = findViewById(R.id.ivRoomLogo);
         ivRoomLogo.setImageDrawable(room.getLogo());
     }
 
-    private void getRoomTitle()
+    private void getRoomTitle(Room room)
     {
         try {
             String titleString = "room"+room.getRoomNumber()+"Title";
@@ -89,17 +89,17 @@ public class RoomActivity extends AppCompatActivity {
 
             room.setTitle(getString(titleStringId));
         } catch (Exception e) {
-            Log.e(getClass().getSimpleName(), e.getMessage());
+            Log.e("getRoomTitle", "Room title not found.");
         }
     }
 
-    private void setRoomTitle()
+    private void setRoomTitle(Room room)
     {
         TextView tvRoomTitle = findViewById(R.id.tvRoomTitle);
         tvRoomTitle.setText(room.getTitle());
     }
 
-    private void getRoomPages()
+    private void getRoomPages(Room room)
     {
         ArrayList<Page> pages = new ArrayList<>();
 
@@ -115,29 +115,24 @@ public class RoomActivity extends AppCompatActivity {
                 int pageNumber = i + 1;
 
                 Page page = new Page(pageNumber);
-
-                getPageTitle(page);
+                getPageTitle(room, page);
 
                 page.setText(pagesText[i]);
 
-                ArrayList<PageImage> pageImages = new ArrayList<>();
+                getPageImages(room, page);
 
-                getPageImages(i, pageImages);
-
-                getPageImageTitles(i, pageImages);
-
-                page.setPageImages(pageImages);
+                getPageImageTitles(room, page);
 
                 pages.add(page);
             }
         } catch (Resources.NotFoundException e) {
-            Log.e(getClass().getSimpleName(), e.getMessage());
+            Log.e("getRoomPages", "Pages not found.");
         }
 
         room.setPages(pages);
     }
 
-    private void getPageTitle(Page page)
+    private void getPageTitle(Room room, Page page)
     {
         try {
             int roomNumber = room.getRoomNumber();
@@ -149,17 +144,18 @@ public class RoomActivity extends AppCompatActivity {
             page.setTitle(getString(pageTitleId));
 
         } catch (Exception e) {
-            Log.e(getClass().getSimpleName(), e.getMessage());
+            Log.e("getPageTitle", "Page title not found.");
         }
     }
 
-    private void getPageImages(int pageNumber, ArrayList<PageImage> pageImages)
+    private void getPageImages(Room room, Page page)
     {
         int roomNumber = room.getRoomNumber();
 
-        pageNumber += 1;
+        int pageNumber = page.getPageNumber();
 
         String imageLocation = "room"+roomNumber+"Page"+pageNumber+"Images";
+        Log.i("PageImageLocation", imageLocation);
 
         try {
             int pageImagesId = getResources().getIdentifier(imageLocation, "array", getPackageName());
@@ -174,18 +170,17 @@ public class RoomActivity extends AppCompatActivity {
 
                 PageImage pageImage = new PageImage(imageDrawable);
 
-                pageImages.add(pageImage);
+                page.getPageImages().add(pageImage);
             }
         } catch (Resources.NotFoundException e) {
-            Log.e(getClass().getSimpleName(), e.getMessage());
+            Log.e("getPageImages", "Images not found.");
         }
     }
 
-    private void getPageImageTitles(int pageNumber, ArrayList<PageImage> pageImages)
+    private void getPageImageTitles(Room room, Page page)
     {
         int roomNumber = room.getRoomNumber();
-
-        pageNumber += 1;
+        int pageNumber = page.getPageNumber();
 
         try {
             String imageTitleLocation = "room"+roomNumber+"Page"+pageNumber+"ImagesTitles";
@@ -197,15 +192,15 @@ public class RoomActivity extends AppCompatActivity {
             for(int j = 0; j < pageImagesTitle.length; j++)
             {
                 String title = pageImagesTitle[j];
-                pageImages.get(j).setImageTitle(title);
+                page.getPageImages().get(j).setImageTitle(title);
             }
         } catch (Resources.NotFoundException e) {
-            Log.e(getClass().getSimpleName(), e.getMessage());
+            Log.e("getPageImageTitles", "Images title not found.");
         }
 
     }
 
-    private void setPageCounter(int currentPage)
+    private void setPageCounter(Room room, int currentPage)
     {
         TextView tvPageCounter = findViewById(R.id.tvRoomPageCount);
 
@@ -215,7 +210,7 @@ public class RoomActivity extends AppCompatActivity {
         tvPageCounter.setText(pagesCounter);
     }
 
-    private void fillPage(int pageId)
+    private void fillPage(Room room, int pageId)
     {
         //argument pageId start at 1
         //we need it to start from 0
@@ -230,7 +225,7 @@ public class RoomActivity extends AppCompatActivity {
         //if page has no title
         //Hide title layout
         ConstraintLayout titleLayout = findViewById(R.id.titleLayout);
-        if(page.getTitle() == null)
+        if(page.getTitle() == null || page.getTitle().isEmpty())
         {
             titleLayout.setVisibility(View.GONE);
         }
@@ -249,22 +244,75 @@ public class RoomActivity extends AppCompatActivity {
         if(page.getPageImages().isEmpty())
         {
             imagesLayout.setVisibility(View.GONE);
-            return;
         }
         else
         {
             imagesLayout.setVisibility(View.VISIBLE);
+
+            RecyclerView imagesListView = findViewById(R.id.lvPageImages);
+
+            //Setting layout manager for images
+            LinearLayoutManager layoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
+            imagesListView.setLayoutManager(layoutManager);
+
+            //Setting adapter for images
+            PageImageAdapter imageAdapter = new PageImageAdapter(this, room.getPages().get(pageId).getPageImages());
+            imagesListView.setAdapter(imageAdapter);
+
+            imageAdapter.notifyDataSetChanged();
         }
 
+
+
+    }
+
+    private void setPageNavigationButtons(final Room room)
+    {
+        final ImageButton btnBack = findViewById(R.id.btnRoomBack);
+        final ImageButton btnForward = findViewById(R.id.btnRoomForward);
+
+        if(room.getPages().size() <= 1)
+        {
+            btnBack.setVisibility(View.GONE);
+            btnForward.setVisibility(View.GONE);
+        }
+
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                btnForward.setVisibility(View.VISIBLE);
+
+                currentPage --;
+
+                if(currentPage == 1)
+                    btnBack.setVisibility(View.GONE);
+
+                fillPage(room, currentPage);
+
+                setPageCounter(room, currentPage);
+            }
+        });
+
+        btnForward.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                btnBack.setVisibility(View.VISIBLE);
+
+                currentPage ++;
+
+                if(currentPage == room.getPages().size())
+                    btnForward.setVisibility(View.GONE);
+
+                fillPage(room, currentPage);
+
+                setPageCounter(room, currentPage);
+            }
+        });
+    }
+
+    private void setImageNavigationButtons()
+    {
         final RecyclerView imagesListView = findViewById(R.id.lvPageImages);
-
-        //Setting layout manager for images
-        LinearLayoutManager layoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
-        imagesListView.setLayoutManager(layoutManager);
-
-        //Setting adapter for images
-        PageImageAdapter imageAdapter = new PageImageAdapter(this, room.getPages().get(pageId).getPageImages());
-        imagesListView.setAdapter(imageAdapter);
 
         final ImageButton btnPreviousImage = findViewById(R.id.btnPreviousImage);
         btnPreviousImage.setOnClickListener(new View.OnClickListener() {
@@ -302,50 +350,6 @@ public class RoomActivity extends AppCompatActivity {
                 else
                     btnPreviousImage.setVisibility(View.VISIBLE);
 
-            }
-        });
-    }
-
-    private void setPageNavigationButtons()
-    {
-        final ImageButton btnBack = findViewById(R.id.btnRoomBack);
-        final ImageButton btnForward = findViewById(R.id.btnRoomForward);
-
-        btnBack.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                btnForward.setVisibility(View.VISIBLE);
-
-                if(currentPage == 1)
-                    return;
-
-                currentPage --;
-
-                if(currentPage == 1)
-                    btnBack.setVisibility(View.GONE);
-
-                fillPage(currentPage);
-
-                setPageCounter(currentPage);
-            }
-        });
-
-        btnForward.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                btnBack.setVisibility(View.VISIBLE);
-
-                if(currentPage == room.getPages().size())
-                    return;
-
-                currentPage ++;
-
-                if(currentPage == room.getPages().size())
-                    btnForward.setVisibility(View.GONE);
-
-                fillPage(currentPage);
-
-                setPageCounter(currentPage);
             }
         });
     }

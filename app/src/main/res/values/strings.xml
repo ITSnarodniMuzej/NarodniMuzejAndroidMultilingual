@@ -26,8 +26,9 @@
 
     //Dogadjaji kod nas i u svetu
     <!--<editor-fold desc="Room1">-->
-    <string name="room1Title" >Догађаји у Европи и Србији крајем\n18. и почетком 19 века</string>
+    <string name="room1Title">Догађаји у Европи и Србији крајем\n18. и почетком 19. века</string>
     <string name="room1Logo" translatable="false">logo1</string>
+    <string name="room1page1Title" translatable="false">Историјске околности</string>
 
     <string-array name="room1Text">
         <item>Историју Европе 18. века су обележиле Револуције и преврати. Те промене се
@@ -289,7 +290,7 @@
 
     <!--</editor-fold>-->
 
-    Vuk Stefanovic Karadzic
+    //Vuk Stefanovic Karadzic
     <!--<editor-fold desc="Room4">-->
     <string name="room4Title" translatable="false">Вук Стефановић Караџић</string>
     <string name="room4Logo" translatable="false">logo4</string>
@@ -819,43 +820,19 @@
     <!--</editor-fold>-->
 
     <!--<editor-fold desc="Room9">-->
-    <string name="room9Title" translatable="false">Догађаји у Европи и Србији крајем\n18. и почетком 19 века</string>
+    <string name="room9Title" translatable="false">Title</string>
     <string name="room9Logo" translatable="false">logo</string>
     <string-array name="room9Text">
         <item>Text for room 9 page 1</item>
-        <item>Text for room 9 page 2</item>
     </string-array>
 
     <!--<editor-fold desc="Page1">-->
     <string-array name="room9Page1Images">
-        <item>deni_didro</item>
-        <item>deni_didro</item>
-        <item>deni_didro</item>
-        <item>deni_didro</item>
-        <item>deni_didro</item>
     </string-array>
 
     <string-array name="room9Page1ImagesTitles">
-        <item>Deni Didro</item>
-        <item>Image</item>
-        <item>ImageTitle1</item>
-        <item>ImageTitle1</item>
-        <item>ImageTitle1</item>
     </string-array>
     <!--</editor-fold>-->
-
-    <!--<editor-fold desc="Page2">-->
-    <string-array name="room9Page2Images">
-        <item>deni_didro</item>
-        <item>deni_didro</item>
-        <item>deni_didro</item>
-    </string-array>
-
-    <string-array name="room9Page2ImagesTitles">
-        <item>Deni Didro</item>
-        <item>ImageTitle</item>
-        <item>ImageTitle1</item>
-    </string-array>
     <!--</editor-fold>-->
 
     <!--</editor-fold>-->

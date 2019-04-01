@@ -5,6 +5,7 @@
     <string name="navigacija">Навигација</string>
 
     <string name="room1Title" >Догађаји у Европи и Србији крајем\n18. и почетком 19 века</string>
+    <string name="room1page1Title">Историјске околности</string>
     <string-array name="room1Text">
         <item>Историју Европе 18. века су обележиле Револуције и преврати. Те промене се
             нису догађале само на политичком плану, већ су им претходиле идеје коју су

@@ -91,6 +91,7 @@
             android:layout_marginEnd="32dp"
             android:layout_marginBottom="175dp"
             android:background="@android:color/transparent"
+            android:contentDescription="3"
             app:layout_constraintBottom_toTopOf="@+id/btnRoom1Down"
             app:layout_constraintEnd_toStartOf="@+id/btnUp"
             app:layout_constraintHorizontal_bias="0.0"
@@ -166,6 +167,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="1.0"
             app:srcCompat="@android:color/transparent" />
+
 
     </android.support.constraint.ConstraintLayout>
 
@@ -250,12 +252,11 @@
             android:layout_height="0dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="190dp"
-            android:layout_marginEnd="110dp"
+            android:layout_marginEnd="100dp"
             android:background="@android:color/transparent"
             android:contentDescription="6"
-            app:layout_constraintBottom_toTopOf="@+id/btnRoom6Down"
+            app:layout_constraintBottom_toTopOf="@+id/btnRoom5Down"
             app:layout_constraintEnd_toEndOf="@+id/btnRoom6Down"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="1.0"
