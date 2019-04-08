@@ -822,6 +822,7 @@
     <!--<editor-fold desc="Room9">-->
     <string name="room9Title" translatable="false">Title</string>
     <string name="room9Logo" translatable="false">logo</string>
+    <string name="backBtnText">ХОДНИК</string>
     <string-array name="room9Text">
         <item>Text for room 9 page 1</item>
     </string-array>

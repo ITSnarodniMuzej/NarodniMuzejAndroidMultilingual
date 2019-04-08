@@ -26,6 +26,7 @@ public class ChooseRoomActivity extends AppCompatActivity implements View.OnClic
         ImageButton btnRoom3 = findViewById(R.id.btnRoom3);
         ImageButton btnRoom4 = findViewById(R.id.btnRoom4);
         ImageButton btnUp = findViewById(R.id.btnUp);
+        ImageButton btnBack = findViewById(R.id.btnBackLanguage);
 
         //Second floor
         ImageButton btnDown = findViewById(R.id.btnDown);
@@ -58,6 +59,12 @@ public class ChooseRoomActivity extends AppCompatActivity implements View.OnClic
         btnRoom8.setOnClickListener(this);
 //        btnRoom9.setOnClickListener(this);
         //</editor-fold>
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
     }
 
     @Override

@@ -270,6 +270,14 @@ public class RoomActivity extends AppCompatActivity {
     {
         final ImageButton btnBack = findViewById(R.id.btnRoomBack);
         final ImageButton btnForward = findViewById(R.id.btnRoomForward);
+        ImageButton btnBackHall = findViewById(R.id.btnBackHall);
+
+        btnBackHall.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
 
         if(room.getPages().size() <= 1)
         {
