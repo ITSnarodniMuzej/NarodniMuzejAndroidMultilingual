@@ -1,4 +1,4 @@
-package com.example.windows10.androidmuzej;
+package com.example.windows10.androidmuzej.Room;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -11,9 +11,11 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 
+import com.example.windows10.androidmuzej.R;
+
 import java.util.ArrayList;
 
-public class PageImageAdapter extends RecyclerView.Adapter<PageImageAdapter.PageView>{
+public class PageImageAdapter extends RecyclerView.Adapter<PageImageView>{
 
     private ArrayList<PageImage> images;
     private Context context;
@@ -25,28 +27,28 @@ public class PageImageAdapter extends RecyclerView.Adapter<PageImageAdapter.Page
 
     @NonNull
     @Override
-    public PageImageAdapter.PageView onCreateViewHolder(@NonNull ViewGroup parent, int i) {
+    public PageImageView onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(context).inflate(R.layout.page_image_layout, parent, false);
 
-        return new PageView(view);
+        return new PageImageView(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull PageImageAdapter.PageView pageView, int position) {
+    public void onBindViewHolder(@NonNull PageImageView pageView, int position) {
 
         PageImage pageImage = images.get(position);
 
         if(pageImage.getImageTitle() == null || pageImage.getImageTitle().isEmpty())
         {
-            pageView.titleLayout.setVisibility(View.GONE);
+            pageView.getTitleLayout().setVisibility(View.GONE);
         }
         else
         {
-            pageView.titleLayout.setVisibility(View.VISIBLE);
-            pageView.textView.setText(images.get(position).getImageTitle());
+            pageView.getTitleLayout().setVisibility(View.VISIBLE);
+            pageView.getTextView().setText(images.get(position).getImageTitle());
         }
 
-        pageView.imageView.setImageDrawable(images.get(position).getImage());
+        pageView.getImageView().setImageDrawable(images.get(position).getImage());
     }
 
     @Override
@@ -54,18 +56,4 @@ public class PageImageAdapter extends RecyclerView.Adapter<PageImageAdapter.Page
         return images.size();
     }
 
-    static class PageView extends RecyclerView.ViewHolder
-    {
-        private ConstraintLayout titleLayout;
-        private TextView textView;
-        private ImageView imageView;
-
-        PageView(View view)
-        {
-            super(view);
-            this.titleLayout = view.findViewById(R.id.textLayout);
-            this.textView = view.findViewById(R.id.tvPageImageTitle);
-            this.imageView = view.findViewById(R.id.ivPageImage);
-        }
-    }
 }

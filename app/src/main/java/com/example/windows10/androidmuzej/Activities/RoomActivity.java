@@ -3,6 +3,10 @@ package com.example.windows10.androidmuzej.Activities;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
+import android.media.MediaPlayer;
+import android.net.Uri;
+import android.os.Handler;
+import android.provider.MediaStore;
 import android.support.annotation.NonNull;
 import android.support.constraint.ConstraintLayout;
 import android.support.v7.app.AppCompatActivity;
@@ -10,22 +14,34 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.SeekBar;
 import android.widget.TextView;
+import android.widget.ToggleButton;
 
-import com.example.windows10.androidmuzej.Page;
-import com.example.windows10.androidmuzej.PageImage;
-import com.example.windows10.androidmuzej.PageImageAdapter;
+import com.example.windows10.androidmuzej.AudioPlayer.AudioPlayerAdapter;
+import com.example.windows10.androidmuzej.AudioPlayer.AudioPlayerItem;
+import com.example.windows10.androidmuzej.AudioPlayer.RecyclerItemClickListener;
+import com.example.windows10.androidmuzej.Room.Page;
+import com.example.windows10.androidmuzej.Room.PageImage;
+import com.example.windows10.androidmuzej.Room.PageImageAdapter;
 import com.example.windows10.androidmuzej.R;
-import com.example.windows10.androidmuzej.Room;
+import com.example.windows10.androidmuzej.Room.Room;
 
+import java.io.IOException;
 import java.util.ArrayList;
 
 public class RoomActivity extends AppCompatActivity {
 
     private int currentPage = 1;
+
+    private MediaPlayer mediaPlayer;
+
+    Handler handler;
+    Runnable runnable;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +53,8 @@ public class RoomActivity extends AppCompatActivity {
         String rNumber = intent.getStringExtra("roomNumber");
         int roomNumber = Integer.parseInt(rNumber.trim());
 
+        handler = new Handler();
+
         Room room = new Room(roomNumber);
 
         getRoomLogo(room);
@@ -44,6 +62,9 @@ public class RoomActivity extends AppCompatActivity {
 
         getRoomTitle(room);
         setRoomTitle(room);
+
+        getAudioItems(room);
+        setAudioItems(room);
 
         getRoomPages(room);
 
@@ -54,16 +75,35 @@ public class RoomActivity extends AppCompatActivity {
         setPageNavigationButtons(room);
 
         setImageNavigationButtons();
+
+        setAudioPlayerControl(room);
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+
+        if(mediaPlayer != null)
+        {
+            mediaPlayer.stop();
+            mediaPlayer.reset();
+            mediaPlayer.release();
+
+            mediaPlayer = null;
+        }
+
+        handler.removeCallbacks(runnable);
+
     }
 
     private void getRoomLogo(Room room)
     {
         try {
-            //Get name of logo from string.xml
-            String logoString = "room"+room.getRoomNumber()+"Logo";
-            int logoStringId = getResources().getIdentifier(logoString, "string", getPackageName());
+            //Get logo id from strings.xml
+            String logoLocation = "room"+room.getRoomNumber()+"Logo";
+            int logoStringId = getResources().getIdentifier(logoLocation, "string", getPackageName());
 
-            //Get drawable with name from string.xml
+            //Get drawable with name from strings.xml
             String logoName = getString(logoStringId);
             int drawableId = getResources().getIdentifier(logoName, "drawable", getPackageName());
 
@@ -84,9 +124,11 @@ public class RoomActivity extends AppCompatActivity {
     private void getRoomTitle(Room room)
     {
         try {
-            String titleString = "room"+room.getRoomNumber()+"Title";
-            int titleStringId = getResources().getIdentifier(titleString, "string", getPackageName());
+            //Get title id from strings.xml
+            String titleLocation = "room"+room.getRoomNumber()+"Title";
+            int titleStringId = getResources().getIdentifier(titleLocation, "string", getPackageName());
 
+            //Get title value
             room.setTitle(getString(titleStringId));
         } catch (Exception e) {
             Log.e("getRoomTitle", "Room title not found.");
@@ -99,6 +141,77 @@ public class RoomActivity extends AppCompatActivity {
         tvRoomTitle.setText(room.getTitle());
     }
 
+    private void getAudioItems(Room room)
+    {
+        int roomNumber = room.getRoomNumber();
+
+        try {
+            //Get mp3 array id from strings.xml
+            String itemsLocation = "room"+roomNumber+"AudioItemsMP3";
+            int itemsId = getResources().getIdentifier(itemsLocation, "array", getPackageName());
+
+            //Get mp3 values
+            String[] items = getResources().getStringArray(itemsId);
+
+            //Get names array id from strings.xml
+            String itemsNameLocation = "room"+roomNumber+"AudioItemsName";
+            int itemsNameId = getResources().getIdentifier(itemsNameLocation, "array", getPackageName());
+
+            //Get name values
+            String[] itemsName = getResources().getStringArray(itemsNameId);
+
+            //Get audio files
+            for(int i = 0; i < items.length; i++)
+            {
+                //Get mp3 file id
+                int fileId = getResources().getIdentifier(items[i], "raw", getPackageName());
+                //Get audio name
+                String itemName = itemsName[i];
+
+                AudioPlayerItem item = new AudioPlayerItem(fileId,  itemName);
+
+                room.getAudioItems().add(item);
+            }
+        } catch (Resources.NotFoundException e) {
+            Log.e("getAudioItems", "Audio items not found.");
+        }
+
+    }
+
+    private void setAudioItems(final Room room)
+    {
+        final RecyclerView lvAudioPlayer = findViewById(R.id.lvAudioItems);
+
+        //Setting layout manager for images
+        LinearLayoutManager layoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
+        lvAudioPlayer.setLayoutManager(layoutManager);
+
+        //Setting adapter for images
+        final AudioPlayerAdapter audioPlayerAdapter = new AudioPlayerAdapter(this, room.getAudioItems());
+        lvAudioPlayer.setAdapter(audioPlayerAdapter);
+
+        //Custom itemClickListener for playing selected audio item
+        lvAudioPlayer.addOnItemTouchListener(new RecyclerItemClickListener(new RecyclerItemClickListener.OnItemClickListener() {
+            @Override
+            public void onItemClick(View v, int position) {
+
+                resetPlaylist(lvAudioPlayer);
+
+                ConstraintLayout unselectedItemLayout = v.findViewById(R.id.unselectedAudioLayout);
+                ConstraintLayout selectedItemLayout = v.findViewById(R.id.selectedAudioLayout);
+
+                selectedItemLayout.setVisibility(View.VISIBLE);
+                unselectedItemLayout.setVisibility(View.GONE);
+
+                AudioPlayerItem item = room.getAudioItems().get(position);
+
+                playAudio(item.getFileId());
+            }
+        }));
+
+        audioPlayerAdapter.notifyDataSetChanged();
+    }
+
     private void getRoomPages(Room room)
     {
         ArrayList<Page> pages = new ArrayList<>();
@@ -106,8 +219,10 @@ public class RoomActivity extends AppCompatActivity {
         int roomNumber = room.getRoomNumber();
 
         try {
-            String pageText = "room"+roomNumber+"Text";
-            int pagesTextId = getResources().getIdentifier(pageText, "array", getPackageName());
+            //Get text array id
+            String pageTextLocation = "room"+roomNumber+"Text";
+            int pagesTextId = getResources().getIdentifier(pageTextLocation, "array", getPackageName());
+            //Get text array values
             String[] pagesText = getResources().getStringArray(pagesTextId);
 
             for(int i = 0; i < pagesText.length; i++)
@@ -115,13 +230,12 @@ public class RoomActivity extends AppCompatActivity {
                 int pageNumber = i + 1;
 
                 Page page = new Page(pageNumber);
+
                 getPageTitle(room, page);
 
                 page.setText(pagesText[i]);
 
                 getPageImages(room, page);
-
-                getPageImageTitles(room, page);
 
                 pages.add(page);
             }
@@ -138,10 +252,14 @@ public class RoomActivity extends AppCompatActivity {
             int roomNumber = room.getRoomNumber();
             int pageNumber = page.getPageNumber();
 
-            String pageTitle = "room"+roomNumber+"Page"+pageNumber+"Title";
-            int pageTitleId = getResources().getIdentifier(pageTitle, "string", getPackageName());
+            //Get page title id
+            String titleLocation = "room"+roomNumber+"Page"+pageNumber+"Title";
+            int pageTitleId = getResources().getIdentifier(titleLocation, "string", getPackageName());
 
-            page.setTitle(getString(pageTitleId));
+            //Get title
+            String title = getString(pageTitleId);
+
+            page.setTitle(title);
 
         } catch (Exception e) {
             Log.e("getPageTitle", "Page title not found.");
@@ -151,53 +269,40 @@ public class RoomActivity extends AppCompatActivity {
     private void getPageImages(Room room, Page page)
     {
         int roomNumber = room.getRoomNumber();
-
         int pageNumber = page.getPageNumber();
 
-        String imageLocation = "room"+roomNumber+"Page"+pageNumber+"Images";
-        Log.i("PageImageLocation", imageLocation);
-
         try {
+            //Get images array id
+            String imageLocation = "room"+roomNumber+"Page"+pageNumber+"Images";
             int pageImagesId = getResources().getIdentifier(imageLocation, "array", getPackageName());
+            //Get images array
             String[] pageImagesLocation = getResources().getStringArray(pageImagesId);
 
-            //Adding images to page
-            for (String location : pageImagesLocation) {
-                //Get drawable id from string
-                int drawableId = getResources().getIdentifier(location, "drawable", getPackageName());
+            //Get images title array id
+            String imageTitleLocation = "room"+roomNumber+"Page"+pageNumber+"ImagesTitles";
+            int pageImagesTitleId = getResources().getIdentifier(imageTitleLocation, "array", getPackageName());
+            //Get images title array
+            String[] pageImagesTitle = getResources().getStringArray(pageImagesTitleId);
 
+            //Adding images to page
+            for(int i = 0; i < pageImagesLocation.length; i++)
+            {
+                //Get image drawable id
+                String location = pageImagesLocation[i];
+                int drawableId = getResources().getIdentifier(location, "drawable", getPackageName());
+                //Get image
                 Drawable imageDrawable = getDrawable(drawableId);
 
-                PageImage pageImage = new PageImage(imageDrawable);
+                //Get image title
+                String title = pageImagesTitle[i];
+
+                PageImage pageImage = new PageImage(imageDrawable, title);
 
                 page.getPageImages().add(pageImage);
             }
         } catch (Resources.NotFoundException e) {
             Log.e("getPageImages", "Images not found.");
         }
-    }
-
-    private void getPageImageTitles(Room room, Page page)
-    {
-        int roomNumber = room.getRoomNumber();
-        int pageNumber = page.getPageNumber();
-
-        try {
-            String imageTitleLocation = "room"+roomNumber+"Page"+pageNumber+"ImagesTitles";
-
-            int pageImagesTitleId = getResources().getIdentifier(imageTitleLocation, "array", getPackageName());
-            String[] pageImagesTitle = getResources().getStringArray(pageImagesTitleId);
-
-            //Adding image titles to page images
-            for(int j = 0; j < pageImagesTitle.length; j++)
-            {
-                String title = pageImagesTitle[j];
-                page.getPageImages().get(j).setImageTitle(title);
-            }
-        } catch (Resources.NotFoundException e) {
-            Log.e("getPageImageTitles", "Images title not found.");
-        }
-
     }
 
     private void setPageCounter(Room room, int currentPage)
@@ -245,6 +350,7 @@ public class RoomActivity extends AppCompatActivity {
         {
             imagesLayout.setVisibility(View.GONE);
         }
+        //Else shot imageListView and add adapter
         else
         {
             imagesLayout.setVisibility(View.VISIBLE);
@@ -261,9 +367,6 @@ public class RoomActivity extends AppCompatActivity {
 
             imageAdapter.notifyDataSetChanged();
         }
-
-
-
     }
 
     private void setPageNavigationButtons(final Room room)
@@ -275,10 +378,15 @@ public class RoomActivity extends AppCompatActivity {
         btnBackHall.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                SeekBar seekBar = findViewById(R.id.audioSeekbar);
+                seekBar.setProgress(0);
+
                 finish();
             }
         });
 
+        //Hide page navigation button if 1 or less pages
         if(room.getPages().size() <= 1)
         {
             btnBack.setVisibility(View.GONE);
@@ -360,5 +468,166 @@ public class RoomActivity extends AppCompatActivity {
 
             }
         });
+    }
+
+    private void setAudioPlayerControl(final Room room)
+    {
+        //Hide audio player button if room has no audio items
+        if(room.getAudioItems().size() <= 0)
+        {
+            ConstraintLayout audioPlayerLayout = findViewById(R.id.audioButtonLayout);
+            audioPlayerLayout.setVisibility(View.GONE);
+            return;
+        }
+
+        final ToggleButton audioPlayer = findViewById(R.id.btnAudioPlayer);
+        audioPlayer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                ConstraintLayout audioPlayerLayout = findViewById(R.id.audioPlayerLayout);
+
+                int visibility = audioPlayerLayout.getVisibility();
+
+                if(visibility == View.VISIBLE)
+                {
+                    audioPlayerLayout.setVisibility(View.GONE);
+                }
+                else if(visibility == View.GONE)
+                {
+                    audioPlayerLayout.setVisibility(View.VISIBLE);
+                }
+            }
+        });
+
+        final ToggleButton audioPlay = findViewById(R.id.btnAudioPlay);
+        audioPlay.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //If room has no audio
+                //audioPlay click wont do anything
+                if(room.getAudioItems().size() <= 0)
+                    return;
+
+                //Play pause control
+                if(audioPlay.isChecked())
+                {
+                    mediaPlayer.pause();
+                }
+                else
+                {
+                    //If no audio is selected
+                    //Play first audio
+                    if(mediaPlayer == null)
+                    {
+                        RecyclerView lvAudioPlayer = findViewById(R.id.lvAudioItems);
+                        lvAudioPlayer.getChildAt(0).findViewById(R.id.selectedAudioLayout).setVisibility(View.VISIBLE);
+                        lvAudioPlayer.getChildAt(0).findViewById(R.id.unselectedAudioLayout).setVisibility(View.GONE);
+                        playAudio(room.getAudioItems().get(0).getFileId());
+                    }
+                    //Otherwise play current audio
+                    else
+                    {
+                        mediaPlayer.start();
+                    }
+                }
+            }
+        });
+
+        //10 seconds
+        final int seekMillisecond = 10000;
+
+        ImageButton btnAudioForward = findViewById(R.id.btnAudioForward);
+        btnAudioForward.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(mediaPlayer != null)
+                    mediaPlayer.seekTo(mediaPlayer.getCurrentPosition() + seekMillisecond);
+            }
+        });
+
+        ImageButton btnAudioBackward = findViewById(R.id.btnAudioBackward);
+        btnAudioBackward.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(mediaPlayer != null)
+                    mediaPlayer.seekTo(mediaPlayer.getCurrentPosition() - seekMillisecond);
+            }
+        });
+    }
+
+    private void playAudio(int audioResourceId)
+    {
+        //Stop previous audio
+        if(mediaPlayer != null)
+            mediaPlayer.reset();
+
+        //Create and play audio
+        mediaPlayer = MediaPlayer.create(RoomActivity.this, audioResourceId);
+        mediaPlayer.start();
+
+        //change play button
+        final ToggleButton audioPlay = findViewById(R.id.btnAudioPlay);
+        audioPlay.setChecked(false);
+
+        final int duration = mediaPlayer.getDuration();
+
+        final SeekBar seekBar = findViewById(R.id.audioSeekbar);
+        seekBar.setMax(duration);
+
+        seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                if(fromUser)
+                {
+                    mediaPlayer.seekTo(progress);
+                }
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+            }
+        });
+
+        //Mapping seekbar progress to media player audio
+        runnable = new Runnable() {
+            @Override
+            public void run() {
+                if(mediaPlayer != null)
+                {
+                    seekBar.setProgress(mediaPlayer.getCurrentPosition());
+
+                    if(seekBar.getProgress() >= seekBar.getMax())
+                    {
+                        audioPlay.setChecked(true);
+
+                        RecyclerView lvAudioPlaylist = findViewById(R.id.lvAudioItems);
+                        resetPlaylist(lvAudioPlaylist);
+
+                        mediaPlayer = null;
+                    }
+                }
+                handler.postDelayed(this, 50);
+            }
+        };
+        runnable.run();
+    }
+
+    private void resetPlaylist(RecyclerView lvAudioPlaylist)
+    {
+        for(int i = 0; i < lvAudioPlaylist.getChildCount(); i++)
+        {
+            ConstraintLayout selectedItemLayout = lvAudioPlaylist.getChildAt(i).findViewById(R.id.selectedAudioLayout);
+            selectedItemLayout.setVisibility(View.GONE);
+
+            ConstraintLayout unselectedItemLayout = lvAudioPlaylist.getChildAt(i).findViewById(R.id.unselectedAudioLayout);
+            unselectedItemLayout.setVisibility(View.VISIBLE);
+        }
     }
 }

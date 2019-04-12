@@ -1,4 +1,4 @@
-package com.example.windows10.androidmuzej;
+package com.example.windows10.androidmuzej.Room;
 
 import java.util.ArrayList;
 
@@ -18,10 +18,6 @@ public class Page {
         return pageNumber;
     }
 
-    public void setPageNumber(int pageNumber) {
-        this.pageNumber = pageNumber;
-    }
-
     public String getTitle() {
         return title;
     }
@@ -36,10 +32,6 @@ public class Page {
 
     public String getText() {
         return text;
-    }
-
-    public void setPageImages(ArrayList<PageImage> pageImages) {
-        this.pageImages = pageImages;
     }
 
     public ArrayList<PageImage> getPageImages() {

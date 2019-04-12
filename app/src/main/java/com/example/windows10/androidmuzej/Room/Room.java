@@ -1,6 +1,8 @@
-package com.example.windows10.androidmuzej;
+package com.example.windows10.androidmuzej.Room;
 
 import android.graphics.drawable.Drawable;
+
+import com.example.windows10.androidmuzej.AudioPlayer.AudioPlayerItem;
 
 import java.util.ArrayList;
 
@@ -10,6 +12,7 @@ public class Room {
     private String title = "";
     private Drawable logo;
     private ArrayList<Page> pages = new ArrayList<>();
+    private ArrayList<AudioPlayerItem> audioItems = new ArrayList<>();
 
 
     public Room(int roomNumber)
@@ -19,10 +22,6 @@ public class Room {
 
     public int getRoomNumber() {
         return roomNumber;
-    }
-
-    public void setRoomNumber(int roomNumber) {
-        this.roomNumber = roomNumber;
     }
 
     public String getTitle() {
@@ -48,4 +47,9 @@ public class Room {
     public void setPages(ArrayList<Page> pages) {
         this.pages = pages;
     }
+
+    public ArrayList<AudioPlayerItem> getAudioItems() {
+        return audioItems;
+    }
+
 }

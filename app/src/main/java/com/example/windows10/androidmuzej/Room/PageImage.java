@@ -1,4 +1,4 @@
-package com.example.windows10.androidmuzej;
+package com.example.windows10.androidmuzej.Room;
 
 import android.graphics.drawable.Drawable;
 
@@ -6,21 +6,14 @@ public class PageImage {
     private String imageTitle;
     private Drawable image;
 
-    public PageImage(Drawable image)
+    public PageImage(Drawable image, String title)
     {
         this.image = image;
-    }
-    
-    public void setImageTitle(String imageTitle) {
-        this.imageTitle = imageTitle;
+        this.imageTitle = title;
     }
 
     String getImageTitle() {
         return imageTitle;
-    }
-
-    public void setImage(Drawable image) {
-        this.image = image;
     }
 
     Drawable getImage() {

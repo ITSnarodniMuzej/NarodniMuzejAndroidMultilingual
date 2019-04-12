@@ -23,12 +23,23 @@
     <string name="second_floor_text">спрат</string>
     <string name="first_floor_text">приземље</string>
     <string name="navigacija" translatable="false">Навигација</string>
+    <string name="backBtnText" translatable="false">ХОДНИК</string>
+    <string name="audioBtnText" translatable="false">АУДИО</string>
 
     //Dogadjaji kod nas i u svetu
     <!--<editor-fold desc="Room1">-->
     <string name="room1Title">Догађаји у Европи и Србији крајем\n18. и почетком 19. века</string>
     <string name="room1Logo" translatable="false">logo1</string>
-    <string name="room1page1Title" translatable="false">Историјске околности</string>
+    <string-array name="room1AudioItemsMP3">
+        <item>audio_a</item>
+        <item>audio_b</item>
+        <item>audio_c</item>
+    </string-array>
+    <string-array name="room1AudioItemsName">
+        <item>PRVI AUDIO</item>
+        <item>DRUGI AUDIO</item>
+        <item>TRECI AUDIO</item>
+    </string-array>
 
     <string-array name="room1Text">
         <item>Историју Европе 18. века су обележиле Револуције и преврати. Те промене се
@@ -822,7 +833,6 @@
     <!--<editor-fold desc="Room9">-->
     <string name="room9Title" translatable="false">Title</string>
     <string name="room9Logo" translatable="false">logo</string>
-    <string name="backBtnText">ХОДНИК</string>
     <string-array name="room9Text">
         <item>Text for room 9 page 1</item>
     </string-array>
