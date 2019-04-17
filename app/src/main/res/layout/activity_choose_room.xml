@@ -169,10 +169,11 @@
             app:layout_constraintVertical_bias="1.0"
             app:srcCompat="@android:color/transparent" />
 
-        <RelativeLayout
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/chooseLanguageLayout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingBottom="20dp"
+            android:layout_marginBottom="20dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent">
@@ -181,13 +182,8 @@
                 android:id="@+id/btnBackLanguage"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginBottom="8dp"
-                android:background="@drawable/hodnik_logo"
+                android:background="@drawable/language_logo"
                 android:visibility="visible"
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -197,13 +193,16 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/btnBackLanguage"
                 android:layout_centerInParent="true"
-                android:layout_marginTop="3dp"
                 android:clickable="false"
                 android:fontFamily="@font/eb_garamond"
                 android:text="Odabir jezika"
+                android:textColor="#fff"
                 android:textSize="18sp"
-                android:textColor="#fff"/>
-        </RelativeLayout>
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnBackLanguage" />
+        </android.support.constraint.ConstraintLayout>
 
     </android.support.constraint.ConstraintLayout>
 

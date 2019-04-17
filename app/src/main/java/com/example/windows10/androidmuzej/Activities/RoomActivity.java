@@ -222,6 +222,7 @@ public class RoomActivity extends AppCompatActivity {
             //Get text array id
             String pageTextLocation = "room"+roomNumber+"Text";
             int pagesTextId = getResources().getIdentifier(pageTextLocation, "array", getPackageName());
+
             //Get text array values
             String[] pagesText = getResources().getStringArray(pagesTextId);
 
@@ -294,7 +295,10 @@ public class RoomActivity extends AppCompatActivity {
                 Drawable imageDrawable = getDrawable(drawableId);
 
                 //Get image title
-                String title = pageImagesTitle[i];
+                String title = "";
+
+                if(pageImagesTitle.length != 0)
+                    title = pageImagesTitle[i];
 
                 PageImage pageImage = new PageImage(imageDrawable, title);
 
