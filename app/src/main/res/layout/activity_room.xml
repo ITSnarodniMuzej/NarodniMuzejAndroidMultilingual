@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/room_background"
-    tools:context=".Activities.RoomActivity">
+    tools:context=".activities.RoomActivity">
 
     <android.support.constraint.ConstraintLayout
         android:id="@+id/headerLayout"
@@ -342,12 +342,12 @@
 
     <android.support.constraint.ConstraintLayout
         android:id="@+id/audioPlayerLayout"
-        android:layout_width="400dp"
+        android:layout_width="500dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="64dp"
         android:background="@xml/audio_player_background"
         android:translationZ="10dp"
-        android:visibility="gone"
+        android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/roomContentLayout">
 

@@ -2,7 +2,7 @@ package com.example.windows10.androidmuzej.Room;
 
 import android.graphics.drawable.Drawable;
 
-import com.example.windows10.androidmuzej.AudioPlayer.AudioPlayerItem;
+import com.example.windows10.androidmuzej.audioPlayer.AudioPlayerItem;
 
 import java.util.ArrayList;
 

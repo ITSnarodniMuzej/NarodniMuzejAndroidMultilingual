@@ -30,12 +30,6 @@
     <!--<editor-fold desc="Room1">-->
     <string name="room1Title">Догађаји у Европи и Србији крајем\n18. и почетком 19. века</string>
     <string name="room1Logo" translatable="false">logo1</string>
-    <string-array name="room1AudioItemsMP3">
-        <item>room1</item>
-    </string-array>
-    <string-array name="room1AudioItemsName">
-        <item>Догађаји у Европи и Србији крајем 18. и почетком 19. века</item>
-    </string-array>
 
     <string-array name="room1Text">
         <item>Историју Европе 18. века су обележиле Револуције и преврати. Те промене се
@@ -131,13 +125,6 @@
     <string name="room2Title" translatable="false">Зграда музеја и Велика школа</string>
     <string name="room2Logo" translatable="false">logo2</string>
 
-    <string-array name="room2AudioItemsMP3">
-        <item>room2</item>
-    </string-array>
-    <string-array name="room2AudioItemsName">
-        <item>Зграда музеја и Велика школа</item>
-    </string-array>
-
     <string-array name="room2Text">
         <item>
             Зграда Музеја Вука и Доситеја представља једну од најстаријих, сачуваних зграда у Београду и класичан је пример оријенталне, градске, стамбене архитектуре.  Подигнута је у првој половини 18. века, вероватно за неког богатог Турчина, највероватније самог управитеља београдске вароши. Година градње, ни име првог станара, нису познати.
@@ -169,7 +156,6 @@
             Зато, дражајши ученици, будите благонаравни и послушни учитељем вашим, учите се и просвештаваје се у науками и добродетели и бићемо сви.
         </item>
     </string-array>
-
 
     <!--<editor-fold desc="Page1">-->
     <string name="room2Page1Title" translatable="false">ЗГРАДА МУЗЕЈА И ВЕЛИКА ШКОЛА</string>
@@ -206,13 +192,6 @@
     <!--<editor-fold desc="Room3">-->
     <string name="room3Title" translatable="false">Доситеј Обрадовић</string>
     <string name="room3Logo" translatable="false">logo3</string>
-
-    <string-array name="room3AudioItemsMP3">
-        <item>room3</item>
-    </string-array>
-    <string-array name="room3AudioItemsName">
-        <item>Доситеј Обрадовић</item>
-    </string-array>
 
     <string-array name="room3Text">
         <item>
@@ -313,13 +292,6 @@
     <!--<editor-fold desc="Room4">-->
     <string name="room4Title" translatable="false">Вук Стефановић Караџић</string>
     <string name="room4Logo" translatable="false">logo4</string>
-
-    <string-array name="room4AudioItemsMP3">
-        <item>room4</item>
-    </string-array>
-    <string-array name="room4AudioItemsName">
-        <item>Вук Стефановић Караџић</item>
-    </string-array>
 
     <string-array name="room4Text">
         <item>Испред Вукове собе постављено је попрсје израђено у бронзи вајара Суров –
@@ -422,13 +394,6 @@
     <!--<editor-fold desc="Room5">-->
     <string name="room5Title" translatable="false">Вуково дело</string>
     <string name="room5Logo" translatable="false">logo5</string>
-
-    <string-array name="room5AudioItemsMP3">
-        <item>room5</item>
-    </string-array>
-    <string-array name="room5AudioItemsName">
-        <item>Вуково дело</item>
-    </string-array>
 
     <string-array name="room5Text">
         <item>После пропасти Првог српског устанка, млади Вук отишао је у Беч. Написао је
@@ -598,13 +563,6 @@
     <string name="room6Title" translatable="false">Доситејево дело</string>
     <string name="room6Logo" translatable="false">logo6</string>
 
-    <string-array name="room6AudioItemsMP3">
-        <item>room6</item>
-    </string-array>
-    <string-array name="room6AudioItemsName">
-        <item>Доситејево дело</item>
-    </string-array>
-
     <string-array name="room6Text">
         <item>
             Након објављивања Писма Харалампију и аутобиографског дела Живот и
@@ -674,13 +632,6 @@
     <!--<editor-fold desc="Room7">-->
     <string name="room7Title" translatable="false">Вукова породица</string>
     <string name="room7Logo" translatable="false">logo7</string>
-
-    <string-array name="room7AudioItemsMP3">
-        <item>room7</item>
-    </string-array>
-    <string-array name="room7AudioItemsName">
-        <item>Вукова породица</item>
-    </string-array>
 
     <string-array name="room7Text">
         <item>
@@ -830,13 +781,6 @@
     //Divanhana
     <!--<editor-fold desc="Room8">-->
     <string name="room8Title" translatable="false">Диванхана</string>
-
-    <string-array name="room8AudioItemsMP3">
-        <item>room8</item>
-    </string-array>
-    <string-array name="room8AudioItemsName">
-        <item>Диванхана</item>
-    </string-array>
 
     <string-array name="room8Text">
         <item>
