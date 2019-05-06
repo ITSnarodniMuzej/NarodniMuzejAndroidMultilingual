@@ -305,15 +305,15 @@
 
         <ImageButton
             android:id="@+id/btnRoomBack"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:background="@android:color/transparent"
-            android:rotation="180"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:scaleType="fitXY"
             android:visibility="gone"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/page_arrow" />
+            app:srcCompat="@drawable/page_arrow_backward" />
 
         <TextView
             android:id="@+id/tvRoomPageCount"
@@ -331,19 +331,20 @@
 
         <ImageButton
             android:id="@+id/btnRoomForward"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:scaleType="fitXY"
             android:background="@android:color/transparent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/page_arrow" />
+            app:srcCompat="@drawable/page_arrow_forward" />
     </android.support.constraint.ConstraintLayout>
 
     <android.support.constraint.ConstraintLayout
         android:id="@+id/audioPlayerLayout"
-        android:layout_width="400dp"
-        android:layout_height="wrap_content"
+        android:layout_width="600dp"
+        android:layout_height="280dp"
         android:layout_marginEnd="64dp"
         android:background="@xml/audio_player_background"
         android:translationZ="10dp"
@@ -436,7 +437,7 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"/>
             </android.support.constraint.ConstraintLayout>
 
         </android.support.constraint.ConstraintLayout>

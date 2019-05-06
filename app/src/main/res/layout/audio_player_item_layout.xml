@@ -40,7 +40,7 @@
             android:fontFamily="@font/engravers_mt"
             android:text="1."
             android:textColor="#442b2b"
-            android:textSize="13sp"
+            android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="@+id/tvItemSelectedName"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/tvItemSelectedName" />
@@ -53,7 +53,7 @@
             android:fontFamily="@font/eb_garamond"
             android:text="TextView"
             android:textColor="#442b2b"
-            android:textSize="13sp"
+            android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/ivAudioSelectedLogo"
@@ -78,7 +78,7 @@
             android:fontFamily="@font/engravers_mt"
             android:text="1."
             android:textColor="#5b5957"
-            android:textSize="13sp"
+            android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="@+id/tvItemUnselectedName"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/tvItemUnselectedName" />
@@ -91,7 +91,7 @@
             android:fontFamily="@font/eb_garamond"
             android:text="TextView"
             android:textColor="#5b5957"
-            android:textSize="13sp"
+            android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/tvItemUnselectedNumber"
             app:layout_constraintTop_toTopOf="parent" />

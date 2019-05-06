@@ -28,13 +28,14 @@
 
     //Dogadjaji kod nas i u svetu
     <!--<editor-fold desc="Room1">-->
-    <string name="room1Title">Догађаји у Европи и Србији крајем\n18. и почетком 19. века</string>
+    <string name="room1Title" translatable="false">Догађаји код нас и у свету</string>
     <string name="room1Logo" translatable="false">logo1</string>
     <string-array name="room1AudioItemsMP3">
         <item>room1</item>
     </string-array>
     <string-array name="room1AudioItemsName">
-        <item>Догађаји у Европи и Србији крајем 18. и почетком 19. века</item>
+        <item>Догађаји код нас и у свету</item>
+        <item>Историјске околности</item>
     </string-array>
 
     <string-array name="room1Text">
@@ -130,6 +131,11 @@
     <!--<editor-fold desc="Room2">-->
     <string name="room2Title" translatable="false">Зграда музеја и Велика школа</string>
     <string name="room2Logo" translatable="false">logo2</string>
+
+
+    <string name="room2page1Title" translatable="false">ЗГРАДА МУЗЕЈА И ВЕЛИКА ШКОЛА</string>
+    <string name="room2page4Title" translatable="false">Велика школа </string>
+    <string name="room2page5Title" translatable="false">Говор Доситеја Обрадовића при отварању Велике школе у Београду 1808. године:</string>
 
     <string-array name="room2AudioItemsMP3">
         <item>room2</item>
@@ -313,13 +319,13 @@
     <!--<editor-fold desc="Room4">-->
     <string name="room4Title" translatable="false">Вук Стефановић Караџић</string>
     <string name="room4Logo" translatable="false">logo4</string>
-
     <string-array name="room4AudioItemsMP3">
         <item>room4</item>
     </string-array>
     <string-array name="room4AudioItemsName">
         <item>Вук Стефановић Караџић</item>
     </string-array>
+
 
     <string-array name="room4Text">
         <item>Испред Вукове собе постављено је попрсје израђено у бронзи вајара Суров –
@@ -422,13 +428,13 @@
     <!--<editor-fold desc="Room5">-->
     <string name="room5Title" translatable="false">Вуково дело</string>
     <string name="room5Logo" translatable="false">logo5</string>
-
     <string-array name="room5AudioItemsMP3">
         <item>room5</item>
     </string-array>
     <string-array name="room5AudioItemsName">
         <item>Вуково дело</item>
     </string-array>
+
 
     <string-array name="room5Text">
         <item>После пропасти Првог српског устанка, млади Вук отишао је у Беч. Написао је
@@ -597,7 +603,6 @@
     <!--<editor-fold desc="Room6">-->
     <string name="room6Title" translatable="false">Доситејево дело</string>
     <string name="room6Logo" translatable="false">logo6</string>
-
     <string-array name="room6AudioItemsMP3">
         <item>room6</item>
     </string-array>
@@ -676,7 +681,7 @@
     <string name="room7Logo" translatable="false">logo7</string>
 
     <string-array name="room7AudioItemsMP3">
-        <item>room7</item>
+        <item>room7cut</item>
     </string-array>
     <string-array name="room7AudioItemsName">
         <item>Вукова породица</item>
@@ -873,27 +878,27 @@
 
     <string-array name="room8Page1ImagesTitles">
     </string-array>
+</resources>
     <!--</editor-fold>-->
 
 
     <!--</editor-fold>-->
 
-    <!--<editor-fold desc="Room9">-->
+    <!--<editor-fold desc="Room9">
     <string name="room9Title" translatable="false">Title</string>
     <string name="room9Logo" translatable="false">logo</string>
     <string-array name="room9Text">
         <item>Text for room 9 page 1</item>
-    </string-array>
+    </string-array>-->
 
-    <!--<editor-fold desc="Page1">-->
+    <!--<editor-fold desc="Page1">
     <string-array name="room9Page1Images">
     </string-array>
 
     <string-array name="room9Page1ImagesTitles">
     </string-array>
-    <!--</editor-fold>-->
-    <!--</editor-fold>-->
-
+    </editor-fold>-->
     <!--</editor-fold>-->
 
-</resources>
+    <!--</editor-fold>-->
+

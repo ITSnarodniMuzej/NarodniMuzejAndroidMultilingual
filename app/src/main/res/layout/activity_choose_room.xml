@@ -170,7 +170,6 @@
             app:srcCompat="@android:color/transparent" />
 
         <android.support.constraint.ConstraintLayout
-        <android.support.constraint.ConstraintLayout
             android:id="@+id/chooseLanguageLayout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -184,7 +183,6 @@
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:background="@drawable/language_back"
-                android:background="@drawable/language_logo"
                 android:visibility="visible"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -197,20 +195,17 @@
                 android:clickable="false"
                 android:fontFamily="@font/eb_garamond"
                 android:text="Одабир језика"
-                android:text="Odabir jezika"
                 android:textColor="#fff"
                 android:textSize="18sp"
-                android:textColor="#fff"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/btnBackLanguage"/>
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/btnBackLanguage" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnBackLanguage" />
         </android.support.constraint.ConstraintLayout>
 
-        </android.support.constraint.ConstraintLayout>
 
     </android.support.constraint.ConstraintLayout>
 
