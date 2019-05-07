@@ -17,6 +17,8 @@ public class ChooseRoomActivity extends AppCompatActivity implements View.OnClic
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_choose_room);
 
+        fullscreen();
+
         //<editor-fold desc="Declaring buttons">
         //First floor
         ImageButton btnRoom1Up = findViewById(R.id.btnRoom1Up);
@@ -99,5 +101,35 @@ public class ChooseRoomActivity extends AppCompatActivity implements View.OnClic
 
 
         }
+    }
+
+    public void fullscreen()
+    {
+        final View view = getWindow().getDecorView();
+
+        view.setSystemUiVisibility(
+                View.SYSTEM_UI_FLAG_IMMERSIVE |
+                        View.SYSTEM_UI_FLAG_LAYOUT_STABLE |
+                        View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION |
+                        View.SYSTEM_UI_FLAG_FULLSCREEN |
+                        View.SYSTEM_UI_FLAG_HIDE_NAVIGATION |
+                        View.SYSTEM_UI_FLAG_FULLSCREEN
+        );
+
+        //Hide navigation bar when visibility has changed
+        view.setOnSystemUiVisibilityChangeListener(new View.OnSystemUiVisibilityChangeListener() {
+            @Override
+            public void onSystemUiVisibilityChange(int visibility) {
+                view.setSystemUiVisibility(
+                        View.SYSTEM_UI_FLAG_IMMERSIVE |
+                                View.SYSTEM_UI_FLAG_LAYOUT_STABLE |
+                                View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION |
+                                View.SYSTEM_UI_FLAG_FULLSCREEN |
+                                View.SYSTEM_UI_FLAG_HIDE_NAVIGATION |
+                                View.SYSTEM_UI_FLAG_FULLSCREEN
+                );
+
+            }
+        });
     }
 }

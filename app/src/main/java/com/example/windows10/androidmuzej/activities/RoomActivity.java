@@ -49,6 +49,8 @@ public class RoomActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_room);
 
+        fullscreen();
+
         Intent intent = getIntent();
 
         String rNumber = intent.getStringExtra("roomNumber");
@@ -470,6 +472,7 @@ public class RoomActivity extends AppCompatActivity {
                 {
                     Log.i("Item", position+"");
                     oldPos = position;
+
                 }
 
             }
@@ -575,13 +578,17 @@ public class RoomActivity extends AppCompatActivity {
 
         //Create and play audio
         mediaPlayer = MediaPlayer.create(RoomActivity.this, Uri.fromFile(mp3file));
-        mediaPlayer.start();
+
+        int duration = 0;
+        if(mediaPlayer != null)
+        {
+            mediaPlayer.start();
+            duration = mediaPlayer.getDuration();
+        }
 
         //change play button
         final ToggleButton audioPlay = findViewById(R.id.btnAudioPlay);
         audioPlay.setChecked(false);
-
-        final int duration = mediaPlayer.getDuration();
 
         final SeekBar seekBar = findViewById(R.id.audioSeekbar);
         seekBar.setMax(duration);
@@ -589,7 +596,7 @@ public class RoomActivity extends AppCompatActivity {
         seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-                if(fromUser)
+                if(fromUser && mediaPlayer != null)
                 {
                     mediaPlayer.seekTo(progress);
                 }
@@ -618,6 +625,8 @@ public class RoomActivity extends AppCompatActivity {
                     {
                         audioPlay.setChecked(true);
 
+                        seekBar.setProgress(0);
+
                         RecyclerView lvAudioPlaylist = findViewById(R.id.lvAudioItems);
                         resetPlaylist(lvAudioPlaylist);
 
@@ -640,5 +649,35 @@ public class RoomActivity extends AppCompatActivity {
             ConstraintLayout unselectedItemLayout = lvAudioPlaylist.getChildAt(i).findViewById(R.id.unselectedAudioLayout);
             unselectedItemLayout.setVisibility(View.VISIBLE);
         }
+    }
+
+    public void fullscreen()
+    {
+        final View view = getWindow().getDecorView();
+
+        view.setSystemUiVisibility(
+                View.SYSTEM_UI_FLAG_IMMERSIVE |
+                        View.SYSTEM_UI_FLAG_LAYOUT_STABLE |
+                        View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION |
+                        View.SYSTEM_UI_FLAG_FULLSCREEN |
+                        View.SYSTEM_UI_FLAG_HIDE_NAVIGATION |
+                        View.SYSTEM_UI_FLAG_FULLSCREEN
+        );
+
+        //Hide navigation bar when visibility has changed
+        view.setOnSystemUiVisibilityChangeListener(new View.OnSystemUiVisibilityChangeListener() {
+            @Override
+            public void onSystemUiVisibilityChange(int visibility) {
+                view.setSystemUiVisibility(
+                        View.SYSTEM_UI_FLAG_IMMERSIVE |
+                                View.SYSTEM_UI_FLAG_LAYOUT_STABLE |
+                                View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION |
+                                View.SYSTEM_UI_FLAG_FULLSCREEN |
+                                View.SYSTEM_UI_FLAG_HIDE_NAVIGATION |
+                                View.SYSTEM_UI_FLAG_FULLSCREEN
+                );
+
+            }
+        });
     }
 }
