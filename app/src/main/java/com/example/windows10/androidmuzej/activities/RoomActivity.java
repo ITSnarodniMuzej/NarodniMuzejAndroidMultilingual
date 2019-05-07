@@ -162,7 +162,7 @@ public class RoomActivity extends AppCompatActivity {
                 //Cut .mp3 from file name
                 String fileName = file.getName().substring(0, file.getName().length()-4);
 
-                AudioPlayerItem item = new AudioPlayerItem(file, fileName);
+                AudioPlayerItem item = new AudioPlayerItem(file.getAbsoluteFile(), fileName);
 
                 room.getAudioItems().add(item);
             }
