@@ -4,7 +4,6 @@ import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.support.constraint.ConstraintLayout;
-import android.support.v4.app.DialogFragment;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
@@ -41,14 +40,16 @@ class PageImageView extends RecyclerView.ViewHolder implements View.OnClickListe
 
         //vrednosti bitmap slike i naslov slike
         Bitmap bm = ((BitmapDrawable)imageView.getDrawable()).getBitmap();
-        String s = (String) textView.getText();
+        String s = "";
+        if(!textView.getText().equals("TextView"))
+            s = textView.getText().toString();
 
         Bundle args = new Bundle();
         args.putParcelable("image_bitmap",bm);
         args.putString("title",s);
 
         //prosledjivanje bundle-a novom dialog fragmentu
-        DialogFragment dialogFragment = new ZoomPhotoFragment();
+        ZoomPhotoFragment dialogFragment = new ZoomPhotoFragment();
         dialogFragment.setArguments(args);
         dialogFragment.show(ft, "dialog");
 

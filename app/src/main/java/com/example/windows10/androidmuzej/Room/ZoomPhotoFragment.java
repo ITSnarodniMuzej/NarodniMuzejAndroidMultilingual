@@ -77,13 +77,8 @@ public class ZoomPhotoFragment extends DialogFragment {
     public void onStart() {
         super.onStart();
         Dialog dialog = getDialog();
-        if (dialog != null)
+        if (dialog != null && dialog.getWindow() != null)
         {
-            int width = 1042;
-            int height = 768;
-
-            //postavaljanje visine i sirine layouta prozora i animacija
-            dialog.getWindow().setLayout(width, height);
             dialog.getWindow().setWindowAnimations(R.style.MyAnimation_Window);
         }
     }

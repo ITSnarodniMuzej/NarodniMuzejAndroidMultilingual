@@ -273,21 +273,32 @@ public class RoomActivity extends AppCompatActivity {
         int pageNumber = page.getPageNumber();
 
         try {
-            String path = Environment.DIRECTORY_DOWNLOADS + "/Museum/Image/room" + roomNumber + "/page" + pageNumber;
+            //Get images array id
+            String imageLocation = "room"+roomNumber+"Page"+pageNumber+"Images";
+            int pageImagesId = getResources().getIdentifier(imageLocation, "array", getPackageName());
+            //Get images array
+            String[] pageImagesLocation = getResources().getStringArray(pageImagesId);
 
-            Log.i("path", path);
-
-            //Get all files from folder
-            File[] images = Environment.getExternalStoragePublicDirectory(path).listFiles();
+            //Get images title array id
+            String imageTitleLocation = "room"+roomNumber+"Page"+pageNumber+"ImagesTitles";
+            int pageImagesTitleId = getResources().getIdentifier(imageTitleLocation, "array", getPackageName());
+            //Get images title array
+            String[] pageImagesTitle = getResources().getStringArray(pageImagesTitleId);
 
             //Adding images to page
-            for (File image : images) {
-
+            for(int i = 0; i < pageImagesLocation.length; i++)
+            {
+                //Get image drawable id
+                String location = pageImagesLocation[i];
+                int drawableId = getResources().getIdentifier(location, "drawable", getPackageName());
                 //Get image
-                Drawable imageDrawable = Drawable.createFromPath(image.getPath());
+                Drawable imageDrawable = getDrawable(drawableId);
 
                 //Get image title
-                String title = image.getName();
+                String title = "";
+
+                if(pageImagesTitle.length != 0)
+                    title = pageImagesTitle[i];
 
                 PageImage pageImage = new PageImage(imageDrawable, title);
 

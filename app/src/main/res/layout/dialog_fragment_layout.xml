@@ -6,43 +6,54 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
-    android:orientation="horizontal"
-    android:background="@drawable/uvecana_slika"
-    >
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/uvecana_slika" />
 
     <ImageView
         android:id="@+id/imageDialogFragment"
-        android:layout_width="800dp"
-        android:layout_height="500dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="120dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="46dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageTitleDialogFragment"
+        app:layout_constraintEnd_toEndOf="@+id/background"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="@+id/background"
+        app:layout_constraintTop_toTopOf="@+id/background"
+        tools:srcCompat="@drawable/branko_radicevic" />
 
     <TextView
         android:id="@+id/imageTitleDialogFragment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="32dp"
+        android:fontFamily="@font/eb_garamond"
         android:text="Test"
         android:textSize="26sp"
-        android:fontFamily="@font/eb_garamond"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageDialogFragment"
-        app:layout_constraintVertical_bias="0.189" />
+        app:layout_constraintBottom_toBottomOf="@+id/background"
+        app:layout_constraintEnd_toEndOf="@+id/imageDialogFragment"
+        app:layout_constraintStart_toStartOf="@+id/imageDialogFragment" />
 
     <ImageButton
         android:id="@+id/buttonCloseDialog"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="28dp"
+        android:layout_marginEnd="32dp"
         android:background="@xml/dialog_close_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
