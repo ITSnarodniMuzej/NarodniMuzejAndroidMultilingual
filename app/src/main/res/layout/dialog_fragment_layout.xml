@@ -17,7 +17,6 @@
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="120dp"
-        android:src="@drawable/branko_radicevic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -38,16 +37,15 @@
         app:layout_constraintTop_toBottomOf="@+id/imageDialogFragment"
         app:layout_constraintVertical_bias="0.189" />
 
-    <Button
+    <ImageButton
         android:id="@+id/buttonCloseDialog"
-        android:layout_width="113dp"
-        android:layout_height="75dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:background="@android:color/transparent"
+        android:layout_marginEnd="28dp"
+        android:background="@xml/dialog_close_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 
 
 </android.support.constraint.ConstraintLayout>

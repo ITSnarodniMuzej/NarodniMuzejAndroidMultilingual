@@ -1,4 +1,4 @@
-package com.example.windows10.androidmuzej.Room;
+package com.example.windows10.androidmuzej.room;
 
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
@@ -13,7 +13,6 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import com.example.windows10.androidmuzej.R;
-import com.example.windows10.androidmuzej.ZoomPhotoFragment;
 
 class PageImageView extends RecyclerView.ViewHolder implements View.OnClickListener
 {

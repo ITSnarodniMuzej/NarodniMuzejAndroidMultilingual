@@ -13,6 +13,7 @@
         <!--<item name="windowNoTitle">true</item>-->
         <item name="android:windowFullscreen">true</item>
     </style>
+
     <!--animacija dialog prozora>-->
     <style name="MyAnimation.Window" parent="@android:style/Animation.Activity">
         <item name="android:windowEnterAnimation">@anim/anim_in</item>

@@ -1,4 +1,4 @@
-package com.example.windows10.androidmuzej;
+package com.example.windows10.androidmuzej.room;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
@@ -15,24 +15,18 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
-import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class ZoomPhotoFragment extends DialogFragment {
+import com.example.windows10.androidmuzej.R;
 
-    Button close;
+public class ZoomPhotoFragment extends DialogFragment {
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.dialog_fragment_layout, container, false);
-
-        final AlertDialog.Builder mBuild=new AlertDialog.Builder(getActivity());
-
-        ImageView image = v.findViewById(R.id.imageDialogFragment);
-        TextView title = v.findViewById(R.id.imageTitleDialogFragment);
-        close = v.findViewById(R.id.buttonCloseDialog);
 
         //providna pozadina
         getDialog().getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
@@ -51,19 +45,28 @@ public class ZoomPhotoFragment extends DialogFragment {
             }
         });
 
-        //preuzimanje slike i naslova slike od recyclerview-a
-        Bitmap bitmapimage = getArguments().getParcelable("image_bitmap");
-        String s = getArguments().getString("title");
+        Bundle bundle = getArguments();
+
+        //preuzimanje slike  od recyclerview-a
+        Bitmap bitmapimage = bundle.getParcelable("image_bitmap");
+        ImageView image = v.findViewById(R.id.imageDialogFragment);
         image.setImageBitmap(bitmapimage);
+
+        //preuzimanje naslova slike od recyclerview-a
+        String s = bundle.getString("title");
+        TextView title = v.findViewById(R.id.imageTitleDialogFragment);
         title.setText(s);
 
         //zatvaranje prozora
+        ImageButton close = v.findViewById(R.id.buttonCloseDialog);
         close.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 getDialog().dismiss();
             }
         });
+
+        AlertDialog.Builder mBuild=new AlertDialog.Builder(getActivity());
         mBuild.setView(v);
         mBuild.create();
 

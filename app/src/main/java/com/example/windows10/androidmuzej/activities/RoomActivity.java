@@ -24,11 +24,11 @@ import android.widget.ToggleButton;
 import com.example.windows10.androidmuzej.audioPlayer.AudioPlayerAdapter;
 import com.example.windows10.androidmuzej.audioPlayer.AudioPlayerItem;
 import com.example.windows10.androidmuzej.audioPlayer.RecyclerItemClickListener;
-import com.example.windows10.androidmuzej.Room.Page;
-import com.example.windows10.androidmuzej.Room.PageImage;
-import com.example.windows10.androidmuzej.Room.PageImageAdapter;
+import com.example.windows10.androidmuzej.room.Page;
+import com.example.windows10.androidmuzej.room.PageImage;
+import com.example.windows10.androidmuzej.room.PageImageAdapter;
 import com.example.windows10.androidmuzej.R;
-import com.example.windows10.androidmuzej.Room.Room;
+import com.example.windows10.androidmuzej.room.Room;
 
 import java.io.File;
 import java.util.ArrayList;

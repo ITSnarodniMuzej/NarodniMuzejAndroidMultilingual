@@ -89,7 +89,7 @@ public class ChooseRoomActivity extends AppCompatActivity implements View.OnClic
         else
         {
             try {
-                int roomNum = Integer.parseInt(roomNumber);
+                Integer.parseInt(roomNumber);
 
                 Intent intent = new Intent(ChooseRoomActivity.this, RoomActivity.class);
                 intent.putExtra("roomNumber", roomNumber);

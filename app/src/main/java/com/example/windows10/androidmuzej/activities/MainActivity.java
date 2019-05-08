@@ -5,15 +5,16 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.res.Configuration;
 import android.content.res.Resources;
+import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.constraint.ConstraintLayout;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.util.DisplayMetrics;
-import android.util.Log;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageButton;
 
 import com.example.windows10.androidmuzej.R;
@@ -39,14 +40,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnCredits.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Animation slideUp = AnimationUtils.loadAnimation(MainActivity.this, R.anim.anim_in);
+
                 creditsLayout.setVisibility(View.VISIBLE);
+                creditsLayout.startAnimation(slideUp);
             }
         });
+
         ImageButton btnCreditsClose = findViewById(R.id.btnCreditsClose);
         btnCreditsClose.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Animation slideDown = AnimationUtils.loadAnimation(MainActivity.this, R.anim.anim_out);
+
                 creditsLayout.setVisibility(View.GONE);
+                creditsLayout.startAnimation(slideDown);
             }
         });
 
