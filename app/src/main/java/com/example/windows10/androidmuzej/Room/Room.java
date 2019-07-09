@@ -1,8 +1,8 @@
-package com.example.windows10.androidmuzej.Room;
+package com.example.windows10.androidmuzej.room;
 
 import android.graphics.drawable.Drawable;
 
-import com.example.windows10.androidmuzej.AudioPlayer.AudioPlayerItem;
+import com.example.windows10.androidmuzej.audioPlayer.AudioPlayerItem;
 
 import java.util.ArrayList;
 
