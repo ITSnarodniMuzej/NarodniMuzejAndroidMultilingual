@@ -152,19 +152,19 @@ public class RoomActivity extends AppCompatActivity {
         int roomNumber = room.getRoomNumber();
 
         try {
-
             //Get audio folder path
             String path = Environment.DIRECTORY_DOWNLOADS + "/Museum/Audio/" + currentLocal + "/room" + roomNumber;
 
             //Get all files from folder
             File[] mp3Files = Environment.getExternalStoragePublicDirectory(path).listFiles();
 
-            //Add mp3 files to room
-            for (File file : mp3Files) {
+            //Add mp3 files paths to room
+            for (File file : mp3Files)
+            {
                 //Cut .mp3 from file name
                 String fileName = file.getName().substring(0, file.getName().length()-4);
 
-                AudioPlayerItem item = new AudioPlayerItem(file.getAbsoluteFile(), fileName);
+                AudioPlayerItem item = new AudioPlayerItem(file.getAbsolutePath(), fileName);
 
                 room.getAudioItems().add(item);
             }
@@ -201,7 +201,9 @@ public class RoomActivity extends AppCompatActivity {
 
                 AudioPlayerItem item = room.getAudioItems().get(position);
 
-                playAudio(item.getFile());
+                File mp3File = new File(item.getFilePath());
+
+                playAudio(mp3File);
             }
         }));
 
@@ -285,6 +287,12 @@ public class RoomActivity extends AppCompatActivity {
             //Get images title array
             String[] pageImagesTitle = getResources().getStringArray(pageImagesTitleId);
 
+            //Get images detail array id
+            String imageDetailLocation = "room"+roomNumber+"Page"+pageNumber+"ImagesDetail";
+            int pageImagesDetailId = getResources().getIdentifier(imageDetailLocation, "array", getPackageName());
+            //Get images title array
+            String[] pageImagesDetail = getResources().getStringArray(pageImagesDetailId);
+
             //Adding images to page
             for(int i = 0; i < pageImagesLocation.length; i++)
             {
@@ -297,10 +305,15 @@ public class RoomActivity extends AppCompatActivity {
                 //Get image title
                 String title = "";
 
-                if(pageImagesTitle.length != 0)
+                if(pageImagesTitle.length != 0 && pageImagesTitle[i] != null)
                     title = pageImagesTitle[i];
 
-                PageImage pageImage = new PageImage(imageDrawable, title);
+                String detail = "";
+
+                if(pageImagesDetail.length != 0 && pageImagesDetail[i] != null)
+                    detail = pageImagesDetail[i];
+
+                PageImage pageImage = new PageImage(imageDrawable, title, detail);
 
                 page.getPageImages().add(pageImage);
             }
@@ -492,17 +505,18 @@ public class RoomActivity extends AppCompatActivity {
 
     private void setAudioPlayerControl(final Room room)
     {
+        final ConstraintLayout audioPlayerLayout = findViewById(R.id.audioPlayerLayout);
+
+        ToggleButton audioPlayer = findViewById(R.id.btnAudioPlayer);
+
         //Hide audio player button if room has no audio items
         if(room.getAudioItems().size() <= 0)
         {
             ConstraintLayout audioPlayerButton = findViewById(R.id.audioButtonLayout);
             audioPlayerButton.setVisibility(View.GONE);
+            audioPlayer.setVisibility(View.GONE);
             return;
         }
-
-        final ConstraintLayout audioPlayerLayout = findViewById(R.id.audioPlayerLayout);
-
-        ToggleButton audioPlayer = findViewById(R.id.btnAudioPlayer);
 
         if(audioPlayer.isChecked())
             audioPlayerLayout.setVisibility(View.VISIBLE);
@@ -548,7 +562,10 @@ public class RoomActivity extends AppCompatActivity {
                         RecyclerView lvAudioPlayer = findViewById(R.id.lvAudioItems);
                         lvAudioPlayer.getChildAt(0).findViewById(R.id.selectedAudioLayout).setVisibility(View.VISIBLE);
                         lvAudioPlayer.getChildAt(0).findViewById(R.id.unselectedAudioLayout).setVisibility(View.GONE);
-                        playAudio(room.getAudioItems().get(0).getFile());
+
+                        File mp3File = new File(room.getAudioItems().get(0).getFilePath());
+
+                        playAudio(mp3File);
                     }
                     //Otherwise play current audio
                     else

@@ -62,17 +62,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         ImageButton btnSr = findViewById(R.id.btnSr);
         btnSr.setOnClickListener(this);
 
-//        ImageButton btnEn = findViewById(R.id.btnEn);
-//        btnEn.setOnClickListener(this);
+        ImageButton btnEn = findViewById(R.id.btnEn);
+        btnEn.setOnClickListener(this);
 
-//        ImageButton btnTr = findViewById(R.id.btnTr);
-//        btnTr.setOnClickListener(this);
+        ImageButton btnTr = findViewById(R.id.btnTr);
+        btnTr.setOnClickListener(this);
 
-//        ImageButton btnFr = findViewById(R.id.btnFr);
-//        btnFr.setOnClickListener(this);
-//
-//        ImageButton btnRu = findViewById(R.id.btnRu);
-//        btnRu.setOnClickListener(this);
+        ImageButton btnFr = findViewById(R.id.btnFr);
+        btnFr.setOnClickListener(this);
+
+        ImageButton btnRu = findViewById(R.id.btnRu);
+        btnRu.setOnClickListener(this);
+
 //        ImageButton btnDe = findViewById(R.id.btnDe);
 //        btnDe.setOnClickListener(this);
 

@@ -1,19 +1,17 @@
 package com.example.windows10.androidmuzej.audioPlayer;
 
-import java.io.File;
-
 public class AudioPlayerItem {
 
-    private File file;
+    private String filePath;
     private String itemName;
 
-    public AudioPlayerItem(File file, String itemName) {
-        this.file = file;
+    public AudioPlayerItem(String filePath, String itemName) {
+        this.filePath = filePath;
         this.itemName = itemName;
     }
 
-    public File getFile() {
-        return file;
+    public String getFilePath() {
+        return filePath;
     }
 
     String getItemName() {

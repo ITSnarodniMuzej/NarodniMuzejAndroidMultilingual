@@ -53,9 +53,9 @@ public class ZoomPhotoFragment extends DialogFragment {
         image.setImageBitmap(bitmapimage);
 
         //preuzimanje naslova slike od recyclerview-a
-        String s = bundle.getString("title");
-        TextView title = v.findViewById(R.id.imageTitleDialogFragment);
-        title.setText(s);
+        String detail = bundle.getString("detail");
+        TextView tvTitle = v.findViewById(R.id.imageTitleDialogFragment);
+        tvTitle.setText(detail);
 
         //zatvaranje prozora
         ImageButton close = v.findViewById(R.id.buttonCloseDialog);

@@ -16,16 +16,18 @@ import com.example.windows10.androidmuzej.R;
 class PageImageView extends RecyclerView.ViewHolder implements View.OnClickListener
 {
     private ConstraintLayout titleLayout;
-    private TextView textView;
-    private ImageView imageView;
+    private TextView tvTitle;
+    private TextView tvDetail;
+    private ImageView ivImage;
 
     PageImageView(final View view)
     {
         super(view);
         this.titleLayout = view.findViewById(R.id.textLayout);
-        this.textView = view.findViewById(R.id.tvPageImageTitle);
-        this.imageView = view.findViewById(R.id.ivPageImage);
-        imageView.setOnClickListener(this);
+        this.tvTitle = view.findViewById(R.id.tvPageImageTitle);
+        this.tvDetail = view.findViewById(R.id.tvPageImageDetail);
+        this.ivImage = view.findViewById(R.id.ivPageImage);
+        ivImage.setOnClickListener(this);
     }
     @Override
     public void onClick(View v) {
@@ -39,14 +41,14 @@ class PageImageView extends RecyclerView.ViewHolder implements View.OnClickListe
         ft.addToBackStack(null);
 
         //vrednosti bitmap slike i naslov slike
-        Bitmap bm = ((BitmapDrawable)imageView.getDrawable()).getBitmap();
-        String s = "";
-        if(!textView.getText().equals("TextView"))
-            s = textView.getText().toString();
+        Bitmap bm = ((BitmapDrawable) ivImage.getDrawable()).getBitmap();
+        String detail = "";
+        if(!tvDetail.getText().equals("TextView"))
+            detail = tvDetail.getText().toString();
 
         Bundle args = new Bundle();
         args.putParcelable("image_bitmap",bm);
-        args.putString("title",s);
+        args.putString("detail",detail);
 
         //prosledjivanje bundle-a novom dialog fragmentu
         ZoomPhotoFragment dialogFragment = new ZoomPhotoFragment();
@@ -59,12 +61,15 @@ class PageImageView extends RecyclerView.ViewHolder implements View.OnClickListe
         return titleLayout;
     }
 
-    TextView getTextView() {
-        return textView;
+    TextView getTvTitle() {
+        return tvTitle;
+    }
+    TextView getTvDetail() {
+        return tvDetail;
     }
 
-    ImageView getImageView() {
-        return imageView;
+    ImageView getIvImage() {
+        return ivImage;
     }
 
 }

@@ -194,7 +194,7 @@
                 android:layout_centerInParent="true"
                 android:clickable="false"
                 android:fontFamily="@font/eb_garamond"
-                android:text="Одабир језика"
+                android:text="@string/choose_language"
                 android:textColor="#fff"
                 android:textSize="18sp"
                 app:layout_constraintBottom_toBottomOf="parent"

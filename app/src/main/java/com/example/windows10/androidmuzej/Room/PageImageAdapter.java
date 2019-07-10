@@ -42,10 +42,12 @@ public class PageImageAdapter extends RecyclerView.Adapter<PageImageView>{
         else
         {
             pageView.getTitleLayout().setVisibility(View.VISIBLE);
-            pageView.getTextView().setText(images.get(position).getImageTitle());
+            pageView.getTvTitle().setText(pageImage.getImageTitle());
+            pageView.getTvDetail().setText(pageImage.getImageDetail());
+
         }
 
-        pageView.getImageView().setImageDrawable(images.get(position).getImage());
+        pageView.getIvImage().setImageDrawable(pageImage.getImage());
     }
 
     @Override

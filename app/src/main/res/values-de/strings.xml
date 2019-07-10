@@ -1,29 +1,29 @@
 <resources>
 
-    <string name="second_floor_text">спрат</string>
-    <string name="first_floor_text">приземље</string>
-    <string name="choose_language">Одабир језика</string>
-    <string name="backBtnText">ХОДНИК</string>
-    <string name="audioBtnText">АУДИО</string>
+    <string name="second_floor_text">zweiter stock</string>
+    <string name="first_floor_text">erdgeschoss</string>
+    <string name="choose_language">Sprache wählen</string>
+    <string name="backBtnText">FLUR</string>
+    <string name="audioBtnText">AUDIO</string>
 
     //Dogadjaji kod nas i u svetu
     <!--<editor-fold desc="Room1">-->
-    <string name="room1Title">Догађаји код нас и у свету</string>
+    <string name="room1Title">Veranstaltungen in Serbien und Europa</string>
 
     <!--<editor-fold desc="Page1">-->
-    <string name="room1Page1Title">Историјске околности</string>
+    <string name="room1Page1Title">Historische Hintergründe</string>
 
     <string name="room1Page1Text">
-        Историју Европе 18. века су обележиле Револуције и преврати. Те промене се
-        нису догађале само на политичком плану, томе су претходиле идеје коју су
-        започели француски просветитељи и енциклопедисти Шарл Монтескје, Дени Дидро,
-        Франсоа Волтер и Жан Жак Русо.
-        Критиком политичког уређења државе и цркве инспирисали су и иницирали многе промене у тадашњем свету.
-        Револуција у Француској, пад Бастиље 14. јула 1789. означио је крај апсолутистичке монархије.
-        Народна скупштина је донела Декларацију права човека и грађанина
-        којом је прокламовано да су сви људи слободни и једнаки у правима,
-        да су закони једнаки за све грађане и да суверенитет почива на нацији.
-        Укидање феудализма у Француској означило је почетак једног новог доба.
+        Die Geschichte Europas im 18. Jahrhundert wurde von Revolutionen und Umwälzungen geprägt.
+        Diese Wandel passierten nicht nur im Rahmen der Politik, sondern ging diesem eine Idee
+        voraus, mit der die französischen Aufklärer und Enzyklopädisten Montesquieu, Denis Diderot,
+        Voltaire und Jean-Jacques Rousseau begannen. Durch Kritik politischer Bildung und Kirche
+        inspirierten und initiierten sie viele Änderungen in der damaligen Welt. Die Revolution in
+        Frankreich, der Sturm auf die Bastille am 14. Juli 1789, bezeichnete das Ende der
+        absolutistischen Monarchie. Die Nationalversammlung beschloss die Erklärung der Menschen-
+        und Bürgerrechte, in der man proklamierte, dass alle Menschen frei und gleich an Rechten
+        sind, dass, das Gesetz für alle Bürger gleich ist, und dass, die Souverenität beim Volk liegt.
+        Die Abschaffung des Feudalismus in Frankreich bezeichnete den Beginn einer neuen Ära.
     </string>
 
     <!-- Image titles-->
@@ -41,16 +41,18 @@
     <!--<editor-fold desc="Page2">-->
 
     <string name="room1Page2Text">
-        Нови историјски токови нису заобишли ни Србију. Београдски пашалук, управну јединицу,
-        Османског царства, су потресале многобројне кризе Царства. Непрестани сукоби ескалирали су
-        покретањем устанка 14. фебруара 1804. године у Орашцу, месту у Централној Србији.
-        За вођу Првог српског устанка изабран је Ђорђе Петровић Карађорђе.
-        Тако је почела Српска револуција која је окончана 1835. године ослобођењем и укидањем феудализма у Србији.
-        Први српски устанак (1804-1813), Други српски устанак (1815-1817), аутономија стечена хатишерифима,
-        својеручно писмено наређење султана које мора одмах бити извршено (1830. и 1833.)
-        и укидање феудализма омогућили су Србима у Кнежевини Србији политичке и економске слободе и друштвену једнакост.
-        Друштвена клима у ослобођеној Србији тражила је и формирање националног идентитета
-        чија су упоришта били ново подигнуто Народно позориште и основани Народни музеј.
+        Die neuen historischen Richtungen umgingen auch Serbien nicht. Paschaluk von Belgrad, eine
+        osmanische Verwaltungseinheit, wurde durch Vielfachkrise des Osmanischen Reichs erschüttert.
+        Die ständigen Konflikte eskalierten durch den Ersten Serbischen Aufstand am 14. Februar 1804
+        im kleinen Dorf Orašac in Zentralserbien. Als Führer des Aufstandes wurde Đorđe Petrović,
+        genannt „Karađorđe“ (Schwarzer Đorđe), gewählt. So begann die Serbische Revolution, die mit
+        der Befreiung und der Abschaffung des Feudalismus 1835 endete. Der Erste Serbische Aufstand
+        (1804 – 1813), der Zweite Serbische Aufstand (1815 – 1817), die Autonomie erworben durch
+        Hatt-i Scherif – der handgeschriebene sultanische Befehl, der sofort erledigt werden musste
+        (1830 und 1833) und die Abschaffung des Feudalismus ermöglichten den Serben im Fürstentum
+        Serbien die politischen und wirtschaftlichen Freiheiten und die geselschaftliche Gleichheit.
+        Das geselschaftliche Klima in befreitem Serbien erforderte auch die Gestaltung nationaler
+        Identität, deren Stützpunkten das neu gebaute Nationaltheater und begründete Nationalmuseum waren.
     </string>
 
     <string name="narodno_pozoriste">Народно позориште</string>
@@ -66,27 +68,12 @@
 
     //Beogradska velika skola
     <!--<editor-fold desc="Room2">-->
-    <string name="room2Title">Зграда музеја и Велика школа</string>
+    <string name="room2Title">Museumsgebäude und Große Schule</string>
 
     <!--<editor-fold desc="Page1">-->
-    <string name="room2page1Title">Зграда Музеја</string>
+    <string name="room2page1Title">Museumsgebäude</string>
 
-    <string name="room2Page1Text">
-        Зграда Музеја Вука и Доситеја представља једну од најстаријих сачуваних стамбених зграда у Београду.
-        Подигнута је у првој половини 18. века, вероватно за неког богатог Турчина, највероватније за самог управитеља београдске вароши.
-        Кућа представља типичан пример турско балканске архитектуре али и једну од раскошнијих и, за то време, ретких спратних кућа у Београду.
-        Двориште је некада опасавао високи зид, данас је сачуван само крај улазне капије. У дворишту је било и неколико помоћних објеката.
-        Кућа је по вертикали подељена на два дела: харем и селамлук.
-        Селамлук је био део куће намењен искључиво мушкарцима, у њему је садашња изложбена поставка Музеја.
-        Службене просторије с библиотеком Музеја су у некадашњем женском делу куће, харему који је био резервисан за породицу.
-        Оба дела имају диванхане, део за дневни боравак укућана.
-        Кућа је више пута мењала намену. У последњој деценији 18. века у њој је радио француски конзулат,
-        као једино дипломатско представништво у време турске власти у Београду. У току Првог српског устанка зграда је уступљена Великој школи.
-        После тога, Турци се поново усељавају у кућу, коју користе скоро до средине 19. века.
-        Након ослобођења Београда од турске власти па све до Другог светског рата смењују се разне београдске трговачке породице.
-        После Другог светског рата зграда је детаљно реконструисана 1948. године, и следеће године додељена основаном Музеју Вука и Доситеја.
-        Од 1979. године налази се у саставу Народног музеј у Београду.
-    </string>
+    <string name="room2Page1Text"></string>
 
     <!-- Image titles-->
     <string name="maketa_zgrade">Макета зграде Музеја Вука и Доситеја</string>
@@ -97,25 +84,31 @@
     <!--</editor-fold>-->
 
     <!--<editor-fold desc="Page2">-->
-    <string name="room2Page2Title">Велика школа</string>
+    <string name="room2Page2Title">Die Große Schule</string>
 
     <string name="room2Page2Text">
-        Са успехом Првог српског устанка, који је почео 1804. године и ослобађања Београда од турске војске, 1806. године,
-        устаници су мирнодопски период искористили како би отпочели уређење државе.
-        Поред доношења Уставног закона, једна од изузетно значајних новина, била је организација школа.
-        Иван Југовић, један од најобразованијих Срба у устаничкој Србији,  писар,
-        а касније и секретар прве владе устаничке државе, уверавао је Карађорђа, у неопходност развоја високог школства у Србији.
-        Новој власти био је потребан што већи број младих, школованих људи.
-        Карађорђе, вођа устаника, позвао је образоване Србе да помогну новој власти. Позиву се одазвао Доситеј Обрадовић.
-        У Београд је стигао 1807. године. Постављен је за главног управитеља свих школа и следеће године, 1808.
-        издејствовао је оснивање Велике школе, претечу свих данашњих високошколских установа у Србији.
-        Школа је почела с радом у кући преко пута данашње зграде Музеја Вука и Доситеја, а следеће, 1809. године пресељена је у њу.
-        Управо у овом здању школа ради све до 1813. године када долази до пада Првог српског устанка.
-        Право на похађање школе имали су сви мушки полазници без обзира на положај и материјално стање својих родитеља.
-        Једини услов био је да умеју да читају, пишу и рачунају.
-        Поред Вука Стефановића Караџића, међу ученицима школе били су и синови устаничких старешина међу којима и најстарији Карађорђев син Алекса.
-        У прве две године учили су се средњошколски предмети - историја, географија, рачуница, стилистика, немачки језик, а у трећој универзитетски - државно право, кривично и међународно право.
-        Oбавезни предмети за све разреде били су црквено појање, моралне поуке и војно вежбање (фехтовање са сабљама и егзерцир с пушкама).
+        Mit dem Erfolg des Erster Serbischer Aufstands von 1804 und der Befreiung Belgrads von der
+        türkischen Armee im Jahre 1806 nutzten die Rebellen die Friedenszeit, um mit der
+        Organisation des Staates zu beginnen. Neben der Verabschiedung des Verfassungsgesetzes war
+        die Organisation der Schulen eine der wichtigsten Neuerungen. Ivan Jugovic, einer der
+        gebildetsten Serben im aufständischen Serbien, Schriftsteller und später Staatssekretär der
+        ersten Regierung des Aufstandes, überzeugte Karadjordje von der Notwendigkeit der
+        Entwicklung einer Hochschulbildung in Serbien. Die neue Regierung brauchte so viele junge,
+        gebildete Menschen wie möglich. Karadjordje, der Anführer des Aufstands, rief die gebildeten
+        Serben auf, der neuen Regierung zu helfen. Dositej Obradovic erwiderte den Aufruf.
+        Er kam 1807 nach Belgrad an. Er wurde zum obersten Verwalter aller Schulen ernannt und
+        setzte sich im Jahr 1808 für die Gründung der Großen Schule, die Vorläufer aller heutigen
+        Hochschulen in Serbien ist. Die Schule wurde im Haus gegenüber dem heutigen Museumsgebäude
+        von Vuk und Dositej eröffnet und wurde dann 1809 dorthin verlegt. In diesem Gebäude war die
+        Schule bis 1813 in Betrieb, als es zum Ersten Serbischen Aufstand kam. Das Recht, die Schule
+        zu besuchen hatten alle Männer, unabhängig von dem materiellen Status ihrer Eltern.
+        Die einzige Bedingung war, dass sie lesen, schreiben und rechnen konnten.
+        Neben Vuk Stefanovic Karadzic befanden sich unter den Schülern der Schule auch die Söhne der
+        Aufständischen, darunter auch der älteste Sohn von Karadjordje, Aleksa. In den ersten zwei
+        Jahren wurden Grundfächer - Geschichte, Geographie, Berechnung, Stilistik, deutsche Sprache
+        - und im dritten Hochschulrecht, Strafrecht und Völkerrecht studiert. Pflichtfächer für alle
+        Klassen waren kirchlicher Gesäng, Moralunterricht und militärische Übungen
+        (Schwertfedern und Exerzieren mit Waffen).
     </string>
     <!--</editor-fold>-->
 
@@ -123,7 +116,7 @@
 
     //Dositej Obradovic
     <!--<editor-fold desc="Room3">-->
-    <string name="room3Title">Доситеј Обрадовић</string>
+    <string name="room3Title">Dositej Obradović</string>
 
     <!--<editor-fold desc="Page1">-->
     <string name="room3page1Text">
@@ -181,7 +174,7 @@
         а не разлика у законима и верској припадности и да ће он због тога писати за ум, срце и нарав.
         Управо зато ово писмо је Доситејев манифест просветитељских идеја те заузима посебно место у историји књижевности.
         Исте године штампана је његова прва књига аутобиографског карактера под називом
-        Живот и прикљученија којом почиње модерна српска књижевност на народном језику.
+        "Живот и прикљученија" којом почиње модерна српска књижевност на народном језику.
     </string>
 
     <!-- Image titles-->
@@ -275,17 +268,21 @@
 
     <!--<editor-fold desc="Page1">-->
     <string name="room5Page1Text">
-        После пропасти Првог српског устанка, млади Вук је отишао у Беч.
-        Написао је спис о пропасти Устанка, што се учинило интересантним Јернеју Копитару, цензору за словенске језике.
-        Он је пожелео да упозна тог младог човека који се изражавао народним језиком.
-        Тако је Вук, уз његову помоћ и савете, почео да сакупља народне песме и да припрема граматику народног говора.
-        У Бечу је 1814. године објавио је збирку народних песама коју је назвао Мала простонародна славено-сербска песнарица.
-        Исте године објавио је Писменицу сербскога језика по говору простога народа написану, прву граматику српског језика на народном говору.
-        Без обзира на несвршеност и непотпуност, ово дело је значајно као прва граматика народног говора.
-        Вук Караџић је 1818. године објавио први речник српског језика, са 26270 речи које су се користиле у народу.
-        Исте године приредио је друго издање своје граматике које је неколико година касније на немачки језик превео Јакоб Грим.
-        У другом издању речника нашло се 47427 речи прикупљених из народног говора.
-        Вук је годинама радио на припреми трећег издања речника и лично је, својом руком, уносио допуне и измене.
+        Nach dem Sturz des ersten serbischen Aufstands, reiste der junge Vuk nach Wien.  Er schrieb
+        eine Akte über den Sturz des Aufstands, die sich als interessanter Jernej Kopitar, dem Zensor
+        für slowenische Sprachen, erwies.  Er wollte diesen jungen Mann, der sich in der Volkssprache
+        äußerte, treffen.  Mit seiner Hilfe und seinem Rat begann Vuk, Volkslieder zu sammeln und
+        die Grammatik der Volksrede vorzubereiten.  1814 in Wien veröffentlichte er eine Sammlung
+        von Volksliedern, die Kleine einfache slawisch-serbische Volksliederbuch genannt wurde.
+        Im denselben Jahr veröffentlichte er Grammatik des serbischen Volks geschrieben nach der
+        einfachen Volkssprache, die erste Grammatik der serbischen Sprache in der Volkssprache.
+        Unabhängig von der Unvollständigkeit ist dieses Werk als die erste Grammatik der Volkssprache
+        von Bedeutung. Vuk Karadzic veröffentlichte 1818 das erste Wörterbuch der serbischen Sprache
+        mit 26270 Wörtern, die vom Volk verwendet wurden. Im denselben Jahr gab er die zweite Auflage
+        seiner Grammatik heraus, die einige Jahre später von Jakob Grimm ins Deutsche übersetzt wurde.
+        In der zweiten Ausgabe des Wörterbuchs wurden 47427 Wörter aus der Volkssprache gesammelt.
+        Vuk arbeitete seit Jahr und Tag an der Vorbereitung der dritten
+        Ausgabe des Wörterbuchs und hat persönlich Änderungen vorgenommen.
     </string>
 
     <!-- Image titles-->
@@ -296,18 +293,21 @@
 
     <!--<editor-fold desc="Page2">-->
     <string name="room5Page2Text">
-        Вук је на путoвања, по Балканском полуострву, Немачкој, Аустрији, Русији и још неким деловима Европе,
-        најчешће кретао подстакнут својим позивом. Током путовања по Србији, Црној Гори, Хрватској, Мађарској записивао је народне песме.
-        Пратећи романтичарски дух, који је у записивању песама препознавао прави израз народног стваралаштва,
-        Вук је бележио умотворине тежећи да упозна и проучи народе и њихове традиције.
-        У европским круговима, за Вукове записе заинтересовали су се бројни научници и песници као што су:
-        Гете, Валтер Скот, Пушкин, Томазео, али и многи други који су их преводили, тумачили и опонашали.
-        Најзначајнији је свакако био Јакоб Грим, захваљујући чијим је преводима на немачки језик
-        народно стваралаштво постало доступно и препознатљиво по својој оригиналности, необичном херојству и богатству ликова и дешавања.
-        Уз подршку Јернеја Копитара, Вук је почео да бележи народне песме.
-        У првој збирци песама из 1814. године, објављено је око 100 лирских и 6 епских песама.
-        Идуће године је издао другу збирку народних песма под именом Народна сербска песнарица и у њој
-        су се нашле песме које су испевали гуслари Тешан Подруговић и Филип Вишњић.
+        Vuk reiste entlang der Balkanhalbinsel, durch Deutschland, Österreich, Russland und einigen
+        Teilen Europas, meistens von seinem Aufruf bewegt. Während seiner Reisen durch Serbien,
+        Montenegro, Kroatien und Ungarn notierte er Volkslieder. Dem romantischen Geist folgend, der
+        in der Aufzeichnung von Gedichtern den wahren Ausdruck der Volkskreativität erkannte, nahm
+        Vuk Volkskompositionen auf, wodurch er Völker und ihre Traditionen kennenlernen und studieren
+        wollte. In europäischen Kreisen waren zahlreiche Gelehrte und Dichter an Vuks Schriften
+        interessiert: Goethe, Walter Scott, Puschkin, Tomazeo, aber auch viele andere, die sie
+        übersetzt, interpretiert und imitiert haben. Sicherlich der Wichtigste war Jakob Grimm,
+        dank dessen Übersetzungen ins Deutsche die Volkskunst durch ihre Originalität, ihren
+        ungewöhnlichen Heroismus und ihren Reichtum an Charakteren und Ereignissen zugänglich und
+        erkennbar wurde. Mit der Unterstützung von Jernej Kopitar begann Vuk, Volkslieder aufzunehmen.
+        In der ersten Liedersammlung aus 1814 wurden ungefähr 100 lyrische und 6 epische Gedichter
+        veröffentlicht.  Im folgenden Jahr veröffentlichte er eine weitere Sammlung von Volksliedern
+        mit dem Namen Nationales serbisches Liederbuch, in der Lieder befanden,
+        die von Geigern Tesan Podrugovic und Filip Visnjic gesungen wurden.
     </string>
 
     <!-- Image titles-->
@@ -318,15 +318,18 @@
 
     <!--<editor-fold desc="Page3">-->
     <string name="room5Page3Text">
-        После великог успеха са песмама, Вук је почео да ради на сакупљању свих врста народних умотворина.
-        Прва збирка приповетки Народне српскеприповијетке штампана је 1821. у Бечу.
-        Паралелно са сакупљањем песама и приповедака Вук је бележио и народне пословице.
-        У Црној Гори, на Цетињу је 1836. штампао је Народне српскепословице које је посветио владици Петру Петровићу Његошу.
-        Предано је радио и на описивању народног фолклора чије је термине тумачио и описивао у Српском рјечнику.
-        Поред рада на реформи српског језика, Вук Караџић се бавио и историографским радом.
-        Као учесник Првог српског устанка, спремио је материјал о догађајима до 1814. године.
-        Тај материјал предао је познатом немачком историчару, Леополду Ранкеу, који је касније написао своје дело Српска револуција
-        Године 1828. објавио је рад Милош Обреновић књаз Сербији у којем је писао о владавини кнеза Милоша Обреновића.
+        Nach großen Erfolgen mit den Liedern begann Vuk mit der Sammlung aller Arten von
+        Volkskompositionen. Die erste Sammlung der Erzählungen Nationale serbische Erzählungen wurde
+        1821 in Wien gedruckt. Parallel zur Sammlung von Gedichtern und Erzählungen notierte Vuk
+        auch Volksprichwörter. In Montenegro 1836 in Cetinje druckte er Serbische Volksprichwörter,
+        die er Bischof Petar Petrovic Njegos widmete. Er widmete sich hingebungsvoll der Beschreibung
+        der Folklore, deren Interpretation er im serbischen Wörterbuch interpretierte und beschrieb.
+        Neben der Reform der serbischen Sprache beschäftigte Vuk Karadzic sich auch mit
+        historiographischen Arbeiten. Als Teilnehmer des ersten serbischen Aufstandes bereitete er
+        Material bis 1814 vor. Dieses Material wurde dem berühmten deutschen Historiker Leopold
+        Ranke übergeben, der später sein Werk Die serbische Revolution schrieb. Im Jahr 1828
+        veröffentlichte er die literarische Arbeit Milos Obrenovic, Fürst des Serbiens, in der er
+        über die Regierungszeit von Fürsten Milos Obrenovic schrieb.
     </string>
 
     <!-- Image titles-->
@@ -337,41 +340,43 @@
 
     <!--<editor-fold desc="Page4">-->
     <string name="room5Page4Text">
-        Правило којим се данас руководимо, а које је омогућило да српски језик постане један од
-        једноставнијих језика за читање и писање јесте Пиши као што говориш, читај како је написано.
-        До ове, данас свима једноставне и логичне фразе није се баш тако једноставно дошло.
-        Доситеј Обрадовић утемељио је основна обележја и правце нове српске културе и писмености
-        залажући се за демократски дух, критичке принципе и употребу народног језика у књижевности,
-        али нажалост, своје тежње није за живота стигао да спроведе у дело.
-        Међутим, Доситеј је свакако, поред многих других изузетних појединаца директно утицао на Вука,
-        који је заокружио процес реформи народног језика и књижевности.
-        Пре Вукове реформе у употреби су паралелно били: простонародни српски језик,
-        црквенословенски и славеносрпски језик.
-        Ширењем националног духа било је очигледно да је увођење народног језика у српску културу
-        једина могућност за њено напредовање. Примењујући правило: за сваки глас по један писмени знак,
-        Вук је из старословенске азбуке узео 24 слова, одбацио је нефункционална и придодавши 6 нових слова:
-        ј, љ, њ, ђ, џ и ћ постигао да српски језик добије један од најсавршенијих правописа на свету.
-        Реформом српског језика и увођењем слова ј Вук је стекао бројне непријатеље од којих велики
-        број међу црквеним људима. Разлог томе било је одступање од црквеног језика и увођење слова
-        из латниских језика што је тумачено као покатоличавање православног народа.
+        Die heutige Regel, die Serbisch zu einer der einfachsten Sprachen zum Lesen und Schreiben
+        gemacht hat, lautet: Schreib, wie du sprichst, lies, wie es geschrieben wird. Zur diesen
+        heute einfachen und logischen Phrase wird es nicht leicht gekommen.  Dositej Obradovic hat
+        die Grundzüge und Richtungen der neuen serbischen Kultur und Alphabetisierung festgelegt,
+        indem er für einen demokratischen Geist, kritische Prinzipien und die Verwendung der
+        Volkssprache in der Literatur plädierte, aber seine Lebensziele wurden leider nicht umgesetzt.
+        Allerdings hatte Dositej, neben zahlreichen anderen herausragenden Persönlichkeiten, einen
+        direkten Einfluss auf Vuk, der die Volkssprache- und Literaturreform zu Ende gebracht hat.
+        Vor Reform von Vuk waren serbisch-kirchenslawische, slawenoserbische Sprache, sowie im Volke
+        gesprochene Idiom (prostonarodni jezik) parallel im Gebrauch. Mit der Verbreitung des
+        Volksgeistes wurde es offensichtlich, dass die Einführung der Volkssprache, die einzige
+        Möglichkeit für serbischen Kulturfortschritt darstellt. Vuk befolgte die Regel „für jeden
+        Laut je ein Symbol“, übernahm 24 Buchstaben aus dem altslawischen kyrillischen Alphabet
+        (Asbuka), lehnte unfunktionale ab und fügte sechs neue Buchstaben – Ј, Љ, Њ, Ч, Ћ,Ђ – hinzu.
+        Auf diese Wiese gelang es Vuk, die serbische Rechtschreibung zu einer der vollkommenen der
+        Welt zu machen. Durch die Sprachreform des Serbischen und die Einführung vom Buchstaben J
+        bekam Vuk zahlreiche Gegner, unter denen auch die orthodoxe Kirche war. Der Grund dafür war
+        die Abweichung von der Kirche und die Einführung von Buchstaben aus den lateinischen Sprachen.
+        Das wurde als Konversion vom orthodoxen Volk zum katholischen Glauben verstanden.
     </string>
 
     <!--</editor-fold>-->
 
     <!--<editor-fold desc="Page5">-->
     <string name="room5Page5Text">
-        Међутим, захваљујући својој нарави и упорности које су Вука красиле, данас са поносом можемо
-        да кажемо да је српска азбука једна од ретких фонетских азбука.
-        У коликој мери је Вукова реформа била изузетна сведочи и потез ирског, драмског писца
-        Џорџа Бенарда Шоа, који је позамашну суму новца оставио у фонд за награду ономе
-        који успе да реформише енглеску абецеду по узору на Вукову ћирилицу.
-        Реформа српског језика и азбуке, коју је започео још Доситеј Обрадовић,
-        однела је незваничну победу 1847. године.
-        Тада је објављена књига Рат за српски језик и правопис Ђуре Даничића и
-        прва збирка песама Бранка Радичевића које су, уз Вуков превод Новог завјета,
-        писане народним језиком или Вуковим правописом.
-        Исте године објављен је и Његошев Горски вијенац, такође писан народним језиком
-        али старим правописом с обзиром да је овај знаменити песник био црквено лице.
+        Dank dem Vuks Charakter und seiner Ausdauer, kann man stolz darauf sein, dass serbisches
+        kyrillisches Alphabet zu den raren phonetischen Alphabeten gehört. In welchem Maß die Reform
+        von Vuk außerordentlich war, bestätigt die Tatsache, dass ein irischer Dramatiker George
+        Bernard Shaw, einen Teil seinen Vermögens in Fond angelegt hat, als Preis für denjenigen,
+        der englisches Alphabet nach dem serbischen Vorbild reformiert. Im Jahr 1847 errang die von
+        Dositej Obradović angefangene Sprachreform den inoffiziellen Sieg. In diesem Jahr erschienen
+        in Vuk reformierter Rechtschreibung und in Volkssprache geschriebene Werke, das Buch
+        „Rat za srpski jezik i pravopis“ („Krieg um serbische Sprache und Rechtschreibung“)
+        von Đuro Daničić, der erste Gedichtband von Branko Radičević, die Übersetzung des
+        Neuen Testaments von Vuk Karadžić. In demselben Jahr wurde in Volkssprache Epos „Gorski Vijenac“
+        („Der Bergkranz“) des Petar Petrović Njegoš veröffentlicht. Da der bekannte Dichter
+        Kirchenvertreter war, wurde das Werk in nicht von Vuk reformierter Rechtsprache geschrieben.
     </string>
 
     <!-- Image titles-->
@@ -388,15 +393,15 @@
 
     <!--<editor-fold desc="Page6">-->
     <string name="room5Page6Text">
-        Важан историјски сусрет догодио се у Бечу, 28. марта 1850. године. Словеначки,
-        српски и хрватски филолози, међу којима је био и Вук, састали су се како би се,
-        што је више могуће, о књижевности сложили и ујединили.
-        Том приликом потписан је Књижевни договор у којем су предложили јединствен српскохрватски језик и правопис.
-        Победа Вукове реформе језика и правописа збила се тек 1868. године
-        када је правопис у Србији званично прихваћен и уведен у школски систем.
-        Вук Стефановић Караџић умро је у Бечу 1864. године.
-        Посмртни остаци пренесени су у Београд 1897. године и са великим почастима
-        сахрањени у порти Саборне цркве, поред Доситеја Обрадовића.
+        Das geschichtsträchtige Treffen passierte in Wien, am 28. März 1850. Slowenische, serbische
+        und Kroatische Philologen, unter denen auch Vuk, haben sich getroffen, um sich in der Frage
+        der Literatur so viel wie möglich zu einigen. Diese Gelegenheit war für die Unterschreibung
+        des Wiener Sprachabkommens günstig (Bečki književni dogovor). Die einheitliche serbokroatische
+        Sprache und Rechtschreibung vorgeschlagen. Der formale Sieg der Volkssprachreform von Vuk
+        folgte in das Jahr 1868, nachdem die Rechtschreibung in Serbien offiziell angenommen und ins
+        Schulsystem eingeführt worden war. Vuk Stefanović Karadžić starb 1864 in Wien. Seine
+        sterbliche Überreste wurden nach Belgrad im Jahr 1897 überführt. Vor dem Haupteingang in die
+        Kathedrale Hl. Michael neben Dositej Obradović begraben.
     </string>
 
     <!--</editor-fold>-->
@@ -409,19 +414,19 @@
 
     <!--<editor-fold desc="Page1">-->
     <string name="room6Page1Text">
-        Након објављивања Писма Харалампију и аутобиографског дела Живот и прикљученија 1784.
-        године у Лајпцигу се штампа Слово поучително у којем Доситеј устаје против употребе
-        неразумљивих речи и израза који се користе у књижевности и беседама.
-        У претходно најављеном делу, Совјети здравог разума из исте године,
-        Доситеј критикује предрасуде, сујеверје и користољубље,
-        а фаворизује идеју слободног мишљења и моралне квалитете.
-        Још током боравка у манастиру Хопово и касније на путовањима,
-        Доситеј Обрадовић читао је и преводио басне Езопа, Федра, Лафонтена, Абстемиуса и Лесинга.
-        Преводе 160 басни на српски језик приредио је и објавио 1788. године у Лајпцигу.
-        Следеће, 1789. године, пошто су аустријска и руска војска уз помоћ Срба добровољаца
-        ослободиле Београд од Турака, 9. октобра, објављена је песма Пјесна на инсурекцију
-        Сербијанов посвећена Карађорђу и устаницима.
-        У народу је због рефрена постала позната под називом Востани Сербије.
+        Nach der Veröffentlichung von „Pismo Haralampiju“ („Brief an Haralampije“) und des
+        autobiografischen Werks „Život i priključenija“ („Leben und Abenteuer“) im Jahr 1784 in
+        Leipzig, gab man das Buch „Slovo poučitelno“ in Druck. In diesem Werk kritisierte Dositej
+        Obradović die Verwendung von unverständlichen Wörtern und Ausdrucken, die in die Literatur
+        auftauchten. In seinem Werk „Sovjeti zdravog razuma“ aus demselben Jahr, wurde von Dositej
+        Vorurteile, Aberglauben und Gewinnsucht getadelt, während die Ideen des freien Denkens und
+        der Moralität bevorzugt. Bei seinem Aufenthalt im Kloster Hopovo und wärend der Reisen,
+        hat Dositej Obradović Fabeln von Äsop, Phaedrus, La Fontaine, Abstemius und Lessing gelesen
+        und übersetzt. Die 160 auf die serbische Sprache übersetzten Fabeln veröffentlichte er 1788
+        in Leipzig. Im nächsten Jahr wurde das Karađorđe und Aufständischen gewidmete Gedicht
+        „Pjesna na insurekciju Serbijanov“ bekanntgegeben, nachdem österreichische und russische
+        Armee samt serbischer Hilfe Belgrad von Türken befreit hatten. Im Volk wurde es dank seinem
+        Refrain unter dem Namen „Vostani Serbije“ bekannt.
     </string>
 
     <!-- Image titles-->
