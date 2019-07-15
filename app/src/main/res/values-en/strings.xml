@@ -151,7 +151,7 @@
     </string>
 
     <!-- Image titles-->
-    <string name="rudolf_valec">Рудолф Валдец, Доситеј Обрадовић, бронза 1911.</string>
+    <string name="rudolf_valec">Доситеј Обрадовић</string>
     <string name="rudolf_valec_detail">Рудолф Валдец, Доситеј Обрадовић,бронза, 1911, и.б. 35/л.</string>
 
     <!--</editor-fold>-->
@@ -173,7 +173,7 @@
     </string>
 
     <!-- Image titles-->
-    <string name="manastir_hopovo">Непознати аутор, Манастир Хопово, дрворез</string>
+    <string name="manastir_hopovo">Манастир Хопово</string>
     <string name="manastir_hopovo_detail">Непознати аутор, Манастир Хопово, дрворез, б.д., и.б. 64/Л</string>
     <string name="mapa_dositejevih_putovanja">Мапа Доситејевих путовања</string>
     <string name="mapa_dositejevih_putovanja_detail">Мапа Доситејевих путовања</string>
@@ -201,7 +201,7 @@
     </string>
 
     <!-- Image titles-->
-    <string name="pismo_haralampiju">писмо Харалампију, 1783. год</string>
+    <string name="pismo_haralampiju">Писмо Харалампију, 1783. год</string>
     <string name="pismo_haralampiju_detail">Писмо Харалампију, 1783. год</string>
     <string name="dositej_obradovic">Тирол, Доситеј Обрадовић</string>
     <string name="dositej_obradovic_detail">Димитрије Тирол, Доситеј Обрадовић</string>
@@ -280,7 +280,7 @@
     </string>
 
     <!-- Image titles-->
-    <string name="vukova_diploma">Вукова диплома Московског универзитета</string>
+    <string name="vukova_diploma">Вукова диплома</string>
     <string name="vukova_diploma_detail">Вукова диплома Московског универзитета,Москва, 14. III 1828 и.б. 275/И.</string>
     <string name="putna_torba">Путна торба</string>
     <string name="putna_torba_detail">Путна торба, кожа и дрво, Беч, 19. век, и.б. 40/И</string>

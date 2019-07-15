@@ -7,32 +7,24 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-
 import com.example.windows10.androidmuzej.R;
 
 import java.util.ArrayList;
 
-public class PageImageAdapter extends RecyclerView.Adapter<PageImageView>{
+public class PageDialogImageAdapter extends RecyclerView.Adapter<PageImageView>{
 
     private ArrayList<PageImage> images;
     private Context context;
-    private boolean bigImage;
 
-    public PageImageAdapter(Context context, ArrayList<PageImage> resource, boolean bigImage) {
+    public PageDialogImageAdapter(Context context, ArrayList<PageImage> resource) {
         this.context = context;
         this.images = resource;
-        this.bigImage = bigImage;
     }
 
     @NonNull
     @Override
     public PageImageView onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view;
-
-        if(bigImage)
-            view = LayoutInflater.from(context).inflate(R.layout.page_image_layout_big, parent, false);
-        else
-            view = LayoutInflater.from(context).inflate(R.layout.page_image_layout, parent, false);
+        View view = LayoutInflater.from(context).inflate(R.layout.page_dialog_image_layout, parent, false);
 
         return new PageImageView(view);
     }
@@ -49,7 +41,7 @@ public class PageImageAdapter extends RecyclerView.Adapter<PageImageView>{
         else
         {
             pageView.getTitleLayout().setVisibility(View.VISIBLE);
-            pageView.getTvTitle().setText(pageImage.getImageTitle());
+            pageView.getTvTitle().setText(pageImage.getImageDetail());
 
         }
 

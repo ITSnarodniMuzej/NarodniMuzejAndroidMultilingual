@@ -1,9 +1,9 @@
 <resources>
 
-    <string name="second_floor_text">спрат</string>
-    <string name="first_floor_text">приземље</string>
-    <string name="choose_language">Одабир језика</string>
-    <string name="backBtnText">ХОДНИК</string>
+    <string name="second_floor_text">второй этаж</string>
+    <string name="first_floor_text">первый этаж</string>
+    <string name="choose_language">Выберите язык</string>
+    <string name="backBtnText">КОРИДОР</string>
     <string name="audioBtnText">АУДИО</string>
 
     //Dogadjaji kod nas i u svetu

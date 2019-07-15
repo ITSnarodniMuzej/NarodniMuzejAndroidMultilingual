@@ -4,6 +4,7 @@
 
     <!--<editor-fold desc="Language button text">-->
     <string name="btnSerbian" translatable="false">српски</string>
+    <string name="btnSerbianSign" translatable="false">српски\nзнаковни</string>
     <string name="btnEnglish" translatable="false">english</string>
     <string name="btnTurkish" translatable="false">türk</string>
     <string name="btnFrench" translatable="false">français</string>
@@ -13,6 +14,7 @@
 
     <!--<editor-fold desc="Localization codes">-->
     <string name="Sr" translatable="false">sr</string>
+    <string name="SrSign" translatable="false">sr_rs</string>
     <string name="En" translatable="false">en</string>
     <string name="Tr" translatable="false">tr</string>
     <string name="Fr" translatable="false">fr</string>

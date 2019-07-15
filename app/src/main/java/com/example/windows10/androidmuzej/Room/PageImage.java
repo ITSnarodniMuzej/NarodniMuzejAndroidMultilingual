@@ -14,13 +14,13 @@ public class PageImage {
         this.imageDetail = detail;
     }
 
-    String getImageTitle() {
+    public String getImageTitle() {
         return imageTitle;
     }
 
-    String getImageDetail() { return  imageDetail; }
+    public String getImageDetail() { return  imageDetail; }
 
-    Drawable getImage() {
+    public Drawable getImage() {
         return image;
     }
 }

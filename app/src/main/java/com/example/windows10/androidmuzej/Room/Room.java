@@ -13,6 +13,7 @@ public class Room {
     private Drawable logo;
     private ArrayList<Page> pages = new ArrayList<>();
     private ArrayList<AudioPlayerItem> audioItems = new ArrayList<>();
+    private String videoPath = "";
 
 
     public Room(int roomNumber)
@@ -52,4 +53,7 @@ public class Room {
         return audioItems;
     }
 
+    public String getVideoPath() { return videoPath; }
+
+    public void setVideoPath(String videoPath) { this.videoPath = videoPath; }
 }

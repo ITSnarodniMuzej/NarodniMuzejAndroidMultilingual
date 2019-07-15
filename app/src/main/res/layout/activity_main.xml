@@ -38,11 +38,11 @@
 
     <android.support.constraint.ConstraintLayout
         android:id="@+id/layoutSrpski"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/layoutEngleski"
+        app:layout_constraintStart_toStartOf="@+id/layoutEngleski"
         app:layout_constraintTop_toBottomOf="@+id/tvNaslov">
 
         <ImageButton
@@ -52,26 +52,59 @@
             android:layout_centerHorizontal="true"
             android:background="@android:color/transparent"
             android:contentDescription="@string/Sr"
+            android:src="@xml/btn_language_left"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@xml/btn_language" />
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageButton
+            android:id="@+id/btnSrSign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/SrSign"
+            android:src="@xml/btn_language_right"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
 
         <TextView
             android:id="@+id/tvSrpski"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
+            android:layout_marginStart="32dp"
             android:layout_marginBottom="16dp"
             android:fontFamily="@font/eb_garamond"
             android:text="@string/btnSerbian"
             android:textColor="#000000"
-            android:textSize="24sp"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.17000002" />
+
+        <TextView
+            android:id="@+id/tvSrpskiSign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/eb_garamond"
+            android:lineSpacingMultiplier=".7"
+            android:text="@string/btnSerbianSign"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="22sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.333" />
 
     </android.support.constraint.ConstraintLayout>
 
@@ -106,7 +139,7 @@
             android:fontFamily="@font/eb_garamond"
             android:text="@string/btnEnglish"
             android:textColor="#000000"
-            android:textSize="24sp"
+            android:textSize="30sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -144,7 +177,7 @@
             android:fontFamily="@font/eb_garamond"
             android:text="@string/btnTurkish"
             android:textColor="#000000"
-            android:textSize="24sp"
+            android:textSize="30sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -182,7 +215,7 @@
             android:fontFamily="@font/eb_garamond"
             android:text="@string/btnFrench"
             android:textColor="#000000"
-            android:textSize="24sp"
+            android:textSize="30sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -220,7 +253,7 @@
             android:fontFamily="@font/eb_garamond"
             android:text="@string/btnRussian"
             android:textColor="#000000"
-            android:textSize="24sp"
+            android:textSize="30sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -258,7 +291,7 @@
             android:fontFamily="@font/eb_garamond"
             android:text="@string/btnGerman"
             android:textColor="#000000"
-            android:textSize="24sp"
+            android:textSize="30sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -279,7 +312,7 @@
         android:id="@+id/creditsLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/halfTransparent"
+        android:background="@color/halfTransparentLight"
         android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

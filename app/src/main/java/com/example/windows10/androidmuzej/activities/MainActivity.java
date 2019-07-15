@@ -61,6 +61,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //Declaring buttons
         ImageButton btnSr = findViewById(R.id.btnSr);
         btnSr.setOnClickListener(this);
+        ImageButton btnSrSign = findViewById(R.id.btnSrSign);
+        btnSrSign.setOnClickListener(this);
 
         ImageButton btnEn = findViewById(R.id.btnEn);
         btnEn.setOnClickListener(this);
