@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--<editor-fold desc="Room1>-->
+
+    <string-array name="room1Text">
+        <item>@string/room1Page1Text</item>
+        <item>@string/room1Page2Text</item>
+    </string-array>
+
+    <!--<editor-fold desc="Page1">-->
+    <string-array name="room1Page1Images">
+        <item>sarl_monteskje</item>
+        <item>deni_didro</item>
+        <item>fransoa_volter</item>
+        <item>zan_zak_ruso</item>
+    </string-array>
+
+    <string-array name="room1Page1ImagesTitles">
+        <item>@string/sarl_monteskje</item>
+        <item>@string/deni_didro</item>
+        <item>@string/fransoa_volter</item>
+        <item>@string/zan_zak_ruso</item>
+    </string-array>
+
+    <string-array name="room1Page1ImagesDetail">
+        <item>@string/sarl_monteskje_detail</item>
+        <item>@string/deni_didro_detail</item>
+        <item>@string/fransoa_volter_detail</item>
+        <item>@string/zan_zak_ruso_detail</item>
+    </string-array>
+
+    <!--</editor-fold>-->
+
+    <!--<editor-fold desc="Page2">-->
+    <string-array name="room1Page2Images">
+        <item>narodno_pozoriste</item>
+        <item>narodni_muzej</item>
+        <item>karadjordje</item>
+    </string-array>
+
+    <string-array name="room1Page2ImagesTitles">
+        <item>@string/narodno_pozoriste</item>
+        <item>@string/narodni_muzej</item>
+        <item>@string/karadjordje</item>
+    </string-array>
+
+    <string-array name="room1Page2ImagesDetail">
+        <item>@string/narodno_pozoriste_detail</item>
+        <item>@string/narodni_muzej_detail</item>
+        <item>@string/karadjordje_detail</item>
+    </string-array>
+
+    <!--</editor-fold>-->
+
+    <!--</editor-fold-->
+
+    <!--<editor-fold desc="Room2>-->
+
+    <string-array name="room2Text">
+        <item>@string/room2Page1Text</item>
+        <item>@string/room2Page2Text</item>
+    </string-array>
+
+    <!--<editor-fold desc="Page1">-->
+
+    <string-array name="room2Page1Images">
+        <item>maketa_zgrade</item>
+        <item>franta_mali_tusem</item>
+    </string-array>
+
+    <string-array name="room2Page1ImagesTitles">
+        <item>@string/maketa_zgrade</item>
+        <item>@string/franta_mali_tusem</item>
+    </string-array>
+
+    <string-array name="room2Page1ImagesDetail">
+        <item>@string/maketa_zgrade_detail</item>
+        <item>@string/franta_mali_tusem_detail</item>
+    </string-array>
+    <!--</editor-fold>-->
+
+    <!--<editor-fold desc="Page2">-->
+
+    <!--</editor-fold>-->
+
+    <!--</editor-fold-->
+
+    <!--<editor-fold desc="Room3>-->
+
+    <string-array name="room3Text">
+        <item>@string/room3page1Text</item>
+        <item>@string/room3page2Text</item>
+        <item>@string/room3page3Text</item>
+    </string-array>
+
+    <!--<editor-fold desc="Page1">-->
+    <string-array name="room3Page1Images">
+        <item>rudolf_valec</item>
+    </string-array>
+
+    <string-array name="room3Page1ImagesTitles">
+        <item>@string/rudolf_valec</item>
+    </string-array>
+
+    <string-array name="room3Page1ImagesDetail">
+        <item>@string/rudolf_valec_detail</item>
+    </string-array>
+
+    <!--</editor-fold>-->
+
+    <!--<editor-fold desc="Page2">-->
+    <string-array name="room3Page2Images">
+        <item>manastir_hopovo</item>
+        <item>mapa_dositejevih_putovanja</item>
+        <item>pismo_haralampiju</item>
+    </string-array>
+
+    <string-array name="room3Page2ImagesTitles">
+        <item>@string/manastir_hopovo</item>
+        <item>@string/mapa_dositejevih_putovanja</item>
+        <item>@string/pismo_haralampiju</item>
+    </string-array>
+
+    <string-array name="room3Page2ImagesDetail">
+        <item>@string/manastir_hopovo_detail</item>
+        <item>@string/mapa_dositejevih_putovanja_detail</item>
+        <item>@string/pismo_haralampiju_detail</item>
+    </string-array>
+
+    <!--</editor-fold>-->
+
+    <!--<editor-fold desc="Page3">-->
+    <string-array name="room3Page3Images">
+        <item>dositej_obradovic</item>
+        <item>zivot_prikljucenija</item>
+    </string-array>
+
+    <string-array name="room3Page3ImagesTitles">
+        <item>@string/dositej_obradovic</item>
+        <item>@string/zivot_prikljucenija</item>
+    </string-array>
+
+    <string-array name="room3Page3ImagesDetail">
+        <item>@string/dositej_obradovic_detail</item>
+        <item>@string/zivot_prikljucenija_detail</item>
+    </string-array>
+
+    <!--</editor-fold>-->
+
+    <!--</editor-fold-->
+
+    <!--<editor-fold desc="Room4>-->
+
+    <string-array name="room4Text">
+        <item>@string/room4Page1Text</item>
+        <item>@string/room4Page2Text</item>
+        <item>@string/room4Page3Text</item>
+    </string-array>
+
+    <!--<editor-fold desc="Page1">-->
+    <string-array name="room4Page1Images">
+        <item>vuk_karadzic_bronza</item>
+        <item>stap_stula</item>
+    </string-array>
+
+    <string-array name="room4Page1ImagesTitles">
+        <item>@string/vuk_karadzic_bronza</item>
+        <item>@string/stap_stula</item>
+    </string-array>
+
+    <string-array name="room4Page1ImagesDetail">
+        <item>@string/vuk_karadzic_bronza_detail</item>
+        <item>@string/stap_stula_detail</item>
+    </string-array>
+
+    <!--</editor-fold>-->
+
+    <!--<editor-fold desc="Page2">-->
+
+    <!--</editor-fold>-->
+
+    <!--<editor-fold desc="Page3">-->
+    <string-array name="room4Page3Images">
+        <item>vukova_diploma</item>
+        <item>putna_torba</item>
+        <item>crvena_coka</item>
+        <item>mladi_vuk</item>
+    </string-array>
+
+    <string-array name="room4Page3ImagesTitles">
+        <item>@string/vukova_diploma</item>
+        <item>@string/putna_torba</item>
+        <item>@string/crvena_coka</item>
+        <item>@string/mladi_vuk</item>
+    </string-array>
+
+    <string-array name="room4Page3ImagesDetail">
+        <item>@string/vukova_diploma_detail</item>
+        <item>@string/putna_torba_detail</item>
+        <item>@string/crvena_coka_detail</item>
+        <item>@string/mladi_vuk_detail</item>
+    </string-array>
+
+    <!--</editor-fold>-->
+
+    <!--</editor-fold-->
+
+    <!--<editor-fold desc="Room5>-->
+
+    <string-array name="room5Text">
+        <item>@string/room5Page1Text</item>
+        <item>@string/room5Page2Text</item>
+        <item>@string/room5Page3Text</item>
+        <item>@string/room5Page4Text</item>
+        <item>@string/room5Page5Text</item>
+        <item>@string/room5Page6Text</item>
+    </string-array>
+
+    <!--<editor-fold desc="Page1">-->
+    <string-array name="room5Page1Images">
+        <item>pismenica</item>
+    </string-array>
+
+    <string-array name="room5Page1ImagesTitles">
+        <item>@string/pismenica</item>
+    </string-array>
+
+    <string-array name="room5Page1ImagesDetail">
+        <item>@string/pismenica_detail</item>
+    </string-array>
+
+    <!--</editor-fold>-->
+
+    <!--<editor-fold desc="Page2">-->
+    <string-array name="room5Page2Images">
+        <item>pjesnarica</item>
+    </string-array>
+
+    <string-array name="room5Page2ImagesTitles">
+        <item>@string/pjesnarica</item>
+    </string-array>
+
+    <string-array name="room5Page2ImagesDetail">
+        <item>@string/pjesnarica_detail</item>
+    </string-array>
+
+    <!--</editor-fold>-->
+
+    <!--<editor-fold desc="Page3">-->
+    <string-array name="room5Page3Images">
+        <item>srpski_rjecnik</item>
+    </string-array>
+
+    <string-array name="room5Page3ImagesTitles">
+        <item>@string/srpski_rjecnik</item>
+    </string-array>
+
+    <string-array name="room5Page3ImagesDetail">
+        <item>@string/srpski_rjecnik_detail</item>
+    </string-array>
+
+    <!--</editor-fold>-->
+
+    <!--<editor-fold desc="Page4">-->
+
+    <!--</editor-fold>-->
+
+    <!--<editor-fold desc="Page5">-->
+    <string-array name="room5Page5Images">
+        <item>djura_danicic</item>
+        <item>gorski_venac</item>
+        <item>branko_radicevic</item>
+        <item>novi_zavet</item>
+    </string-array>
+
+    <string-array name="room5Page5ImagesTitles">
+        <item>@string/djura_danicic</item>
+        <item>@string/gorski_venac</item>
+        <item>@string/branko_radicevic</item>
+        <item>@string/novi_zavet</item>
+    </string-array>
+
+    <string-array name="room5Page5ImagesDetail">
+        <item>@string/djura_danicic_detail</item>
+        <item>@string/gorski_venac_detail</item>
+        <item>@string/branko_radicevic_detail</item>
+        <item>@string/novi_zavet_detail</item>
+    </string-array>
+
+    <!--</editor-fold>-->
+
+    <!--<editor-fold desc="Page6">-->
+
+    <!--</editor-fold>-->
+
+    <!--</editor-fold-->
+
+    <!--<editor-fold desc="Room6>-->
+
+    <string-array name="room6Text">
+        <item>@string/room6Page1Text</item>
+        <item>@string/room6Page2Text</item>
+    </string-array>
+
+    <!--<editor-fold desc="Page1">-->
+    <string-array name="room6Page1Images">
+        <item>sovjeti</item>
+        <item>basne</item>
+    </string-array>
+
+    <string-array name="room6Page1ImagesTitles">
+        <item>@string/sovjeti</item>
+        <item>@string/basne</item>
+    </string-array>
+
+    <string-array name="room6Page1ImagesDetail">
+        <item>@string/sovjeti_detail</item>
+        <item>@string/basne_detail</item>
+    </string-array>
+
+    <!--</editor-fold>-->
+
+    <!--<editor-fold desc="Page2">-->
+    <string-array name="room6Page2Images">
+        <item>sobranie</item>
+        <item>etika</item>
+    </string-array>
+
+    <string-array name="room6Page2ImagesTitles">
+        <item>@string/sobranie</item>
+        <item>@string/etika</item>
+    </string-array>
+
+    <string-array name="room6Page2ImagesDetail">
+        <item>@string/sobranie_detail</item>
+        <item>@string/etika_detail</item>
+    </string-array>
+
+    <!--</editor-fold>-->
+
+    <!--</editor-fold-->
+
+    <!--<editor-fold desc="Room7>-->
+
+    <string-array name="room7Text">
+        <item>@string/room7Page1Text</item>
+        <item>@string/room7Page2Text</item>
+        <item>@string/room7Page3Text</item>
+        <item>@string/room7Page4Text</item>
+    </string-array>
+
+    <!--<editor-fold desc="Page1">-->
+    <string-array name="room7Page1Images">
+        <item>vuk_ana</item>
+        <item>igracke</item>
+    </string-array>
+
+    <string-array name="room7Page1ImagesTitles">
+        <item>@string/vuk_ana</item>
+        <item>@string/igracke</item>
+    </string-array>
+
+    <string-array name="room7Page1ImagesDetail">
+        <item>@string/vuk_ana_detail</item>
+        <item>@string/igracke_detail</item>
+    </string-array>
+
+    <!--</editor-fold>-->
+
+    <!--<editor-fold desc="Page2">-->
+    <string-array name="room7Page2Images">
+        <item>mina_sin</item>
+        <item>dimitrije_karadzic</item>
+    </string-array>
+
+    <string-array name="room7Page2ImagesTitles">
+        <item>@string/mina_sin</item>
+        <item>@string/dimitrije_karadzic</item>
+    </string-array>
+
+    <string-array name="room7Page2ImagesDetail">
+        <item>@string/mina_sin_detail</item>
+        <item>@string/dimitrije_karadzic_detail</item>
+    </string-array>
+
+    <!--</editor-fold>-->
+
+    <!--<editor-fold desc="Page3">-->
+    <string-array name="room7Page3Images">
+        <item>mina_karadzic</item>
+        <item>branko_radicevic</item>
+    </string-array>
+
+    <string-array name="room7Page3ImagesTitles">
+        <item>@string/mina_karadzic</item>
+        <item>@string/branko_radicevic</item>
+    </string-array>
+
+    <string-array name="room7Page3ImagesDetail">
+        <item>@string/mina_karadzic_detail</item>
+        <item>@string/branko_radicevic_detail</item>
+    </string-array>
+
+    <!--</editor-fold>-->
+
+    <!--<editor-fold desc="Page4">-->
+
+    <!--</editor-fold>-->
+
+    <!--<editor-fold desc="Page5">-->
+    <string-array name="room7Page5Images">
+        <item>dimitrije_karadzic</item>
+    </string-array>
+
+    <string-array name="room7Page5ImagesTitles">
+        <item>@string/dimitrije_karadzic</item>
+    </string-array>
+
+    <string-array name="room7Page5ImagesDetail">
+        <item>@string/dimitrije_karadzic_detail</item>
+    </string-array>
+
+    <!--</editor-fold>-->
+
+    <!--</editor-fold-->
+
+    <!--<editor-fold desc="Room8>-->
+
+    <string-array name="room8Text">
+        <item>@string/room8Page1Text</item>
+    </string-array>
+
+    <!--<editor-fold desc="Page1">-->
+    <string-array name="room8Page1Images">
+        <item>divanhana</item>
+        <item>divanhana2</item>
+        <item>divanhana3</item>
+        <item>divanhana4</item>
+    </string-array>
+
+    <string-array name="room8Page1ImagesTitles">
+    </string-array>
+
+    <string-array name="room8Page1ImagesDetail">
+    </string-array>
+
+    <!--</editor-fold>-->
+
+    <!--</editor-fold-->
+
+</resources>
