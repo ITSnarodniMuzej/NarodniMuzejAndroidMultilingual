@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/main_background"
-    tools:context=".activities.MainActivity">
+    android:background="@mipmap/pozadinapocetna"
+    tools:context=".MainActivity">
 
     <ImageView
         android:id="@+id/logo"
@@ -15,14 +15,11 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="8dp"
-        android:contentDescription="@null"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo" />
+        android:layout_marginStart="573dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="571dp"
+        app:srcCompat="@drawable/logo"
+        android:contentDescription="@null" />
 
     <ImageButton
         android:id="@+id/buttonSrpski"
@@ -106,88 +103,32 @@
         android:id="@+id/tvNaslov"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
+        android:layout_above="@+id/buttonSrpski"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="152dp"
+        android:layout_marginBottom="25dp"
         android:fontFamily="@font/eb_garamond"
         android:text="@string/muzej_vuka_i_dositeja"
         android:textColor="#FFF"
         android:textSize="25sp" />
 
-    <android.support.constraint.ConstraintLayout
-        android:id="@+id/layoutSrpski"
-        android:layout_width="0dp"
+    <TextView
+        android:id="@+id/tvSrpski"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        app:layout_constraintEnd_toEndOf="@+id/layoutEngleski"
-        app:layout_constraintStart_toStartOf="@+id/layoutEngleski"
-        app:layout_constraintTop_toBottomOf="@+id/tvNaslov">
+        android:layout_alignTop="@+id/buttonSrpski"
+        android:layout_alignBottom="@+id/buttonSrpski"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="25dp"
+        android:fontFamily="@font/eb_garamond"
+        android:text="@string/dugmeSrpski"
+        android:textColor="#000000"
+        android:textSize="24sp" />
 
-        <ImageButton
-            android:id="@+id/btnSr"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:background="@android:color/transparent"
-            android:contentDescription="@string/Sr"
-            android:src="@xml/btn_language_left"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
-
-        <ImageButton
-            android:id="@+id/btnSrSign"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:background="@android:color/transparent"
-            android:contentDescription="@string/SrSign"
-            android:src="@xml/btn_language_right"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
-
-        <TextView
-            android:id="@+id/tvSrpski"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_marginStart="32dp"
-            android:layout_marginBottom="16dp"
-            android:fontFamily="@font/eb_garamond"
-            android:text="@string/btnSerbian"
-            android:textColor="#000000"
-            android:textSize="30sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.17000002" />
-
-        <TextView
-            android:id="@+id/tvSrpskiSign"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_marginEnd="32dp"
-            android:layout_marginBottom="16dp"
-            android:fontFamily="@font/eb_garamond"
-            android:lineSpacingMultiplier=".7"
-            android:text="@string/btnSerbianSign"
-            android:textAlignment="center"
-            android:textAllCaps="false"
-            android:textColor="#000000"
-            android:textSize="22sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.333" />
-
-    </android.support.constraint.ConstraintLayout>
-
-    <android.support.constraint.ConstraintLayout
-        android:id="@+id/layoutEngleski"
+    <TextView
+        android:id="@+id/tvEngleski"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/buttonEngleski"
@@ -200,37 +141,8 @@
         android:textColor="#000000"
         android:textSize="24sp" />
 
-        <ImageButton
-            android:id="@+id/btnEn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:background="@android:color/transparent"
-            android:contentDescription="@string/En"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@xml/btn_language" />
-
-        <TextView
-            android:id="@+id/tvEngleski"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="16dp"
-            android:fontFamily="@font/eb_garamond"
-            android:text="@string/btnEnglish"
-            android:textColor="#000000"
-            android:textSize="30sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-    </android.support.constraint.ConstraintLayout>
-
-    <android.support.constraint.ConstraintLayout
-        android:id="@+id/layoutTurski"
+    <TextView
+        android:id="@+id/tvTurski"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/buttonTurski"
@@ -243,37 +155,8 @@
         android:textColor="#000000"
         android:textSize="24sp" />
 
-        <ImageButton
-            android:id="@+id/btnTr"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:background="@android:color/transparent"
-            android:contentDescription="@string/Tr"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@xml/btn_language" />
-
-        <TextView
-            android:id="@+id/tvTurski"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="16dp"
-            android:fontFamily="@font/eb_garamond"
-            android:text="@string/btnTurkish"
-            android:textColor="#000000"
-            android:textSize="30sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-    </android.support.constraint.ConstraintLayout>
-
-    <android.support.constraint.ConstraintLayout
-        android:id="@+id/layoutFrancuski"
+    <TextView
+        android:id="@+id/tvFrancuski"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/buttonFrancuski"
@@ -286,37 +169,8 @@
         android:textColor="#000000"
         android:textSize="24sp" />
 
-        <ImageButton
-            android:id="@+id/btnFr"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:background="@android:color/transparent"
-            android:contentDescription="@string/Fr"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@xml/btn_language" />
-
-        <TextView
-            android:id="@+id/tvFrancuski"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="16dp"
-            android:fontFamily="@font/eb_garamond"
-            android:text="@string/btnFrench"
-            android:textColor="#000000"
-            android:textSize="30sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-    </android.support.constraint.ConstraintLayout>
-
-    <android.support.constraint.ConstraintLayout
-        android:id="@+id/layoutRuski"
+    <TextView
+        android:id="@+id/tvRuski"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/buttonRuski"
@@ -329,37 +183,8 @@
         android:textColor="#000000"
         android:textSize="24sp" />
 
-        <ImageButton
-            android:id="@+id/btnRu"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:background="@android:color/transparent"
-            android:contentDescription="@string/Ru"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@xml/btn_language" />
-
-        <TextView
-            android:id="@+id/tvRuski"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="16dp"
-            android:fontFamily="@font/eb_garamond"
-            android:text="@string/btnRussian"
-            android:textColor="#000000"
-            android:textSize="30sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-    </android.support.constraint.ConstraintLayout>
-
-    <android.support.constraint.ConstraintLayout
-        android:id="@+id/layoutNemacki"
+    <TextView
+        android:id="@+id/tvNemacki"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/buttonNemacki"
@@ -372,80 +197,4 @@
         android:textColor="#000000"
         android:textSize="24sp" />
 
-        <ImageButton
-            android:id="@+id/btnDe"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:background="@android:color/transparent"
-            android:contentDescription="@string/De"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@xml/btn_language" />
-
-        <TextView
-            android:id="@+id/tvNemacki"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="16dp"
-            android:fontFamily="@font/eb_garamond"
-            android:text="@string/btnGerman"
-            android:textColor="#000000"
-            android:textSize="30sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-    </android.support.constraint.ConstraintLayout>
-
-    <ImageButton
-        android:id="@+id/btnCredits"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_marginBottom="16dp"
-        android:background="@drawable/credits"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/layoutNemacki"
-        app:layout_constraintStart_toStartOf="@+id/layoutNemacki" />
-
-    <android.support.constraint.ConstraintLayout
-        android:id="@+id/creditsLayout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/halfTransparentLight"
-        android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <ImageView
-            android:id="@+id/creditsImage"
-            android:layout_width="650dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginEnd="8dp"
-            android:clickable="true"
-            android:focusable="true"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0"
-            app:srcCompat="@drawable/credits_layout" />
-
-        <ImageButton
-            android:id="@+id/btnCreditsClose"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="16dp"
-            android:background="@xml/dialog_close_button"
-            app:layout_constraintEnd_toEndOf="@+id/creditsImage"
-            app:layout_constraintTop_toTopOf="@+id/creditsImage" />
-    </android.support.constraint.ConstraintLayout>
-
-</android.support.constraint.ConstraintLayout>
+</RelativeLayout>
