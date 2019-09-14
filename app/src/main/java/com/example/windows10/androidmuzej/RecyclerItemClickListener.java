@@ -16,6 +16,9 @@ public class RecyclerItemClickListener implements RecyclerView.OnItemTouchListen
     private OnItemClickListener listener;
     private int previousMotionEvent = 0;
 
+    private float downPos = 0;
+    private float upPos = 0;
+
     public RecyclerItemClickListener(OnItemClickListener listener)
     {
         this.listener = listener;
@@ -25,20 +28,28 @@ public class RecyclerItemClickListener implements RecyclerView.OnItemTouchListen
     public boolean onInterceptTouchEvent(@NonNull RecyclerView recyclerView, @NonNull MotionEvent motionEvent) {
         View view = recyclerView.findChildViewUnder(motionEvent.getX(), motionEvent.getY());
 
-        boolean click = previousMotionEvent == 0 && motionEvent.getAction() == 1;
+        switch (motionEvent.getAction())
+        {
+            case MotionEvent.ACTION_DOWN:
+                downPos = motionEvent.getX();
+                break;
+            case MotionEvent.ACTION_UP:
+                upPos = motionEvent.getX();
+                break;
+        }
+
+        boolean click = downPos == upPos;
 
         if(view != null && listener != null && click)
         {
             listener.onItemClick(view, recyclerView.getChildAdapterPosition(view));
         }
-        previousMotionEvent = motionEvent.getAction();
 
         return false;
     }
 
     @Override
     public void onTouchEvent(@NonNull RecyclerView recyclerView, @NonNull MotionEvent motionEvent) {
-
     }
 
     @Override

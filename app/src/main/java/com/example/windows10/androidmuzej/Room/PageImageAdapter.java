@@ -39,7 +39,6 @@ public class PageImageAdapter extends RecyclerView.Adapter<PageImageView>{
 
     @Override
     public void onBindViewHolder(@NonNull PageImageView pageView, int position) {
-
         PageImage pageImage = images.get(position);
 
         if(pageImage.getImageTitle() == null || pageImage.getImageTitle().isEmpty())
