@@ -19,12 +19,9 @@ import android.support.v7.widget.SnapHelper;
 import android.util.Log;
 import android.view.SurfaceView;
 import android.view.View;
-import android.view.ViewGroup;
-import android.view.animation.AccelerateInterpolator;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
-import android.view.animation.DecelerateInterpolator;
 import android.widget.CompoundButton;
 import android.widget.ImageButton;
 import android.widget.ImageView;
@@ -33,9 +30,9 @@ import android.widget.TextView;
 import android.widget.ToggleButton;
 
 import com.example.windows10.androidmuzej.R;
+import com.example.windows10.androidmuzej.RecyclerItemClickListener;
 import com.example.windows10.androidmuzej.audioPlayer.AudioPlayerAdapter;
 import com.example.windows10.androidmuzej.audioPlayer.AudioPlayerItem;
-import com.example.windows10.androidmuzej.RecyclerItemClickListener;
 import com.example.windows10.androidmuzej.room.Page;
 import com.example.windows10.androidmuzej.room.PageDialogImageAdapter;
 import com.example.windows10.androidmuzej.room.PageImage;
@@ -43,8 +40,6 @@ import com.example.windows10.androidmuzej.room.PageImageAdapter;
 import com.example.windows10.androidmuzej.room.Room;
 
 import java.io.File;
-import java.io.FileDescriptor;
-import java.io.FileInputStream;
 import java.util.ArrayList;
 
 public class RoomActivity extends AppCompatActivity {
