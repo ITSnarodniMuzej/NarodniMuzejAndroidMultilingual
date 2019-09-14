@@ -6,8 +6,8 @@ android {
         applicationId "com.example.windows10.androidmuzej"
         minSdkVersion 24
         targetSdkVersion 28
-        versionCode 2
-        versionName "1.1"
+        versionCode 1
+        versionName "1.0"
     }
     buildTypes {
         release {
@@ -15,8 +15,8 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-    aaptOptions.cruncherEnabled = false
-    aaptOptions.useNewCruncher = false
+//    aaptOptions.cruncherEnabled = false
+//    aaptOptions.useNewCruncher = false
 }
 
 dependencies {
