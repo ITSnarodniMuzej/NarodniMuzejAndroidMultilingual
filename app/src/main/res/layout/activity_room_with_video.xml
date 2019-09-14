@@ -248,7 +248,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <android.support.constraint.ConstraintLayout
-            android:id="@+id/backgroud"
+            android:id="@+id/background"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginStart="48dp"
@@ -308,10 +308,10 @@
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:padding="16dp"
-            app:layout_constraintBottom_toBottomOf="@+id/backgroud"
-            app:layout_constraintEnd_toEndOf="@+id/backgroud"
-            app:layout_constraintStart_toStartOf="@+id/backgroud"
-            app:layout_constraintTop_toTopOf="@+id/backgroud">
+            app:layout_constraintBottom_toBottomOf="@+id/background"
+            app:layout_constraintEnd_toEndOf="@+id/background"
+            app:layout_constraintStart_toStartOf="@+id/background"
+            app:layout_constraintTop_toTopOf="@+id/background">
 
             <ImageButton
                 android:id="@+id/btnDialogPreviousImage"
@@ -377,8 +377,9 @@
             app:layout_constraintTop_toTopOf="parent" />
     </android.support.constraint.ConstraintLayout>
 
-    <SurfaceView
-        android:id="@+id/surfaceView"
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/videoPlayerLayout"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="608dp"
@@ -390,6 +391,51 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="1.0">
+
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/overlayLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/halfTransparentDark"
+            android:clickable="false"
+            android:elevation="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ToggleButton
+                android:id="@+id/videoButtonOverlay"
+                android:layout_width="145dp"
+                android:layout_height="166dp"
+                android:background="@xml/video_player_overlay_button"
+                android:checked="true"
+                android:clickable="false"
+                android:enabled="true"
+                android:padding="20dp"
+                android:tag="Play"
+                android:textOff=""
+                android:textOn=""
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+
+        <SurfaceView
+            android:id="@+id/surfaceView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+    </android.support.constraint.ConstraintLayout>
 
 </android.support.constraint.ConstraintLayout>

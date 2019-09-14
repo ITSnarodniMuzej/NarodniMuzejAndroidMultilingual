@@ -1,5 +1,6 @@
 package com.example.windows10.androidmuzej.activities;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
@@ -18,8 +19,13 @@ import android.support.v7.widget.SnapHelper;
 import android.util.Log;
 import android.view.SurfaceView;
 import android.view.View;
+import android.view.ViewGroup;
+import android.view.animation.AccelerateInterpolator;
+import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.view.animation.DecelerateInterpolator;
+import android.widget.CompoundButton;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.SeekBar;
@@ -37,6 +43,8 @@ import com.example.windows10.androidmuzej.room.PageImageAdapter;
 import com.example.windows10.androidmuzej.room.Room;
 
 import java.io.File;
+import java.io.FileDescriptor;
+import java.io.FileInputStream;
 import java.util.ArrayList;
 
 public class RoomActivity extends AppCompatActivity {
@@ -90,7 +98,7 @@ public class RoomActivity extends AppCompatActivity {
         if (withVideo) {
             getVideoItems(room);
 
-            setVideoPlayerControl(room);
+            setVideoPlayerControl();
         } else {
             getAudioItems(room);
 
@@ -106,6 +114,7 @@ public class RoomActivity extends AppCompatActivity {
         fillPage(room, currentPage);
 
         setImagesControls();
+
         setDialogImagesControls();
 
         setRoomExitButton();
@@ -355,13 +364,13 @@ public class RoomActivity extends AppCompatActivity {
                         audioPlayer.setChecked(false);
                     }
 
-                    //Show Fullscreen Image Dialog
-                    final ConstraintLayout zoomImageLayout = findViewById(R.id.zoomImageLayout);
-                    Animation slideIn = AnimationUtils.loadAnimation(RoomActivity.this, R.anim.anim_in);
-
                     //Set selected image in Fullscreen Image Dialog
                     setFullscreenSelectedImage(position);
 
+                    //Show Fullscreen Image Dialog
+                    Animation slideIn = AnimationUtils.loadAnimation(RoomActivity.this, R.anim.anim_in);
+
+                    final ConstraintLayout zoomImageLayout = findViewById(R.id.zoomImageLayout);
                     zoomImageLayout.setVisibility(View.VISIBLE);
                     zoomImageLayout.startAnimation(slideIn);
 
@@ -379,7 +388,6 @@ public class RoomActivity extends AppCompatActivity {
 
                             zoomImageLayout.setVisibility(View.GONE);
                             zoomImageLayout.startAnimation(slideDown);
-
 
                             //Change video player size
                             if (withVideo) {
@@ -610,25 +618,17 @@ public class RoomActivity extends AppCompatActivity {
             return;
         }
 
-        if (audioPlayer.isChecked())
-            audioPlayerLayout.setVisibility(View.VISIBLE);
-        else
-            audioPlayerLayout.setVisibility(View.GONE);
-
-        audioPlayer.setOnClickListener(new View.OnClickListener() {
+        audioPlayer.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
-            public void onClick(View v) {
-                int visibility = audioPlayerLayout.getVisibility();
-
-                if (visibility == View.VISIBLE) {
-                    audioPlayerLayout.setVisibility(View.GONE);
-                } else if (visibility == View.GONE) {
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked)
                     audioPlayerLayout.setVisibility(View.VISIBLE);
-                }
+                else
+                    audioPlayerLayout.setVisibility(View.GONE);
             }
         });
 
-        final ToggleButton audioPlay = findViewById(R.id.btnAudioPlay);
+        ToggleButton audioPlay = findViewById(R.id.btnAudioPlay);
         audioPlay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -638,12 +638,13 @@ public class RoomActivity extends AppCompatActivity {
                     return;
 
                 //Play pause control
-                if (audioPlay.isChecked() && mediaPlayer != null) {
+                if (mediaPlayer != null && mediaPlayer.isPlaying()) {
                     mediaPlayer.pause();
                 } else {
                     //If no audio is selected
                     //Play first audio
                     if (mediaPlayer == null) {
+                        //Change selected item layout
                         RecyclerView lvAudioPlayer = findViewById(R.id.lvAudioItems);
                         lvAudioPlayer.getChildAt(0).findViewById(R.id.selectedAudioLayout).setVisibility(View.VISIBLE);
                         lvAudioPlayer.getChildAt(0).findViewById(R.id.unselectedAudioLayout).setVisibility(View.GONE);
@@ -768,43 +769,106 @@ public class RoomActivity extends AppCompatActivity {
             String path = Environment.DIRECTORY_DOWNLOADS + "/Museum/Video/" + "room" + roomNumber;
 
             //Get all files from folder
-            File[] mp4Files = Environment.getExternalStoragePublicDirectory(path).listFiles();
+            File[] files = Environment.getExternalStoragePublicDirectory(path).listFiles();
 
             //Add mp3 files paths to room
-            for (File file : mp4Files) {
-
-                room.setVideoPath(file.getAbsolutePath());
+            for (File mp4File : files)
+            {
+                room.setVideoPath(mp4File.getPath());
             }
 
+            mediaPlayer = new MediaPlayer();
+            mediaPlayer.setDataSource(room.getVideoPath());
+            mediaPlayer.prepare();
+
+            //Connect surface view with media player
+            mediaPlayer.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
+                @Override
+                public void onPrepared(MediaPlayer mp) {
+                    try {
+                        SurfaceView surfaceView = findViewById(R.id.surfaceView);
+                        mediaPlayer.setDisplay(surfaceView.getHolder());
+                    } catch (Exception e) {
+                        Log.e(getClass().getSimpleName(), e.getMessage());
+                    }
+                }
+            });
+
+            //Change button when video is completed
+            mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                @Override
+                public void onCompletion(MediaPlayer mp) {
+
+                    ToggleButton videoPlay = findViewById(R.id.btnVideoPlay);
+                    videoPlay.setChecked(true);
+
+                    ToggleButton videoButtonOverlay = findViewById(R.id.videoButtonOverlay);
+                    videoButtonOverlay.setChecked(true);
+
+                    videoButtonOverlay.setBackground(getDrawable(R.drawable.video_replay_button));
+                    videoButtonOverlay.setTag("Replay");
+
+                    ConstraintLayout overlayLayout = findViewById(R.id.overlayLayout);
+                    overlayLayout.setVisibility(View.VISIBLE);
+
+                }
+            });
+
         } catch (Exception e) {
-            Log.e("getAudioItems", "Audio items not found.\n" + e.getMessage());
+            Log.e("getVideoItems", "Video item not found.\n" + e.getMessage());
         }
     }
 
-    private void setVideoPlayerControl(final Room room) {
+    private void setVideoPlayerControl() {
         final ToggleButton videoPlay = findViewById(R.id.btnVideoPlay);
-        videoPlay.setOnClickListener(new View.OnClickListener() {
+        final ToggleButton videoButtonOverlay = findViewById(R.id.videoButtonOverlay);
+
+        ConstraintLayout videoPlayerLayout = findViewById(R.id.videoPlayerLayout);
+
+        //On click listener for video player button and overlay button
+        View.OnClickListener listener = new View.OnClickListener() {
+            @SuppressLint("ResourceType")
             @Override
             public void onClick(View v) {
 
-                //Play pause control
-                if (videoPlay.isChecked() && mediaPlayer != null) {
+                ConstraintLayout overlayLayout = findViewById(R.id.overlayLayout);
+
+                if (mediaPlayer.isPlaying())
+                {
                     mediaPlayer.pause();
-                } else {
-                    //Play video
-                    if (mediaPlayer == null) {
+                    overlayLayout.setVisibility(View.VISIBLE);
 
-                        File mp4File = new File(room.getVideoPath());
+                    videoPlay.setChecked(true);
+                    videoButtonOverlay.setChecked(true);
+                }
+                //Play video
+                else
+                {
+                    mediaPlayer.start();
 
-                        playVideo(mp4File);
+                    videoPlay.setChecked(false);
+                    videoButtonOverlay.setChecked(false);
+
+                    //End of video
+                    if(videoButtonOverlay.getTag().equals("Replay"))
+                    {
+                        videoButtonOverlay.setBackground(getDrawable(R.xml.video_player_overlay_button));
+                        videoButtonOverlay.setTag("Play");
                     }
-                    //Otherwise continue
-                    else {
-                        mediaPlayer.start();
-                    }
+
+                    Animation fadeOut = new AlphaAnimation(1,0);
+                    fadeOut.setDuration(500);
+
+                    overlayLayout.startAnimation(fadeOut);
+
+                    overlayLayout.setVisibility(View.INVISIBLE);
                 }
             }
-        });
+        };
+
+        videoPlay.setOnClickListener(listener);
+
+        videoPlayerLayout.setOnClickListener(listener);
 
         //10 seconds
         final int seekMillisecond = 10000;
@@ -814,38 +878,38 @@ public class RoomActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (mediaPlayer != null)
-                    mediaPlayer.seekTo(mediaPlayer.getCurrentPosition() + seekMillisecond);
+                {
+                    int position = mediaPlayer.getCurrentPosition() + seekMillisecond;
+
+                    if(position > mediaPlayer.getDuration())
+                        mediaPlayer.seekTo(mediaPlayer.getDuration()-500);
+                    else
+                        mediaPlayer.seekTo(position);
+                }
             }
         });
 
         ImageButton btnAudioBackward = findViewById(R.id.btnVideoBackward);
         btnAudioBackward.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("ResourceType")
             @Override
             public void onClick(View v) {
                 if (mediaPlayer != null)
-                    mediaPlayer.seekTo(mediaPlayer.getCurrentPosition() - seekMillisecond);
+                {
+                    int position = mediaPlayer.getCurrentPosition() - seekMillisecond;
+
+                    mediaPlayer.seekTo(position);
+
+                    //When video is finish and video is rewind backward
+                    //Change overlay button from replay to play
+                    if(videoButtonOverlay.getTag().equals("Replay"))
+                    {
+                        videoButtonOverlay.setBackground(getDrawable(R.xml.video_player_overlay_button));
+                        videoButtonOverlay.setTag("Play");
+                    }
+                }
             }
         });
-    }
-
-    private void playVideo(File mp4file) {
-        //Stop previous audio
-        if (mediaPlayer != null)
-            mediaPlayer.reset();
-
-        //Create and play audio
-        mediaPlayer = MediaPlayer.create(RoomActivity.this, Uri.fromFile(mp4file));
-
-        if (mediaPlayer != null) {
-            mediaPlayer.start();
-
-            SurfaceView surfaceView = findViewById(R.id.surfaceView);
-            mediaPlayer.setDisplay(surfaceView.getHolder());
-        }
-
-        //change play button
-        final ToggleButton audioPlay = findViewById(R.id.btnVideoPlay);
-        audioPlay.setChecked(false);
     }
     //</editor-fold>
 
@@ -873,14 +937,19 @@ public class RoomActivity extends AppCompatActivity {
     }
 
     private void setDialogImagesControls() {
-        final RecyclerView imagesListView = findViewById(R.id.lvPageDialogImages);
+
+        final RecyclerView imagesListView = findViewById(R.id.lvPageImages);
+        final RecyclerView dialogImagesListView = findViewById(R.id.lvPageDialogImages);
 
         final ImageButton btnPreviousImage = findViewById(R.id.btnDialogPreviousImage);
         btnPreviousImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                int dialogImageWidth = dialogImagesListView.getChildAt(0).getWidth();
                 int imageWidth = imagesListView.getChildAt(0).getWidth();
+                dialogImagesListView.scrollBy(-dialogImageWidth, 0);
                 imagesListView.scrollBy(-imageWidth, 0);
+
             }
         });
 
@@ -888,17 +957,19 @@ public class RoomActivity extends AppCompatActivity {
         btnNextImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                int dialogImageWidth = dialogImagesListView.getChildAt(0).getWidth();
                 int imageWidth = imagesListView.getChildAt(0).getWidth();
+                dialogImagesListView.scrollBy(dialogImageWidth, 0);
                 imagesListView.scrollBy(imageWidth, 0);
             }
         });
 
         SnapHelper snapHelper = new LinearSnapHelper();
-        snapHelper.attachToRecyclerView(imagesListView);
+        snapHelper.attachToRecyclerView(dialogImagesListView);
 
         //Scroll listener
         //If end is reached turn off corresponding button
-        imagesListView.addOnScrollListener(new RecyclerView.OnScrollListener() {
+        dialogImagesListView.addOnScrollListener(new RecyclerView.OnScrollListener() {
             @Override
             public void onScrolled(@NonNull RecyclerView recyclerView, int dx, int dy) {
                 //Show or hide Next Image Button if last image
@@ -912,70 +983,79 @@ public class RoomActivity extends AppCompatActivity {
                     btnPreviousImage.setVisibility(View.INVISIBLE);
                 else
                     btnPreviousImage.setVisibility(View.VISIBLE);
+
+                View v = recyclerView.getChildAt(0);
+                if(v != null)
+                {
+                    int pos = recyclerView.getChildLayoutPosition(v);
+
+                    imagesListView.scrollToPosition(pos);
+                }
+
             }
         });
     }
 
     private void toggleVideoPlayerSize(final boolean miniPlayer) {
-        final SurfaceView surfaceView = findViewById(R.id.surfaceView);
+        final ConstraintLayout videoPlayerLayout = findViewById(R.id.videoPlayerLayout);
+        final ConstraintLayout.LayoutParams overlayLayoutParams = (ConstraintLayout.LayoutParams) videoPlayerLayout.getLayoutParams();
 
-        final ConstraintLayout.LayoutParams layoutParams = (ConstraintLayout.LayoutParams) surfaceView.getLayoutParams();
+        final ToggleButton overlayPlayButton = findViewById(R.id.videoButtonOverlay);
+        final ConstraintLayout.LayoutParams overlayPlayButtonLayoutParams = (ConstraintLayout.LayoutParams) overlayPlayButton.getLayoutParams();
 
         if (miniPlayer) {
             Animation scaleDown = AnimationUtils.loadAnimation(RoomActivity.this, R.anim.anim_scale_down);
             scaleDown.setAnimationListener(new Animation.AnimationListener() {
                 @Override
-                public void onAnimationStart(Animation animation) {
-                }
+                public void onAnimationStart(Animation animation) {}
 
                 @Override
                 public void onAnimationEnd(Animation animation) {
 
-                    layoutParams.leftMargin = 899;
-                    layoutParams.topMargin = 502;
-                    layoutParams.rightMargin = 48;
-                    layoutParams.bottomMargin = 48;
+                    overlayLayoutParams.leftMargin = 899;
+                    overlayLayoutParams.topMargin = 502;
+                    overlayLayoutParams.rightMargin = 48;
+                    overlayLayoutParams.bottomMargin = 48;
 
-                    surfaceView.setLayoutParams(layoutParams);
-                    surfaceView.clearAnimation();
+                    overlayPlayButtonLayoutParams.width = 90;
+                    overlayPlayButtonLayoutParams.height = 102;
+
+                    videoPlayerLayout.setLayoutParams(overlayLayoutParams);
+                    videoPlayerLayout.clearAnimation();
                 }
-
 
                 @Override
-                public void onAnimationRepeat(Animation animation) {
-
-                }
+                public void onAnimationRepeat(Animation animation) {}
             });
 
-            surfaceView.startAnimation(scaleDown);
+            videoPlayerLayout.startAnimation(scaleDown);
 
         } else {
             Animation scaleDown = AnimationUtils.loadAnimation(RoomActivity.this, R.anim.anim_scale_up);
             scaleDown.setAnimationListener(new Animation.AnimationListener() {
                 @Override
-                public void onAnimationStart(Animation animation) {
-
-                }
+                public void onAnimationStart(Animation animation) {}
 
                 @Override
                 public void onAnimationEnd(Animation animation) {
-                    layoutParams.leftMargin = 608;
-                    layoutParams.topMargin = 232;
-                    layoutParams.rightMargin = 132;
-                    layoutParams.bottomMargin = 163;
+                    overlayLayoutParams.leftMargin = 608;
+                    overlayLayoutParams.topMargin = 232;
+                    overlayLayoutParams.rightMargin = 132;
+                    overlayLayoutParams.bottomMargin = 163;
 
-                    surfaceView.setLayoutParams(layoutParams);
-                    surfaceView.clearAnimation();
+                    overlayPlayButtonLayoutParams.width = 145;
+                    overlayPlayButtonLayoutParams.height = 166;
+
+                    videoPlayerLayout.setLayoutParams(overlayLayoutParams);
+                    videoPlayerLayout.clearAnimation();
                 }
 
 
                 @Override
-                public void onAnimationRepeat(Animation animation) {
-
-                }
+                public void onAnimationRepeat(Animation animation) {}
             });
 
-            surfaceView.startAnimation(scaleDown);
+            videoPlayerLayout.startAnimation(scaleDown);
 
         }
     }

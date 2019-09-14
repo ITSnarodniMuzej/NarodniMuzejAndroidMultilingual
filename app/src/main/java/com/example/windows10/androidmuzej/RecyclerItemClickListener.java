@@ -3,6 +3,7 @@ package com.example.windows10.androidmuzej;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
 
@@ -14,7 +15,6 @@ public class RecyclerItemClickListener implements RecyclerView.OnItemTouchListen
     }
 
     private OnItemClickListener listener;
-    private int previousMotionEvent = 0;
 
     private float downPos = 0;
     private float upPos = 0;

@@ -459,7 +459,7 @@
         android:clickable="true">
 
         <android.support.constraint.ConstraintLayout
-            android:id="@+id/backgroud"
+            android:id="@+id/background"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginStart="48dp"
@@ -520,10 +520,10 @@
             android:layout_height="0dp"
             android:background="@xml/image_gallery_background"
             android:padding="16dp"
-            app:layout_constraintBottom_toBottomOf="@+id/backgroud"
-            app:layout_constraintEnd_toEndOf="@+id/backgroud"
-            app:layout_constraintStart_toStartOf="@+id/backgroud"
-            app:layout_constraintTop_toTopOf="@+id/backgroud">
+            app:layout_constraintBottom_toBottomOf="@+id/background"
+            app:layout_constraintEnd_toEndOf="@+id/background"
+            app:layout_constraintStart_toStartOf="@+id/background"
+            app:layout_constraintTop_toTopOf="@+id/background">
 
             <ImageButton
                 android:id="@+id/btnDialogPreviousImage"
