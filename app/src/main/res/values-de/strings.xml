@@ -1,0 +1,593 @@
+<resources>
+
+    <string name="second_floor_text">zweiter stock</string>
+    <string name="first_floor_text">erdgeschoss</string>
+    <string name="choose_language">Sprache wählen</string>
+    <string name="backBtnText">FLUR</string>
+    <string name="audioBtnText">AUDIO</string>
+
+    //Dogadjaji kod nas i u svetu
+    <!--<editor-fold desc="Room1">-->
+    <string name="room1Title">Veranstaltungen in Serbien und Europa</string>
+
+    <!--<editor-fold desc="Page1">-->
+    <string name="room1Page1Title">Historische Hintergründe</string>
+
+    <string name="room1Page1Text">
+        Die Geschichte Europas im 18. Jahrhundert wurde von Revolutionen und Umwälzungen geprägt.
+        Diese Wandel passierten nicht nur im Rahmen der Politik, sondern ging diesem eine Idee
+        voraus, mit der die französischen Aufklärer und Enzyklopädisten Montesquieu, Denis Diderot,
+        Voltaire und Jean-Jacques Rousseau begannen. Durch Kritik politischer Bildung und Kirche
+        inspirierten und initiierten sie viele Änderungen in der damaligen Welt. Die Revolution in
+        Frankreich, der Sturm auf die Bastille am 14. Juli 1789, bezeichnete das Ende der
+        absolutistischen Monarchie. Die Nationalversammlung beschloss die Erklärung der Menschen-
+        und Bürgerrechte, in der man proklamierte, dass alle Menschen frei und gleich an Rechten
+        sind, dass, das Gesetz für alle Bürger gleich ist, und dass, die Souverenität beim Volk liegt.
+        Die Abschaffung des Feudalismus in Frankreich bezeichnete den Beginn einer neuen Ära.
+    </string>
+
+    <!-- Image titles-->
+    <string name="sarl_monteskje">Шарл Монтескје</string>
+    <string name="sarl_monteskje_detail">Шарл Монтескје</string>
+    <string name="deni_didro">Дени Дидро</string>
+    <string name="deni_didro_detail">Дени Дидро</string>
+    <string name="fransoa_volter">Франсоа Волтер</string>
+    <string name="fransoa_volter_detail">Франсоа Волтер</string>
+    <string name="zan_zak_ruso">Жан Жак Русо</string>
+    <string name="zan_zak_ruso_detail">Жан Жак Русо</string>
+
+    <!--</editor-fold>-->
+
+    <!--<editor-fold desc="Page2">-->
+
+    <string name="room1Page2Text">
+        Die neuen historischen Richtungen umgingen auch Serbien nicht. Paschaluk von Belgrad, eine
+        osmanische Verwaltungseinheit, wurde durch Vielfachkrise des Osmanischen Reichs erschüttert.
+        Die ständigen Konflikte eskalierten durch den Ersten Serbischen Aufstand am 14. Februar 1804
+        im kleinen Dorf Orašac in Zentralserbien. Als Führer des Aufstandes wurde Đorđe Petrović,
+        genannt „Karađorđe“ (Schwarzer Đorđe), gewählt. So begann die Serbische Revolution, die mit
+        der Befreiung und der Abschaffung des Feudalismus 1835 endete. Der Erste Serbische Aufstand
+        (1804 – 1813), der Zweite Serbische Aufstand (1815 – 1817), die Autonomie erworben durch
+        Hatt-i Scherif – der handgeschriebene sultanische Befehl, der sofort erledigt werden musste
+        (1830 und 1833) und die Abschaffung des Feudalismus ermöglichten den Serben im Fürstentum
+        Serbien die politischen und wirtschaftlichen Freiheiten und die geselschaftliche Gleichheit.
+        Das geselschaftliche Klima in befreitem Serbien erforderte auch die Gestaltung nationaler
+        Identität, deren Stützpunkten das neu gebaute Nationaltheater und begründete Nationalmuseum waren.
+    </string>
+
+    <string name="narodno_pozoriste">Народно позориште</string>
+    <string name="narodno_pozoriste_detail">Народно позориште</string>
+    <string name="narodni_muzej">Народни музеј</string>
+    <string name="narodni_muzej_detail">Народни музеј</string>
+    <string name="karadjordje">Ђорђе Петровић Карађорђе</string>
+    <string name="karadjordje_detail">Ђорђе Петровић Карађорђе</string>
+
+    <!--</editor-fold>-->
+
+    <!--</editor-fold>-->
+
+    //Beogradska velika skola
+    <!--<editor-fold desc="Room2">-->
+    <string name="room2Title">Museumsgebäude und Große Schule</string>
+
+    <!--<editor-fold desc="Page1">-->
+    <string name="room2page1Title">Museumsgebäude</string>
+
+    <string name="room2Page1Text"></string>
+
+    <!-- Image titles-->
+    <string name="maketa_zgrade">Макета зграде Музеја Вука и Доситеја</string>
+    <string name="maketa_zgrade_detail">Макета зграде Музеја Вука и Доситеја</string>
+    <string name="franta_mali_tusem">Доситејев лицеј</string>
+    <string name="franta_mali_tusem_detail">Франта Мали, Доситејев лицеј, цртеж тушем, 1935, и.б. 19/Л</string>
+
+    <!--</editor-fold>-->
+
+    <!--<editor-fold desc="Page2">-->
+    <string name="room2Page2Title">Die Große Schule</string>
+
+    <string name="room2Page2Text">
+        Mit dem Erfolg des Erster Serbischer Aufstands von 1804 und der Befreiung Belgrads von der
+        türkischen Armee im Jahre 1806 nutzten die Rebellen die Friedenszeit, um mit der
+        Organisation des Staates zu beginnen. Neben der Verabschiedung des Verfassungsgesetzes war
+        die Organisation der Schulen eine der wichtigsten Neuerungen. Ivan Jugovic, einer der
+        gebildetsten Serben im aufständischen Serbien, Schriftsteller und später Staatssekretär der
+        ersten Regierung des Aufstandes, überzeugte Karadjordje von der Notwendigkeit der
+        Entwicklung einer Hochschulbildung in Serbien. Die neue Regierung brauchte so viele junge,
+        gebildete Menschen wie möglich. Karadjordje, der Anführer des Aufstands, rief die gebildeten
+        Serben auf, der neuen Regierung zu helfen. Dositej Obradovic erwiderte den Aufruf.
+        Er kam 1807 nach Belgrad an. Er wurde zum obersten Verwalter aller Schulen ernannt und
+        setzte sich im Jahr 1808 für die Gründung der Großen Schule, die Vorläufer aller heutigen
+        Hochschulen in Serbien ist. Die Schule wurde im Haus gegenüber dem heutigen Museumsgebäude
+        von Vuk und Dositej eröffnet und wurde dann 1809 dorthin verlegt. In diesem Gebäude war die
+        Schule bis 1813 in Betrieb, als es zum Ersten Serbischen Aufstand kam. Das Recht, die Schule
+        zu besuchen hatten alle Männer, unabhängig von dem materiellen Status ihrer Eltern.
+        Die einzige Bedingung war, dass sie lesen, schreiben und rechnen konnten.
+        Neben Vuk Stefanovic Karadzic befanden sich unter den Schülern der Schule auch die Söhne der
+        Aufständischen, darunter auch der älteste Sohn von Karadjordje, Aleksa. In den ersten zwei
+        Jahren wurden Grundfächer - Geschichte, Geographie, Berechnung, Stilistik, deutsche Sprache
+        - und im dritten Hochschulrecht, Strafrecht und Völkerrecht studiert. Pflichtfächer für alle
+        Klassen waren kirchlicher Gesäng, Moralunterricht und militärische Übungen
+        (Schwertfedern und Exerzieren mit Waffen).
+    </string>
+    <!--</editor-fold>-->
+
+    <!--</editor-fold>-->
+
+    //Dositej Obradovic
+    <!--<editor-fold desc="Room3">-->
+    <string name="room3Title">Dositej Obradović</string>
+
+    <!--<editor-fold desc="Page1">-->
+    <string name="room3page1Text">
+        У приземљу Музеја налази се мања скулптура – скица за споменик Доситеју Обрадовићу који се
+        данас налази у Студенском парку, у непосредној близини музејске зграде.
+        Скулптура је вајарско дело Рудолфа Валдеца.  На овој скици, као и на скулптури, види се да
+        је Доситеј обучен по последњој, тадашњој, европској моди. Приказан је у покрету са шеширом
+        и књигама у левој руци и штапом у десној. Преко штапа дискретно прелази део мантила који се
+        виори као да благи ветар прати његове покрете.
+        На постаменту скулптуре, која украшава Студенски парк, на предњој страни пише
+        „Доситеју Обрадовићу, захвални српски народ“, а на доњем делу постамента уклесане су речи:
+        „Идућ учи, у векове гледа“, познат Доситејев цитат.
+    </string>
+
+    <!-- Image titles-->
+    <string name="rudolf_valec">Доситеј Обрадовић</string>
+    <string name="rudolf_valec_detail">Рудолф Валдец, Доситеј Обрадовић,бронза, 1911, и.б. 35/л.</string>
+
+    <!--</editor-fold>-->
+
+    <!--<editor-fold desc="Page2">-->
+    <string name="room3page2Text">
+        Димитрије Обрадовић рођен је вероватно око 1739. године у Чакову, у Банату, на територији данашње Румуније.
+        Рано је oстао без родитеља, а бригу о њему преузео је теча који га шаље на занат.
+        У четрнаестој години побегао је у манастир Хопово, у Војводини, где се замонашио и добио име Доситеј.
+        У манастиру је почео да размишља и о пустињачком животу, али се убрзо разочарао монашким
+        животом у коме није пронашао оне чаробне приче о свецима које је годинама читао.
+        Поред тога упознао се и са профаном књижевношћу и упловио у један нови свет који је
+        представљао другачији морал и животна начела.
+        Након три године напушта монашки живот и отпочиње непрекидна путовања зарад студија и усавршавања.
+        Боравио је и школовао се од Мале Азије, преко Балкана до Русије и Енглеске.
+        Током путовања изучавао је језик и књижевност различитих народа,
+        упијајући актуелне културно просветне и социјалне реформе које су се одвијале у Европи.
+    </string>
+
+    <!-- Image titles-->
+    <string name="manastir_hopovo">Манастир Хопово</string>
+    <string name="manastir_hopovo_detail">Непознати аутор, Манастир Хопово, дрворез, б.д., и.б. 64/Л</string>
+    <string name="mapa_dositejevih_putovanja">Мапа Доситејевих путовања</string>
+    <string name="mapa_dositejevih_putovanja_detail">Мапа Доситејевих путовања</string>
+
+    <!--</editor-fold>-->
+
+    <!--<editor-fold desc="Page3">-->
+    <string name="room3page3Text">
+        Писац је овај рад уприличио као позив на претплату за књигу Совјети здравог разума, коју је планирао да штампа.
+        У тексту писма, у којем се обраћа пријатељу Харалампију, свештенику из Трста,
+        објашњава зашто жели да изда књигу писану на српском, народном језику.
+        Разлог штампања дела на народном језику био је у складу са тадашњим светским токовима и реформама,
+        где је, као и код Доситеја, идеја била да књиге стигну и до људи из удаљених и неприступачних
+        крајева који, ако знају да читају, могу и да разумеју шта је написано.
+        Даље, Доситеј се у писму залаже за верску равноправност која му је помогла
+        да се уздигне над старинским схватањем национализма по вери.
+        Наглашава да је за светску мржњу и зло крива неразумност, самољубље и сујета,
+        а не разлика у законима и верској припадности и да ће он због тога писати за ум, срце и нарав.
+        Управо зато ово писмо је Доситејев манифест просветитељских идеја те заузима посебно место у историји књижевности.
+        Исте године штампана је његова прва књига аутобиографског карактера под називом
+        "Живот и прикљученија" којом почиње модерна српска књижевност на народном језику.
+    </string>
+
+    <!-- Image titles-->
+    <string name="pismo_haralampiju">Писмо Харалампију</string>
+    <string name="pismo_haralampiju_detail">Писмо Харалампију, 1783. год</string>
+    <string name="dositej_obradovic">Доситеј Обрадовић</string>
+    <string name="dositej_obradovic_detail">Димитрије Тирол, Доситеј Обрадовић</string>
+    <string name="zivot_prikljucenija">Живот и прикљученија</string>
+    <string name="zivot_prikljucenija_detail">Живот и прикљученија, Лајпциг, 1783</string>
+
+    <!--</editor-fold>-->
+
+    <!--</editor-fold>-->
+
+    //Vuk Stefanovic Karadzic
+    <!--<editor-fold desc="Room4">-->
+    <string name="room4Title">Вук Стефановић Караџић</string>
+
+    <!--<editor-fold desc="Page1">-->
+    <string name="room4Page1Text">
+        Испред Вукове собе постављено је попрсје израђено у бронзи вајара Суров – Везилића на којој је
+        Вук представљен као зрео човек обучен у европско одело са својим карактестичним атрибутима, фесом на глави и засуканим дугачким брцима.
+        Вук Стефановић Караџић је рођен 6. новембра 1787. године у селу Тршићу,  близу Лознице, у западној Србији.
+        У породици Караџића су сва деца пре Вука рано умирала, па је он добио име Вук, како би,
+        по народном веровању, био заштићен од вештица и духова.
+        Да ли због имена или због животних околности, Вук је, иако у младости оболео од тешке реуматске болести,
+        због које му је лева нога остала згрчена у колену до краја живота, поживео дуг и испуњен живот.
+        За ходање је користио штулу, штаку и штап.
+    </string>
+
+    <!-- Image titles-->
+    <string name="vuk_karadzic_bronza">Вук Караџић</string>
+    <string name="vuk_karadzic_bronza_detail">Суров – Везилић, Вук Караџић, попрсје, бронза, 1886, и.б.37/Л.</string>
+    <string name="stap_stula">Штап, штула и штака</string>
+    <string name="stap_stula_detail">Штап, штула и штака, кожа и дрво, Беч, 19. век, и.б. 14, 15, 16/И.</string>
+
+    <!--</editor-fold>-->
+
+    <!--<editor-fold desc="Page2">-->
+    <string name="room4Page2Text">
+        Писање и читање је научио од рођака Јевте Савића Чотрића, који је био једини писмен човек у том крају.
+        Образовање је наставио у школи у Лозници, али је није завршио због болести.
+        Школовање је касније наставио у манастиру Троноши. Како га у манастиру нису учили,
+        него терали да чува стоку, отац га је вратио кући.
+        Једно време учио је и у Великој школи у Београду, али се ни ту, због болести, није дуго задржао.
+        Тако је Вук највише сам научио да пише и чита јер је био жељан знања, вредан, радознао и врло упоран.
+        Касније је схватио неке недостатке у правопису и књижевном српском језику па је одлучио да га реформише и приближи обичном народу.
+        Водила га је идеја да је језик основно средство споразумевања међу људима, па књиге које се на том језику пишу треба да буду разумљиве сваком човеку.
+        Након пада Првог српског устанка (1804 – 1813), као и већина младих, учених грађана,
+        Вук напушта Србију и одлази у Беч, престоницу Аустријског царства где ће остати све до краја живота.
+        У Београд се враћао само два пута где је током другог боравка постављен за члана Суда нахије и вароши београдске.
+    </string>
+    <!--</editor-fold>-->
+
+    <!--<editor-fold desc="Page3">-->
+    <string name="room4Page3Text">
+        Вук Стефановић Караџић био је цењен у Европи: биран је за члана Берлинске, Бечке и Петроградске академије наука,
+        примљен је за члана научних друштава у Кракову, Москву, Гетингену и Паризу,
+        одликован је од руског и аустроугарског цара, од пруског краља и Руске академије наука.
+        Умро је у Бечу у својој 77. години живота, 1864. године.
+        Посмртни остаци пренесени су у Београд 1897. године и са великим почастима сахрањени у порти Саборне цркве, поред гроба Доситеја Обрадовића.
+        Своје личне предмете Вук је на путовањима носио у путној торби.
+        У њој се налази прибор за бријање, четке за чишћење обуће и одеће и прибор за нокте.
+        Вук је засигурно носио ситнице које су му биле неопходне током његових честих путовања.
+        Неизоставни предмети током путовања били су и путни прибор за писање, путни сат, бројаница, муштикла, дуванкеса и кубура.
+        Вук Караџић се не може ни замислити без феса на глави. Фес је капа од чохе, најчешће црвене боје,
+        у облику купе са одсеченим врхом, са црним ресама које висе са врха. Назив капе потиче од имена града Фез у Мароку.
+        Током периода турског ропства, фес су носили и Срби и други немуслимани царства.
+        Вук је носио фес у поробљеној и у ослобођеној Србији, али и у Бечу, као саставни део одеће која је била мешавина европског и оријенталног стила.
+        Већ прослављен и познат, одевен у кошуљу, прслук, сако и панталоне по европској моди,
+        са црвеним фесом на глави и дугих бркова, помажући се у ходу штаком, Вук је био упечатљива фигура где год би се појавио.
+    </string>
+
+    <!-- Image titles-->
+    <string name="vukova_diploma">Вукова диплома Московског универзитета</string>
+    <string name="vukova_diploma_detail">Вукова диплома Московског универзитета,Москва, 14. III 1828 и.б. 275/И.</string>
+    <string name="putna_torba">Путна торба</string>
+    <string name="putna_torba_detail">Путна торба, кожа и дрво, Беч, 19. век, и.б. 40/И</string>
+    <string name="crvena_coka">Фес, црвена чоха са кићанком</string>
+    <string name="crvena_coka_detail">Фес, црвена чоха са кићанком од плавог конца, Србија, 19. век, и.б. 9/И</string>
+    <string name="mladi_vuk">Млади Вук</string>
+    <string name="mladi_vuk_detail">Павел Ђурковић, Млади Вук, уље на платну, 19. век.</string>
+
+    <!--</editor-fold>-->
+
+    <!--</editor-fold>-->
+
+    //Vukovo delo
+    <!--<editor-fold desc="Room5">-->
+    <string name="room5Title">Вуково дело</string>
+
+    <!--<editor-fold desc="Page1">-->
+    <string name="room5Page1Text">
+        Nach dem Sturz des ersten serbischen Aufstands, reiste der junge Vuk nach Wien.  Er schrieb
+        eine Akte über den Sturz des Aufstands, die sich als interessanter Jernej Kopitar, dem Zensor
+        für slowenische Sprachen, erwies.  Er wollte diesen jungen Mann, der sich in der Volkssprache
+        äußerte, treffen.  Mit seiner Hilfe und seinem Rat begann Vuk, Volkslieder zu sammeln und
+        die Grammatik der Volksrede vorzubereiten.  1814 in Wien veröffentlichte er eine Sammlung
+        von Volksliedern, die Kleine einfache slawisch-serbische Volksliederbuch genannt wurde.
+        Im denselben Jahr veröffentlichte er Grammatik des serbischen Volks geschrieben nach der
+        einfachen Volkssprache, die erste Grammatik der serbischen Sprache in der Volkssprache.
+        Unabhängig von der Unvollständigkeit ist dieses Werk als die erste Grammatik der Volkssprache
+        von Bedeutung. Vuk Karadzic veröffentlichte 1818 das erste Wörterbuch der serbischen Sprache
+        mit 26270 Wörtern, die vom Volk verwendet wurden. Im denselben Jahr gab er die zweite Auflage
+        seiner Grammatik heraus, die einige Jahre später von Jakob Grimm ins Deutsche übersetzt wurde.
+        In der zweiten Ausgabe des Wörterbuchs wurden 47427 Wörter aus der Volkssprache gesammelt.
+        Vuk arbeitete seit Jahr und Tag an der Vorbereitung der dritten
+        Ausgabe des Wörterbuchs und hat persönlich Änderungen vorgenommen.
+    </string>
+
+    <!-- Image titles-->
+    <string name="pismenica">Писменицa сербскога језика</string>
+    <string name="pismenica_detail">Вук С. Караџић, Писменицa сербскога језика по говору простога народа написану, Беч, 1815.</string>
+
+    <!--</editor-fold>-->
+
+    <!--<editor-fold desc="Page2">-->
+    <string name="room5Page2Text">
+        Vuk reiste entlang der Balkanhalbinsel, durch Deutschland, Österreich, Russland und einigen
+        Teilen Europas, meistens von seinem Aufruf bewegt. Während seiner Reisen durch Serbien,
+        Montenegro, Kroatien und Ungarn notierte er Volkslieder. Dem romantischen Geist folgend, der
+        in der Aufzeichnung von Gedichtern den wahren Ausdruck der Volkskreativität erkannte, nahm
+        Vuk Volkskompositionen auf, wodurch er Völker und ihre Traditionen kennenlernen und studieren
+        wollte. In europäischen Kreisen waren zahlreiche Gelehrte und Dichter an Vuks Schriften
+        interessiert: Goethe, Walter Scott, Puschkin, Tomazeo, aber auch viele andere, die sie
+        übersetzt, interpretiert und imitiert haben. Sicherlich der Wichtigste war Jakob Grimm,
+        dank dessen Übersetzungen ins Deutsche die Volkskunst durch ihre Originalität, ihren
+        ungewöhnlichen Heroismus und ihren Reichtum an Charakteren und Ereignissen zugänglich und
+        erkennbar wurde. Mit der Unterstützung von Jernej Kopitar begann Vuk, Volkslieder aufzunehmen.
+        In der ersten Liedersammlung aus 1814 wurden ungefähr 100 lyrische und 6 epische Gedichter
+        veröffentlicht.  Im folgenden Jahr veröffentlichte er eine weitere Sammlung von Volksliedern
+        mit dem Namen Nationales serbisches Liederbuch, in der Lieder befanden,
+        die von Geigern Tesan Podrugovic und Filip Visnjic gesungen wurden.
+    </string>
+
+    <!-- Image titles-->
+    <string name="pjesnarica">Народна сербска песнарица</string>
+    <string name="pjesnarica_detail">Народна сербска песнарица</string>
+
+    <!--</editor-fold>-->
+
+    <!--<editor-fold desc="Page3">-->
+    <string name="room5Page3Text">
+        Nach großen Erfolgen mit den Liedern begann Vuk mit der Sammlung aller Arten von
+        Volkskompositionen. Die erste Sammlung der Erzählungen Nationale serbische Erzählungen wurde
+        1821 in Wien gedruckt. Parallel zur Sammlung von Gedichtern und Erzählungen notierte Vuk
+        auch Volksprichwörter. In Montenegro 1836 in Cetinje druckte er Serbische Volksprichwörter,
+        die er Bischof Petar Petrovic Njegos widmete. Er widmete sich hingebungsvoll der Beschreibung
+        der Folklore, deren Interpretation er im serbischen Wörterbuch interpretierte und beschrieb.
+        Neben der Reform der serbischen Sprache beschäftigte Vuk Karadzic sich auch mit
+        historiographischen Arbeiten. Als Teilnehmer des ersten serbischen Aufstandes bereitete er
+        Material bis 1814 vor. Dieses Material wurde dem berühmten deutschen Historiker Leopold
+        Ranke übergeben, der später sein Werk Die serbische Revolution schrieb. Im Jahr 1828
+        veröffentlichte er die literarische Arbeit Milos Obrenovic, Fürst des Serbiens, in der er
+        über die Regierungszeit von Fürsten Milos Obrenovic schrieb.
+    </string>
+
+    <!-- Image titles-->
+    <string name="srpski_rjecnik">Српски рјечник</string>
+    <string name="srpski_rjecnik_detail">Вук С. Караџић, Српски рјечник, Беч, 1818.</string>
+
+    <!--</editor-fold>-->
+
+    <!--<editor-fold desc="Page4">-->
+    <string name="room5Page4Text">
+        Die heutige Regel, die Serbisch zu einer der einfachsten Sprachen zum Lesen und Schreiben
+        gemacht hat, lautet: Schreib, wie du sprichst, lies, wie es geschrieben wird. Zur diesen
+        heute einfachen und logischen Phrase wird es nicht leicht gekommen.  Dositej Obradovic hat
+        die Grundzüge und Richtungen der neuen serbischen Kultur und Alphabetisierung festgelegt,
+        indem er für einen demokratischen Geist, kritische Prinzipien und die Verwendung der
+        Volkssprache in der Literatur plädierte, aber seine Lebensziele wurden leider nicht umgesetzt.
+        Allerdings hatte Dositej, neben zahlreichen anderen herausragenden Persönlichkeiten, einen
+        direkten Einfluss auf Vuk, der die Volkssprache- und Literaturreform zu Ende gebracht hat.
+        Vor Reform von Vuk waren serbisch-kirchenslawische, slawenoserbische Sprache, sowie im Volke
+        gesprochene Idiom (prostonarodni jezik) parallel im Gebrauch. Mit der Verbreitung des
+        Volksgeistes wurde es offensichtlich, dass die Einführung der Volkssprache, die einzige
+        Möglichkeit für serbischen Kulturfortschritt darstellt. Vuk befolgte die Regel „für jeden
+        Laut je ein Symbol“, übernahm 24 Buchstaben aus dem altslawischen kyrillischen Alphabet
+        (Asbuka), lehnte unfunktionale ab und fügte sechs neue Buchstaben – Ј, Љ, Њ, Ч, Ћ,Ђ – hinzu.
+        Auf diese Wiese gelang es Vuk, die serbische Rechtschreibung zu einer der vollkommenen der
+        Welt zu machen. Durch die Sprachreform des Serbischen und die Einführung vom Buchstaben J
+        bekam Vuk zahlreiche Gegner, unter denen auch die orthodoxe Kirche war. Der Grund dafür war
+        die Abweichung von der Kirche und die Einführung von Buchstaben aus den lateinischen Sprachen.
+        Das wurde als Konversion vom orthodoxen Volk zum katholischen Glauben verstanden.
+    </string>
+
+    <!--</editor-fold>-->
+
+    <!--<editor-fold desc="Page5">-->
+    <string name="room5Page5Text">
+        Dank dem Vuks Charakter und seiner Ausdauer, kann man stolz darauf sein, dass serbisches
+        kyrillisches Alphabet zu den raren phonetischen Alphabeten gehört. In welchem Maß die Reform
+        von Vuk außerordentlich war, bestätigt die Tatsache, dass ein irischer Dramatiker George
+        Bernard Shaw, einen Teil seinen Vermögens in Fond angelegt hat, als Preis für denjenigen,
+        der englisches Alphabet nach dem serbischen Vorbild reformiert. Im Jahr 1847 errang die von
+        Dositej Obradović angefangene Sprachreform den inoffiziellen Sieg. In diesem Jahr erschienen
+        in Vuk reformierter Rechtschreibung und in Volkssprache geschriebene Werke, das Buch
+        „Rat za srpski jezik i pravopis“ („Krieg um serbische Sprache und Rechtschreibung“)
+        von Đuro Daničić, der erste Gedichtband von Branko Radičević, die Übersetzung des
+        Neuen Testaments von Vuk Karadžić. In demselben Jahr wurde in Volkssprache Epos „Gorski Vijenac“
+        („Der Bergkranz“) des Petar Petrović Njegoš veröffentlicht. Da der bekannte Dichter
+        Kirchenvertreter war, wurde das Werk in nicht von Vuk reformierter Rechtsprache geschrieben.
+    </string>
+
+    <!-- Image titles-->
+    <string name="djura_danicic">Ђура Даничић</string>
+    <string name="djura_danicic_detail">Стева Тодоровић, Ђура Даничић, уље на платну, 19. век.</string>
+    <string name="gorski_venac">Горски вијенац</string>
+    <string name="gorski_venac_detail">П.П. Његош, Горски вијенац, Беч, 1847.</string>
+    <string name="branko_radicevic">Бранко Радичевић</string>
+    <string name="branko_radicevic_detail">Непознати аутор, Бранко Радичевић, уље на платну, 19. век.</string>
+    <string name="novi_zavet">Нови завјет</string>
+    <string name="novi_zavet_detail">Нови завјет, превод Вука С. Караџића, Беч, 1847.</string>
+
+    <!--</editor-fold>-->
+
+    <!--<editor-fold desc="Page6">-->
+    <string name="room5Page6Text">
+        Das geschichtsträchtige Treffen passierte in Wien, am 28. März 1850. Slowenische, serbische
+        und Kroatische Philologen, unter denen auch Vuk, haben sich getroffen, um sich in der Frage
+        der Literatur so viel wie möglich zu einigen. Diese Gelegenheit war für die Unterschreibung
+        des Wiener Sprachabkommens günstig (Bečki književni dogovor). Die einheitliche serbokroatische
+        Sprache und Rechtschreibung vorgeschlagen. Der formale Sieg der Volkssprachreform von Vuk
+        folgte in das Jahr 1868, nachdem die Rechtschreibung in Serbien offiziell angenommen und ins
+        Schulsystem eingeführt worden war. Vuk Stefanović Karadžić starb 1864 in Wien. Seine
+        sterbliche Überreste wurden nach Belgrad im Jahr 1897 überführt. Vor dem Haupteingang in die
+        Kathedrale Hl. Michael neben Dositej Obradović begraben.
+    </string>
+
+    <!--</editor-fold>-->
+
+    <!--</editor-fold>-->
+
+    //Dositejevo delo
+    <!--<editor-fold desc="Room6">-->
+    <string name="room6Title">Доситејево дело</string>
+
+    <!--<editor-fold desc="Page1">-->
+    <string name="room6Page1Text">
+        Nach der Veröffentlichung von „Pismo Haralampiju“ („Brief an Haralampije“) und des
+        autobiografischen Werks „Život i priključenija“ („Leben und Abenteuer“) im Jahr 1784 in
+        Leipzig, gab man das Buch „Slovo poučitelno“ in Druck. In diesem Werk kritisierte Dositej
+        Obradović die Verwendung von unverständlichen Wörtern und Ausdrucken, die in die Literatur
+        auftauchten. In seinem Werk „Sovjeti zdravog razuma“ aus demselben Jahr, wurde von Dositej
+        Vorurteile, Aberglauben und Gewinnsucht getadelt, während die Ideen des freien Denkens und
+        der Moralität bevorzugt. Bei seinem Aufenthalt im Kloster Hopovo und wärend der Reisen,
+        hat Dositej Obradović Fabeln von Äsop, Phaedrus, La Fontaine, Abstemius und Lessing gelesen
+        und übersetzt. Die 160 auf die serbische Sprache übersetzten Fabeln veröffentlichte er 1788
+        in Leipzig. Im nächsten Jahr wurde das Karađorđe und Aufständischen gewidmete Gedicht
+        „Pjesna na insurekciju Serbijanov“ bekanntgegeben, nachdem österreichische und russische
+        Armee samt serbischer Hilfe Belgrad von Türken befreit hatten. Im Volk wurde es dank seinem
+        Refrain unter dem Namen „Vostani Serbije“ bekannt.
+    </string>
+
+    <!-- Image titles-->
+    <string name="sovjeti">Совјети здравог разума</string>
+    <string name="sovjeti_detail">Совјети здравог разума, Лајпциг, 1784.</string>
+    <string name="basne">Басне</string>
+    <string name="basne_detail">Басне, Лајпциг, 1788.</string>
+
+    <!--</editor-fold>-->
+
+    <!--<editor-fold desc="Page2">-->
+    <string name="room6Page2Text">
+        Собраније разних наравоучителних вешчеј oбјављено је 1793. године у Бечу у којем се полемише
+        о проблемима филозофије, историје, етике и естетике паралелно са примерима из књижевности европских народа.
+        Други део овог дела под називом Мезимац објављен је постхумно 1818. године.
+        Овом опусу треба придодати и дело Етика из 1803. године које садржи анегдоте, народне
+        приче и пословице како би се српском читаоцу приближио  кодекс етичких принципа.
+        Иако путујући светом, Доситеј Обрадовић свесрдно је помагао Србима у борби за
+        ослобођење од турске власти, најпре слањем прилога и разним поверљивим мисијама да
+        би касније коначно прешао у Србију. Тада, већ у позним годинама, он долази да помогне,
+        не само пером и стеченим знањем, већ према легенди и кромпиром, који је са њим први пут дошао у Србију.
+        У ослобођеној Србији провео је последњих пет година живота.
+        Увео је нове реформе у настави и успоставио ново схватање улоге жене у друштву
+        тражећи да и женска деца добију могућност да се школују.
+        Свега неколико месеци након што је постављен за првог Министра просвете, Доситеј Обрадовић,
+        28. марта 1811. године умире у Београду где је и сахрањен у порти Саборне цркве.
+    </string>
+
+    <!-- Image titles-->
+    <string name="sobranie">Собраније</string>
+    <string name="sobranie_detail">Собраније разних наравоучителних вешчеј, Беч, 1793.</string>
+    <string name="etika">Етика</string>
+    <string name="etika_detail">Етика, Венеција, 1803.</string>
+
+    <!--</editor-fold>-->
+
+    <!--</editor-fold>-->
+
+    //Vukova porodica
+    <!--<editor-fold desc="Room7">-->
+    <string name="room7Title">Вукова породица</string>
+
+    <!--<editor-fold desc="Page1">-->
+    <string name="room7Page1Text">
+        Доласком у Беч, Вук се оженио ћерком своје станодавке, аустријанком Ана Маријом Краус.
+        Од њихово тринаесторо деце, само су двоје, Мина и Димитрије, надживели родитеље,
+        па је Вук и сам писао да му се чини да ће најпосле од његове деце остати само његови књижевни послови.
+        Мајка Ана је готово сама подизала децу, јер је Вук често месецима путовао,
+        обилазећи разне пределе и бележећи речи, изреке и народне песме.
+        Оскудевали су у новцу уз напоре да  деци омогуће добро образовање.
+        На различите начине и уз тешкоће су деци обезбеђивали основне услове за живот и школовање.
+        Ана се трудила да деца буду здрава и негована, а Вук је сам израђивао играчке за њих.
+        Породици Караџић се живот значајно побољшао када је Вук добио руску пензију, а потом и пензију кнеза Милоша.
+    </string>
+
+    <!-- Image titles-->
+    <string name="vuk_ana">Вук и Ана Караџић</string>
+    <string name="vuk_ana_detail">Вук и Ана Караџић,фотографија J. B. Rottmayer-a, Беч, 564/И</string>
+    <string name="igracke">Играчке</string>
+    <string name="igracke_detail">Играчке (Минијатурни пољопривредни и занатлијски алат,оружје – 31 ком., Вукове рукотворине),шимширово дрво, Беч, 19. век</string>
+
+    <!--</editor-fold>-->
+
+    <!--<editor-fold desc="Page2">-->
+    <string name="room7Page2Text">
+        Вуково и Анино седмо дете, била је Вилхелмина Мина Караџић, рођена 1828. године у Бечу.
+        Мина је, иако без редовног образовања, похађала часове клавира и сликања.
+        Вредно је учила језике, те је, поред матерњег немачког и очевог српског,
+        савладала и француски, италијански, а затим и енглески језик.
+        Са родитељима је посећивала музеје и галерије, где је упијала лепоту уметничких дела.
+        Мина се бавила сликањем, које је учила од познатих уметника.
+        Међу педесетак цртежа и портрета, сачуван је њен аутопортрет, као и портрет брата Димитрија.
+        Надајући се руској стипендији за учење сликарства у Италији и Француској, коју није добила,
+        петнаестогодишња Мина окреће се све више књижевности.
+        Писала је песме и преводила народне изреке, помажући и оцу у обављању његове преписке.
+        Мина Караџић је тешко поднела очеву смрт 1864. године, а затим 1876 и мајчину.
+        Потпуно је клонула када је 1877. године добила писмо да је страдао њен деветнаестогодишњи
+        син Јанко, питомац војне школе у Русији. Након тога посветила се раду на објављивању очевих
+        дела у Београду, Бечу и Петрограду. Очеву заоставштину је пред смрт поклонила
+        Краљевини Србији, захваљујући чему у Музеју Вука и Доситеја Народног музеја у Београду
+        постоје сачувани лични предмети, писма, књиге и слике Вука, Мине и породице Караџић.
+        Међу њима је и портрет Бранка Радичевића.
+    </string>
+
+    <!-- Image titles-->
+    <string name="mina_sin">Мина са сином Јанком</string>
+    <string name="mina_sin_detail">Мина са сином Јанком,рад бечког фотографа Ј. Б. Ротмајера(J. B. Rottmayer), 573/И</string>
+    <string name="dimitrije_karadzic">Димитрије Караџић</string>
+    <string name="dimitrije_karadzic_detail">Света Мандић, Димитрије Караџић,(по Мини Вукомановић), уље на платну, 1958.</string>
+
+    <!--</editor-fold>-->
+
+    <!--<editor-fold desc="Page3">-->
+    <string name="room7Page3Text">
+        Блискост Мине Караџић и Бранка Радичевића, српског романтичарског песника
+        још увек је тема која интересује велики број истраживача.
+        Мина је наклоност и симпатије узвратила и отелотворила насликавши неколико Бранкових портрета.
+        У познијим годинама написала је Сећања на Бранка, откривајући изузетну блискост и велико пријатељство које су њих двоје делили.
+        Како је заиста изгледао Минин и Бранков однос, шта је заиста постојало између младог песника,
+        оболелог од тешке, неизлечиве болести и лепе девојке која је била инспирација и недостижна
+        љубав многим учењацима тог периода, остаје нам да нагађамо. Међутим, занимљиво је да Бранко,
+        у тренутку када болест почиње да  узима данак, све своје ствари шаље пријатељу задржавајући само један Минин портрет.
+        Не смемо заборавити да је Бранко био песник романтичарске епохе и да је самим тим његова љубав морала бити идеална и идеализована.
+        Пет година након Бранкове смрти Мина Караџић се удала за Алексу Вукомановића,
+        оснивача катедре за српски језик, историју и књижевност и братанца књегиње Љубице.
+    </string>
+
+    <!-- Image titles-->
+    <string name="mina_karadzic">Мина Караџић</string>
+    <string name="mina_karadzic_detail">Мина Караџић, снимљено око 1845, и.б. 755/И.</string>
+
+    <!--</editor-fold>-->
+
+    <!--<editor-fold desc="Page4">-->
+    <string name="room7Page4Text">
+        Вуков син Димитрије је био велика нада, не само породице Караџић, већ и Србије.
+        После школовања у Трсту и Клостербруку, Влада Србије стипендирала је његово образовање
+        у Берлину, а касније и Антверпену. Међутим, Димитрије је волео раскалашан живот и алкохол
+        и неумерено је  трошио новац због чега је још у у студентским данима запао у дугове.
+        У почетку овакав начин живота и нарастајући дугови нису утицали на његову каријеру.
+        Постао је капетан друге класе и професор фортификације у Артиљеријској школи у Београду.
+        Међутим, након Вукове смрти, почео је због дугова да распродаје очеву имовину и његов начин живота изашао је на видело.
+        Због неумерености у пићу и коцки био је лош пример за младе војнике, а самим тим и Србију.
+        Зато је био принуђен да напусти место професора у Артиљеријској школи и оде у Русију где је служио као официр.
+        Све молбе које му је сестра Мина упућивала да се смири и промени начин живота Димитрију нису помогле.
+        Као руски добровољац борио се у српско-турском рату заједно са Мининим сином Јанком,
+        који се из рата вратио са медаљом за храброст. Од последица двобоја или болести Јанко је
+        умро у Русији 1878., док је његов ујак Димитрије умро након неколико година.
+    </string>
+
+    <!--</editor-fold>-->
+
+    <!--</editor-fold>-->
+
+
+    //Divanhana
+    <!--<editor-fold desc="Room8">-->
+    <string name="room8Title">Диванхана</string>
+
+    <!--<editor-fold desc="Page1">-->
+    <string name="room8Page1Text">
+        Традиционални начин градње домова у Отоманском царству јасно је разграничавао јавно од
+        приватног и мушко од женског. Диванхана у згради Музеја Вука и Доситеја верно представља поделу.
+        Ова просторија била је намењена делу живота који је био јаван, пријему гостију,
+        пословних сарадника, угледника и других људи који нису били у сродству са власником куће.
+        Мало издигнута од пода, ограђена доручјем и украсним дрвеним стубовима,
+        диванхана је видно била одвојена од простора који се користио за свакодневни породични живот.
+        Рубом диванхане простире се диван (отуд и име), клупа на којој су седели гости,
+        док је сам домаћин заузимао средишње место, додатно уздигнуто, како би његов социјални статус био наглашен.
+        У случају посете каквог великаша, домаћин би узнак поштовања уступио место виђеном госту.
+        До ослобођења и модернизације Србије, угледни и имућни Срби су такође градили куће на овај начин, преузимајући обичаје од Турака.
+        Унутрашњост диванхане је била једноставна, по поду и по зидовима били су прострти шарени
+        ћилими, на полицама, које су се налазиле нешто више, било је поређано украсно посуће, или,
+        макар, оно највредније у дому. Занатлијски домови често су у диванхани имали и какав леп
+        предмет који је домаћин, или његов предак, направио. У хришћанским кућама, касније се за украшавање користе и фотографије и скулптуре.
+        У Музеју Вука и Доситеја, у диванхани снимљен је један део телевизијске серије
+        „Вук Караџић“ у којој се Доситеј Обрадовић обраћа Карађорђу, кнезовима и ученицима приликом отварања Велике школе.
+        У диванхани је изведена и монодрама „Мој отац Вук Караџић“.
+    </string>
+
+    <!--</editor-fold>-->
+    <!--</editor-fold>-->
+
+</resources>
