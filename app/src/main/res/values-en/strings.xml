@@ -97,10 +97,10 @@
     </string>
 
     <!-- Image titles-->
-    <string name="maketa_zgrade">Макета зграде Музеја Вука и Доситеја</string>
-    <string name="maketa_zgrade_detail">Макета зграде Музеја Вука и Доситеја</string>
-    <string name="franta_mali_tusem">Франта Мали, Доситејев Лицеј, цртеж тушем</string>
-    <string name="franta_mali_tusem_detail">Франта Мали, Доситејев лицеј, цртеж тушем, 1935, и.б. 19/Л</string>
+    <string name="maketa_zgrade">Model of the museum building</string>
+    <string name="maketa_zgrade_detail">Model of the museum building</string>
+    <string name="franta_mali_tusem">Franta Mali,  Dositej’s lyceum</string>
+    <string name="franta_mali_tusem_detail">Franta Mali,  Dositej’s lyceum</string>
 
     <!--</editor-fold>-->
 
@@ -151,8 +151,8 @@
     </string>
 
     <!-- Image titles-->
-    <string name="rudolf_valec">Доситеј Обрадовић</string>
-    <string name="rudolf_valec_detail">Рудолф Валдец, Доситеј Обрадовић,бронза, 1911, и.б. 35/л.</string>
+    <string name="rudolf_valec">Dositej Obradović</string>
+    <string name="rudolf_valec_detail">Rudolf Valdec, Dositej Obradović, bronze 1911.</string>
 
     <!--</editor-fold>-->
 
@@ -173,10 +173,10 @@
     </string>
 
     <!-- Image titles-->
-    <string name="manastir_hopovo">Манастир Хопово</string>
-    <string name="manastir_hopovo_detail">Непознати аутор, Манастир Хопово, дрворез, б.д., и.б. 64/Л</string>
-    <string name="mapa_dositejevih_putovanja">Мапа Доситејевих путовања</string>
-    <string name="mapa_dositejevih_putovanja_detail">Мапа Доситејевих путовања</string>
+    <string name="manastir_hopovo">Monaster Hopovo</string>
+    <string name="manastir_hopovo_detail">Unknow author, Monaster Hopovo</string>
+    <string name="mapa_dositejevih_putovanja">The map of Dositej’s travels</string>
+    <string name="mapa_dositejevih_putovanja_detail">The map of Dositej’s travels</string>
 
     <!--</editor-fold>-->
 
@@ -201,12 +201,12 @@
     </string>
 
     <!-- Image titles-->
-    <string name="pismo_haralampiju">Писмо Харалампију, 1783. год</string>
-    <string name="pismo_haralampiju_detail">Писмо Харалампију, 1783. год</string>
-    <string name="dositej_obradovic">Тирол, Доситеј Обрадовић</string>
-    <string name="dositej_obradovic_detail">Димитрије Тирол, Доситеј Обрадовић</string>
-    <string name="zivot_prikljucenija">Живот и прикљученија</string>
-    <string name="zivot_prikljucenija_detail">Живот и прикљученија, Лајпциг, 1783</string>
+    <string name="pismo_haralampiju">Letter to Haralampije</string>
+    <string name="pismo_haralampiju_detail">Letter to Haralampije</string>
+    <string name="dositej_obradovic">Dimitrije Tirol, Dositej Obradović</string>
+    <string name="dositej_obradovic_detail">Dimitrije Tirol, Dositej Obradović</string>
+    <string name="zivot_prikljucenija">Life and Adventures</string>
+    <string name="zivot_prikljucenija_detail">Life and Adventures, Leipzig 1783.</string>
 
     <!--</editor-fold>-->
 
@@ -233,10 +233,10 @@
     </string>
 
     <!-- Image titles-->
-    <string name="vuk_karadzic_bronza">Вук Караџић</string>
-    <string name="vuk_karadzic_bronza_detail">Суров – Везилић, Вук Караџић, попрсје, бронза, 1886, и.б.37/Л.</string>
-    <string name="stap_stula">Штап, штула и штака</string>
-    <string name="stap_stula_detail">Штап, штула и штака, кожа и дрво, Беч, 19. век, и.б. 14, 15, 16/И.</string>
+    <string name="vuk_karadzic_bronza">Vuk Karadžić</string>
+    <string name="vuk_karadzic_bronza_detail">Surov - Vezilić, Vuk Karadžić, bust, bronze, 1886</string>
+    <string name="stap_stula">Vuk’s crutch, peg leg and cane</string>
+    <string name="stap_stula_detail">Vuk’s crutch, peg leg and cane, leather and wood, Vienna, 19th Century</string>
 
     <!--</editor-fold>-->
 
@@ -280,14 +280,14 @@
     </string>
 
     <!-- Image titles-->
-    <string name="vukova_diploma">Вукова диплома</string>
-    <string name="vukova_diploma_detail">Вукова диплома Московског универзитета,Москва, 14. III 1828 и.б. 275/И.</string>
-    <string name="putna_torba">Путна торба</string>
-    <string name="putna_torba_detail">Путна торба, кожа и дрво, Беч, 19. век, и.б. 40/И</string>
-    <string name="crvena_coka">Фес, црвена чоха са кићанком</string>
-    <string name="crvena_coka_detail">Фес, црвена чоха са кићанком од плавог конца, Србија, 19. век, и.б. 9/И</string>
-    <string name="mladi_vuk">Млади Вук</string>
-    <string name="mladi_vuk_detail">Павел Ђурковић, Млади Вук, уље на платну, 19. век.</string>
+    <string name="vukova_diploma">Vuk\'s Degree from Moscow University</string>
+    <string name="vukova_diploma_detail">Vuk\'s Degree from Moscow University, Moscow 14. III 1828.</string>
+    <string name="putna_torba">Vuk\'s traveling bag</string>
+    <string name="putna_torba_detail">Vuk\'s traveling bag, leather and wood, Vienna, 19th Century</string>
+    <string name="crvena_coka">Vuk\'s fez</string>
+    <string name="crvena_coka_detail">Vuk\'s fez, part of Turkish national costume</string>
+    <string name="mladi_vuk">Young Vuk Karadžić</string>
+    <string name="mladi_vuk_detail">Pavel Đurković, Young Vuk Karadžić</string>
 
     <!--</editor-fold>-->
 
@@ -359,8 +359,8 @@
     </string>
 
     <!-- Image titles-->
-    <string name="srpski_rjecnik">Српски рјечник</string>
-    <string name="srpski_rjecnik_detail">Вук С. Караџић, Српски рјечник, Беч, 1818.</string>
+    <string name="srpski_rjecnik">Serbian Dictionary</string>
+    <string name="srpski_rjecnik_detail">Serbian Dictionary, first edition, Vienna 1818</string>
 
     <!--</editor-fold>-->
 
@@ -404,14 +404,14 @@
     </string>
 
     <!-- Image titles-->
-    <string name="djura_danicic">Ђура Даничић</string>
-    <string name="djura_danicic_detail">Стева Тодоровић, Ђура Даничић, уље на платну, 19. век.</string>
-    <string name="gorski_venac">Горски вијенац</string>
-    <string name="gorski_venac_detail">П.П. Његош, Горски вијенац, Беч, 1847.</string>
-    <string name="branko_radicevic">Бранко Радичевић</string>
-    <string name="branko_radicevic_detail">Непознати аутор, Бранко Радичевић, уље на платну, 19. век.</string>
-    <string name="novi_zavet">Нови завјет</string>
-    <string name="novi_zavet_detail">Нови завјет, превод Вука С. Караџића, Беч, 1847.</string>
+    <string name="djura_danicic">Đura Daničić</string>
+    <string name="djura_danicic_detail">Steva Todorović, Đura Daničić, oil on canvas, 19th century.</string>
+    <string name="gorski_venac">Goski Vijenac</string>
+    <string name="gorski_venac_detail">Petar II Petrović Njegoš, Goski Vijenac Vienna 1847.</string>
+    <string name="branko_radicevic">Branko Radičević</string>
+    <string name="branko_radicevic_detail">Unknown author, Branko Radičević, oil on canvas, 19th Century </string>
+    <string name="novi_zavet">Bible</string>
+    <string name="novi_zavet_detail">Bible, translation by Vuk Karadžić, Vienna 1818.</string>
 
     <!--</editor-fold>-->
 
@@ -453,10 +453,10 @@
     </string>
 
     <!-- Image titles-->
-    <string name="sovjeti">Совјети здравог разума</string>
-    <string name="sovjeti_detail">Совјети здравог разума, Лајпциг, 1784.</string>
-    <string name="basne">Басне</string>
-    <string name="basne_detail">Басне, Лајпциг, 1788.</string>
+    <string name="sovjeti">Sovjeti zdravog razuma</string>
+    <string name="sovjeti_detail">Sovjeti zdravog razuma, Leipzig, 1784.</string>
+    <string name="basne">Fables</string>
+    <string name="basne_detail">Dositej Obradović, Fables, Leipzig, 1784.</string>
 
     <!--</editor-fold>-->
 
@@ -480,10 +480,10 @@
     </string>
 
     <!-- Image titles-->
-    <string name="sobranie">Собраније</string>
-    <string name="sobranie_detail">Собраније разних наравоучителних вешчеј, Беч, 1793.</string>
-    <string name="etika">Етика</string>
-    <string name="etika_detail">Етика, Венеција, 1803.</string>
+    <string name="sobranie">Sobranije raznih naravoučitelnih veštej</string>
+    <string name="sobranie_detail">Dositej Obradović, Sobranije raznih naravoučitelnih veštej, Viena 1793. </string>
+    <string name="etika">Ethics</string>
+    <string name="etika_detail">Dositej Obradović, Ethics, Venice, 1803.</string>
 
     <!--</editor-fold>-->
 
@@ -508,10 +508,10 @@
     </string>
 
     <!-- Image titles-->
-    <string name="vuk_ana_detail">Вук и Ана Караџић</string>
-    <string name="vuk_ana">Вук и Ана Караџић,фотографија J. B. Rottmayer-a, Беч, 564/И</string>
-    <string name="igracke">Играчке</string>
-    <string name="igracke_detail">Играчке (Минијатурни пољопривредни и занатлијски алат,оружје – 31 ком., Вукове рукотворине),шимширово дрво, Беч, 19. век</string>
+    <string name="vuk_ana_detail">Vuk and Ana Karadžić</string>
+    <string name="vuk_ana">Vuk and Ana Karadžić</string>
+    <string name="igracke">Toys</string>
+    <string name="igracke_detail">Toys made of boxwood by Vuk Karadžić himself, Viena 19th Century</string>
 
     <!--</editor-fold>-->
 
@@ -537,16 +537,16 @@
     </string>
 
     <!-- Image titles-->
-    <string name="mina_sin">Мина са сином Јанком</string>
-    <string name="mina_sin_detail">Мина са сином Јанком,рад бечког фотографа Ј. Б. Ротмајера(J. B. Rottmayer), 573/И</string>
-    <string name="dimitrije_karadzic">Димитрије Караџић</string>
-    <string name="dimitrije_karadzic_detail">Света Мандић, Димитрије Караџић,(по Мини Вукомановић), уље на платну, 1958.</string>
+    <string name="mina_sin">Mina Karadžić with her son Janko Vukomanović</string>
+    <string name="mina_sin_detail">Mina Karadžić with her son Janko Vukomanović</string>
+    <string name="dimitrije_karadzic">Dimitrije Karadžić</string>
+    <string name="dimitrije_karadzic_detail">Dimitrije Karadžić</string>
 
     <!--</editor-fold>-->
 
     <!--<editor-fold desc="Page3">-->
     <string name="room7Page3Text">
-        The closeness of Mina Karadzic and Branko Radičević,  Serbian romantic poet, is still a
+        The closeness of Mina Karadzic and Branko Radičević,  Serbianbranko romantic poet, is still a
         topic of interest to a large number of researchers. Mina returned and embellished her
         affection and sympathy painting some of Branko\'s portraits. In her late years, she wrote
         Memories of Branko, revealing the extreme closeness and great friendship shared by both of them.
@@ -561,8 +561,8 @@
     </string>
 
     <!-- Image titles-->
-    <string name="mina_karadzic">Мина Караџић</string>
-    <string name="mina_karadzic_detail">Мина Караџић, снимљено око 1845, и.б. 755/И.</string>
+    <string name="mina_karadzic">Mina Karadžić</string>
+    <string name="mina_karadzic_detail">Mina Karadžić as a 16 year old girl</string>
 
     <!--</editor-fold>-->
 

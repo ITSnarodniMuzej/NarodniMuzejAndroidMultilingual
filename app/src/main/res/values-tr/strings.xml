@@ -94,10 +94,10 @@
     </string>
 
     <!-- Image titles-->
-    <string name="maketa_zgrade">Макета зграде Музеја Вука и Доситеја</string>
-    <string name="maketa_zgrade_detail">Макета зграде Музеја Вука и Доситеја</string>
-    <string name="franta_mali_tusem">Доситејев лицеј</string>
-    <string name="franta_mali_tusem_detail">Франта Мали, Доситејев лицеј, цртеж тушем, 1935, и.б. 19/Л</string>
+    <string name="maketa_zgrade">Vuk ve Dositej müze binasi maketi</string>
+    <string name="maketa_zgrade_detail">Vuk ve Dositej müze binasi maketi</string>
+    <string name="franta_mali_tusem">Franta Mali, Dositej\'in okulu çizimi</string>
+    <string name="franta_mali_tusem_detail">Franta Mali, Dositej\'in okulu çizimi</string>
 
     <!--</editor-fold>-->
 
@@ -146,8 +146,8 @@
     </string>
 
     <!-- Image titles-->
-    <string name="rudolf_valec">Доситеј Обрадовић</string>
-    <string name="rudolf_valec_detail">Рудолф Валдец, Доситеј Обрадовић,бронза, 1911, и.б. 35/л.</string>
+    <string name="rudolf_valec">Dositej Obradović</string>
+    <string name="rudolf_valec_detail">Rudolf Valdec, Dositej Obradović,  bronz büst 1911.</string>
 
     <!--</editor-fold>-->
 
@@ -166,10 +166,10 @@
     </string>
 
     <!-- Image titles-->
-    <string name="manastir_hopovo">Манастир Хопово</string>
-    <string name="manastir_hopovo_detail">Непознати аутор, Манастир Хопово, дрворез, б.д., и.б. 64/Л</string>
-    <string name="mapa_dositejevih_putovanja">Мапа Доситејевих путовања</string>
-    <string name="mapa_dositejevih_putovanja_detail">Мапа Доситејевих путовања</string>
+    <string name="manastir_hopovo">Hopovo Manastiri</string>
+    <string name="manastir_hopovo_detail">Hopovo Manastiri gravürü, anonim eser</string>
+    <string name="mapa_dositejevih_putovanja">Dositej\'in seyahatlerinin haritasi</string>
+    <string name="mapa_dositejevih_putovanja_detail">Dositej\'in seyahatlerinin haritasi</string>
 
     <!--</editor-fold>-->
 
@@ -191,12 +191,12 @@
     </string>
 
     <!-- Image titles-->
-    <string name="pismo_haralampiju">Писмо Харалампију</string>
-    <string name="pismo_haralampiju_detail">Писмо Харалампију, 1783. год</string>
-    <string name="dositej_obradovic">Доситеј Обрадовић</string>
-    <string name="dositej_obradovic_detail">Димитрије Тирол, Доситеј Обрадовић</string>
-    <string name="zivot_prikljucenija">Живот и прикљученија</string>
-    <string name="zivot_prikljucenija_detail">Живот и прикљученија, Лајпциг, 1783</string>
+    <string name="pismo_haralampiju">Haralampije\'ye mektuplar</string>
+    <string name="pismo_haralampiju_detail">Haralampije\'ye mektuplar, 1783.</string>
+    <string name="dositej_obradovic">Dimitrije Tirol, Dositej Obradović</string>
+    <string name="dositej_obradovic_detail">Dimitrije Tirol, Dositej Obradović</string>
+    <string name="zivot_prikljucenija">Hayat ve seruvenleri</string>
+    <string name="zivot_prikljucenija_detail">Hayat ve seruvenleri, Leipzig 1783.</string>
 
     <!--</editor-fold>-->
 
@@ -219,10 +219,10 @@
     </string>
 
     <!-- Image titles-->
-    <string name="vuk_karadzic_bronza">Вук Караџић</string>
-    <string name="vuk_karadzic_bronza_detail">Суров – Везилић, Вук Караџић, попрсје, бронза, 1886, и.б.37/Л.</string>
-    <string name="stap_stula">Штап, штула и штака</string>
-    <string name="stap_stula_detail">Штап, штула и штака, кожа и дрво, Беч, 19. век, и.б. 14, 15, 16/И.</string>
+    <string name="vuk_karadzic_bronza">Vuk Karadžić</string>
+    <string name="vuk_karadzic_bronza_detail">Suvorov-Velzilć,  Vuk Karadžić, yaptığı, büst 1886.</string>
+    <string name="stap_stula">Sopa, Baston, Koltuk değneği</string>
+    <string name="stap_stula_detail">Sopa, Baston, Koltuk değneği, Viyana, 19 yy</string>
 
     <!--</editor-fold>-->
 
@@ -265,14 +265,14 @@
     </string>
 
     <!-- Image titles-->
-    <string name="vukova_diploma">Вукова диплома Московског универзитета</string>
-    <string name="vukova_diploma_detail">Вукова диплома Московског универзитета,Москва, 14. III 1828 и.б. 275/И.</string>
-    <string name="putna_torba">Путна торба</string>
-    <string name="putna_torba_detail">Путна торба, кожа и дрво, Беч, 19. век, и.б. 40/И</string>
-    <string name="crvena_coka">Фес, црвена чоха са кићанком</string>
-    <string name="crvena_coka_detail">Фес, црвена чоха са кићанком од плавог конца, Србија, 19. век, и.б. 9/И</string>
-    <string name="mladi_vuk">Млади Вук</string>
-    <string name="mladi_vuk_detail">Павел Ђурковић, Млади Вук, уље на платну, 19. век.</string>
+    <string name="vukova_diploma">Vuk\'un Moskova üniversitesi diplomasi</string>
+    <string name="vukova_diploma_detail">Vuk\'un Moskova üniversitesi diplomasi, Moskova 14. III 1828.</string>
+    <string name="putna_torba">Seyahat çantasi</string>
+    <string name="putna_torba_detail">Seyahat çantasi, deri ve ahşap, Viyana, 19 yy</string>
+    <string name="crvena_coka">Püskullü kirmizi fes</string>
+    <string name="crvena_coka_detail">Püskullü kirmizi fes</string>
+    <string name="mladi_vuk">Genç Vuk</string>
+    <string name="mladi_vuk_detail">Pavel Đurković Genç Vuk-yağli tablo, 19 yy</string>
 
     <!--</editor-fold>-->
 
@@ -345,8 +345,8 @@
     </string>
 
     <!-- Image titles-->
-    <string name="srpski_rjecnik">Српски рјечник</string>
-    <string name="srpski_rjecnik_detail">Вук С. Караџић, Српски рјечник, Беч, 1818.</string>
+    <string name="srpski_rjecnik">Sirpca sözlük</string>
+    <string name="srpski_rjecnik_detail">Sirpca sözlük, Vuk S. Karadžić, Viyena 1818.</string>
 
     <!--</editor-fold>-->
 
@@ -433,10 +433,10 @@
     </string>
 
     <!-- Image titles-->
-    <string name="sovjeti">Совјети здравог разума</string>
-    <string name="sovjeti_detail">Совјети здравог разума, Лајпциг, 1784.</string>
-    <string name="basne">Басне</string>
-    <string name="basne_detail">Басне, Лајпциг, 1788.</string>
+    <string name="sovjeti">Sağduyu sovyetliei</string>
+    <string name="sovjeti_detail">Sağduyu sovyetliei, Leipzig, 1784.</string>
+    <string name="basne">Masal Kitabi</string>
+    <string name="basne_detail">Masal Kitabi, Leipzig, 1788.</string>
 
     <!--</editor-fold>-->
 
@@ -456,10 +456,10 @@
     </string>
 
     <!-- Image titles-->
-    <string name="sobranie">Собраније</string>
-    <string name="sobranie_detail">Собраније разних наравоучителних вешчеј, Беч, 1793.</string>
-    <string name="etika">Етика</string>
-    <string name="etika_detail">Етика, Венеција, 1803.</string>
+    <string name="sobranie">Sobranije</string>
+    <string name="sobranie_detail">Sobranije, Viyena, 1793.</string>
+    <string name="etika">Etika</string>
+    <string name="etika_detail">Etika, Venedik, 1803.</string>
 
     <!--</editor-fold>-->
 
@@ -483,10 +483,10 @@
     </string>
 
     <!-- Image titles-->
-    <string name="vuk_ana">Вук и Ана Караџић</string>
-    <string name="vuk_ana_detail">Вук и Ана Караџић,фотографија J. B. Rottmayer-a, Беч, 564/И</string>
-    <string name="igracke">Играчке</string>
-    <string name="igracke_detail">Играчке (Минијатурни пољопривредни и занатлијски алат,оружје – 31 ком., Вукове рукотворине),шимширово дрво, Беч, 19. век</string>
+    <string name="vuk_ana">Vuk ve Ana Karadžić</string>
+    <string name="vuk_ana_detail">Vuk ve Ana Karadžić</string>
+    <string name="igracke">Oyuncaklar</string>
+    <string name="igracke_detail">Oyuncaklar, Viyana, 19. yy</string>
 
     <!--</editor-fold>-->
 
@@ -512,10 +512,10 @@
     </string>
 
     <!-- Image titles-->
-    <string name="mina_sin">Мина са сином Јанком</string>
-    <string name="mina_sin_detail">Мина са сином Јанком,рад бечког фотографа Ј. Б. Ротмајера(J. B. Rottmayer), 573/И</string>
-    <string name="dimitrije_karadzic">Димитрије Караџић</string>
-    <string name="dimitrije_karadzic_detail">Света Мандић, Димитрије Караџић,(по Мини Вукомановић), уље на платну, 1958.</string>
+    <string name="mina_sin">Mina, oğlu Janko ile birlikte</string>
+    <string name="mina_sin_detail">Mina, oğlu Janko ile birlikte</string>
+    <string name="dimitrije_karadzic">Dimitrije Kradžić, 1958</string>
+    <string name="dimitrije_karadzic_detail">Dimitrije Kradžić, 1958</string>
 
     <!--</editor-fold>-->
 
@@ -535,8 +535,8 @@
     </string>
 
     <!-- Image titles-->
-    <string name="mina_karadzic">Мина Караџић</string>
-    <string name="mina_karadzic_detail">Мина Караџић, снимљено око 1845, и.б. 755/И.</string>
+    <string name="mina_karadzic">Mina Karadžić</string>
+    <string name="mina_karadzic_detail">Mina Karadžić</string>
 
     <!--</editor-fold>-->
 
