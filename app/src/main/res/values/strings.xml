@@ -22,6 +22,108 @@
     <string name="De" translatable="false">de</string>
     <!--</editor-fold>-->
 
+    <!--<editor-fold desc="Credits">-->
+    <string-array name="credits_parties">
+        <item>its</item>
+        <item>fil</item>
+        <item>sgns</item>
+        <item>ssss</item>
+        <item>iip</item>
+        <item>to</item>
+        <item>date</item>
+    </string-array>
+
+    <!--<editor-fold desc="ITS">-->
+    <string name="its_title" translatable="false">ИТС (ITS)\nВисока струковна школа за информационе технологије</string>\
+    <string name="its_logo" translatable="false">its_logo</string>
+    <string-array name="its_names" translatable="false">
+        <item>Милош Доброта</item>
+        <item>Јована Јаношевић</item>
+        <item>Ђорђе Ђорђевић</item>
+        <item>Стефан Цекић</item>
+        <item>Адам Константиновић</item>
+    </string-array>
+    <string-array name="its_roles" translatable="false">
+        <item>координатор</item>
+        <item>дизајнер</item>
+        <item>програмер</item>
+        <item>програмер</item>
+        <item>програмер</item>
+    </string-array>
+    <!--</editor-fold>-->
+
+    <!--<editor-fold desc="Filoloski fakultet">-->
+    <string name="fil_title" translatable="false">Филолошки факултет</string>\
+    <string name="fil_logo" translatable="false">fil_logo</string>
+    <string-array name="fil_names" translatable="false">
+    </string-array>
+    <string-array name="fil_roles" translatable="false">
+    </string-array>
+    <!--</editor-fold>-->
+
+    <!--<editor-fold desc="Savez gluvih i nagluvih Srbije">-->
+    <string name="sgns_title" translatable="false">Савез глувих и наглувих Србије</string>\
+    <string name="sgns_logo" translatable="false">its_logo</string>
+    <string-array name="sgns_names" translatable="false">
+        <item>Ана Лукић</item>
+    </string-array>
+    <string-array name="sgns_roles" translatable="false">
+        <item>тумач за знаковни српски језик</item>
+    </string-array>
+    <!--</editor-fold>-->
+
+    <!--<editor-fold desc="Savez slepih i slabovidih Srbije">-->
+    <string name="ssss_title" translatable="false">Савез слепих и слабовидих Србије</string>\
+    <string name="ssss_logo" translatable="false" >ssss_logo</string>
+    <string-array name="ssss_names" translatable="false">
+    </string-array>
+    <string-array name="ssss_roles" translatable="false">
+    </string-array>
+    <!--</editor-fold>-->
+
+    <!--<editor-fold desc="Interpretatori i prevodioci">-->
+    <string name="iip_title" translatable="false">Интерпретатори и преводиоци за аудио водич</string>\
+    <string name="iip_logo" translatable="false" />
+    <string-array name="iip_names" translatable="false">
+        <item>Рада Ђурачин</item>
+        <item>Дубравка Дуца Марковић</item>
+        <item>Милан Цаци Михаиловић</item>
+        <item>Др Светлана Белић Малиновић</item>
+        <item>Sinem Yollu</item>
+    </string-array>
+    <string-array name="iip_roles" translatable="false">
+        <item>аудио запис Ана Марија Краус Караџић</item>
+        <item>аудио запис водича</item>
+        <item>аудио запис Доситеј Обрадовић</item>
+        <item>превод на енглески језик и аудио запис водича,\n сарадник ФСУ (FSU)</item>
+        <item>превод на турски језик и аудио запис водича</item>
+    </string-array>
+    <!--</editor-fold>-->
+
+    <!--<editor-fold desc="Savez slepih i slabovidih Srbije">-->
+    <string name="date_title" translatable="false">Фебруар 2020</string>\
+    <string name="date_logo" translatable="false" />
+    <string-array name="date_names" translatable="false">
+    </string-array>
+    <string-array name="date_roles" translatable="false">
+    </string-array>
+    <!--</editor-fold>-->
+
+    <!--<editor-fold desc="Tonska obrada">-->
+    <string name="to_title" translatable="false">Тонска обрада аудио записа</string>\
+    <string name="to_logo" translatable="false"/>
+    <string-array name="to_names" translatable="false">
+        <item>Урош Крстовић</item>
+        <item>Ворис Доничић</item>
+    </string-array>
+    <string-array name="to_roles" translatable="false">
+        <item>сниматељ аудио записа</item>
+        <item>сниматељ аудио записа</item>
+    </string-array>
+    <!--</editor-fold>-->
+
+    <!--</editor-fold>-->
+    
     <string name="second_floor_text">спрат</string>
     <string name="first_floor_text">приземље</string>
     <string name="choose_language">Одабир језика</string>
