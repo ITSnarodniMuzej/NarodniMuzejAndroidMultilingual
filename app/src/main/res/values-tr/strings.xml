@@ -27,14 +27,14 @@
     </string>
 
     <!-- Image titles-->
-    <string name="sarl_monteskje">Шарл Монтескје</string>
-    <string name="sarl_monteskje_detail">Шарл Монтескје</string>
-    <string name="deni_didro">Дени Дидро</string>
-    <string name="deni_didro_detail">Дени Дидро</string>
+    <string name="sarl_monteskje">Charles-Louis de Secondat</string>
+    <string name="sarl_monteskje_detail">Charles-Louis de Secondat</string>
+    <string name="deni_didro">Denis Diderot</string>
+    <string name="deni_didro_detail">Denis Diderot</string>
     <string name="fransoa_volter">Франсоа Волтер</string>
     <string name="fransoa_volter_detail">Франсоа Волтер</string>
-    <string name="zan_zak_ruso">Жан Жак Русо</string>
-    <string name="zan_zak_ruso_detail">Жан Жак Русо</string>
+    <string name="zan_zak_ruso">Jean-Jacques Rousseau</string>
+    <string name="zan_zak_ruso_detail">Jean-Jacques Rousseau</string>
 
     <!--</editor-fold>-->
 
@@ -54,12 +54,12 @@
         millet kimliğinin oluşturmasını da istedi.
     </string>
 
-    <string name="narodno_pozoriste">Народно позориште</string>
-    <string name="narodno_pozoriste_detail">Народно позориште</string>
-    <string name="narodni_muzej">Народни музеј</string>
-    <string name="narodni_muzej_detail">Народни музеј</string>
-    <string name="karadjordje">Ђорђе Петровић Карађорђе</string>
-    <string name="karadjordje_detail">Ђорђе Петровић Карађорђе</string>
+    <string name="narodno_pozoriste">Ulusal Tiyatro</string>
+    <string name="narodno_pozoriste_detail">Ulusal Tiyatro</string>
+    <string name="narodni_muzej">Ulusal Müzesi</string>
+    <string name="narodni_muzej_detail">Ulusal Müzesi</string>
+    <string name="karadjordje">Đorđe Petrović Karađorđe</string>
+    <string name="karadjordje_detail">Đorđe Petrović Karađorđe</string>
 
     <!--</editor-fold>-->
 
@@ -97,7 +97,7 @@
     <string name="maketa_zgrade">Vuk ve Dositej müze binasi maketi</string>
     <string name="maketa_zgrade_detail">Vuk ve Dositej müze binasi maketi</string>
     <string name="franta_mali_tusem">Franta Mali, Dositej\'in okulu çizimi</string>
-    <string name="franta_mali_tusem_detail">Franta Mali, Dositej\'in okulu çizimi</string>
+    <string name="franta_mali_tusem_detail">Franta Mali, Dositej\'in okulu çizimi, 1935.</string>
 
     <!--</editor-fold>-->
 
@@ -270,7 +270,7 @@
     <string name="putna_torba">Seyahat çantasi</string>
     <string name="putna_torba_detail">Seyahat çantasi, deri ve ahşap, Viyana, 19 yy</string>
     <string name="crvena_coka">Püskullü kirmizi fes</string>
-    <string name="crvena_coka_detail">Püskullü kirmizi fes</string>
+    <string name="crvena_coka_detail">Püskullü kirmizi fes, 19 yy</string>
     <string name="mladi_vuk">Genç Vuk</string>
     <string name="mladi_vuk_detail">Pavel Đurković Genç Vuk-yağli tablo, 19 yy</string>
 
@@ -322,10 +322,6 @@
         adlı bir başka halk şarkıları koleksiyonu çıkardı ve gusle oyunculeri Tešan Podrugovićve
         Filip Visnjić tarafından basılan şarkılar buldu.
     </string>
-
-    <!-- Image titles-->
-    <string name="pjesnarica">Народна сербска песнарица</string>
-    <string name="pjesnarica_detail">Народна сербска песнарица</string>
 
     <!--</editor-fold>-->
 
@@ -515,7 +511,7 @@
     <string name="mina_sin">Mina, oğlu Janko ile birlikte</string>
     <string name="mina_sin_detail">Mina, oğlu Janko ile birlikte</string>
     <string name="dimitrije_karadzic">Dimitrije Kradžić, 1958</string>
-    <string name="dimitrije_karadzic_detail">Dimitrije Kradžić, 1958</string>
+    <string name="dimitrije_karadzic_detail">Sveta Mandić, Dimitrije Kradžić, 1858.</string>
 
     <!--</editor-fold>-->
 
@@ -536,7 +532,7 @@
 
     <!-- Image titles-->
     <string name="mina_karadzic">Mina Karadžić</string>
-    <string name="mina_karadzic_detail">Mina Karadžić</string>
+    <string name="mina_karadzic_detail">Mina Karadžić, 1845.</string>
 
     <!--</editor-fold>-->
 

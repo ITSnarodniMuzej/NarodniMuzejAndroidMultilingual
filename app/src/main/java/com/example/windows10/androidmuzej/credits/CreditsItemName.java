@@ -14,7 +14,7 @@ public class CreditsItemName {
         return name;
     }
 
-    public String getRole() {
+    String getRole() {
         return role;
     }
 }

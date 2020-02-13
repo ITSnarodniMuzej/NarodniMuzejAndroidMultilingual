@@ -233,17 +233,6 @@
     <!--</editor-fold>-->
 
     <!--<editor-fold desc="Page2">-->
-    <string-array name="room5Page2Images">
-        <item>pjesnarica</item>
-    </string-array>
-
-    <string-array name="room5Page2ImagesTitles">
-        <item>@string/pjesnarica</item>
-    </string-array>
-
-    <string-array name="room5Page2ImagesDetail">
-        <item>@string/pjesnarica_detail</item>
-    </string-array>
 
     <!--</editor-fold>-->
 

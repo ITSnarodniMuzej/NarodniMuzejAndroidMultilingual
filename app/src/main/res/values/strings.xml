@@ -95,7 +95,7 @@
         <item>аудио запис Ана Марија Краус Караџић</item>
         <item>аудио запис водича</item>
         <item>аудио запис Доситеј Обрадовић</item>
-        <item>превод на енглески језик и аудио запис водича,\n сарадник ФСУ (FSU)</item>
+        <item>превод на енглески језик и \nаудио запис водича,\n сарадник ФСУ (FSU)</item>
         <item>превод на турски језик и аудио запис водича</item>
     </string-array>
     <!--</editor-fold>-->
@@ -439,10 +439,6 @@
         су се нашле песме које су испевали гуслари Тешан Подруговић и Филип Вишњић.
     </string>
 
-    <!-- Image titles-->
-    <string name="pjesnarica">Народна сербска песнарица</string>
-    <string name="pjesnarica_detail">Народна сербска песнарица</string>
-
     <!--</editor-fold>-->
 
     <!--<editor-fold desc="Page3">-->
@@ -641,7 +637,7 @@
     <string name="mina_sin">Мина са сином Јанком</string>
     <string name="mina_sin_detail">Мина са сином Јанком,рад бечког фотографа Ј. Б. Ротмајера(J. B. Rottmayer), 573/И</string>
     <string name="dimitrije_karadzic">Димитрије Караџић</string>
-    <string name="dimitrije_karadzic_detail">Света Мандић, Димитрије Караџић,(по Мини Вукомановић), уље на платну, 1958.</string>
+    <string name="dimitrije_karadzic_detail">Света Мандић, Димитрије Караџић,(по Мини Вукомановић), уље на платну, 1858.</string>
 
     <!--</editor-fold>-->
 

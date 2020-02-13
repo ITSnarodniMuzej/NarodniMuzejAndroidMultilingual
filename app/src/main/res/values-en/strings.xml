@@ -27,14 +27,14 @@
     </string>
 
     <!-- Image titles-->
-    <string name="sarl_monteskje">Шарл Монтескје</string>
-    <string name="sarl_monteskje_detail">Шарл Монтескје</string>
-    <string name="deni_didro">Дени Дидро</string>
-    <string name="deni_didro_detail">Дени Дидро</string>
+    <string name="sarl_monteskje">Charles-Louis de Secondat</string>
+    <string name="sarl_monteskje_detail">Charles-Louis de Secondat</string>
+    <string name="deni_didro">Denis Diderot</string>
+    <string name="deni_didro_detail">Denis Diderot</string>
     <string name="fransoa_volter">Франсоа Волтер</string>
     <string name="fransoa_volter_detail">Франсоа Волтер</string>
-    <string name="zan_zak_ruso">Жан Жак Русо</string>
-    <string name="zan_zak_ruso_detail">Жан Жак Русо</string>
+    <string name="zan_zak_ruso">Jean-Jacques Rousseau</string>
+    <string name="zan_zak_ruso_detail">Jean-Jacques Rousseau</string>
 
     <!--</editor-fold>-->
 
@@ -43,8 +43,8 @@
     <string name="room1Page2Text">
         Serbia was not excluded from new historical currents. The Pashalik of Belgrade, an
         administrative unit of the Ottoman Empire was shaken by numerous crises pervading the Empire.
-        Interminable conflicts escalated in the form of insurrection on February 14, 1804 in Orasac,
-        a place in Western Serbia. Djordje Petrovic Karadjordje was chosen to be the leader of
+        Interminable conflicts escalated in the form of insurrection on February 14, 1804 in Orašac,
+        a place in Western Serbia. Đorđe Petrović Karađorđe was chosen to be the leader of
         The First Serbian Uprising. That was the beginning of the Serbian revolution which ended
         in 1835 with liberation and abolition of feudalism in Serbia. The First Serbian Uprising
         (1804-1813), The Second Serbian Uprising (1815-1817), the autonomy gained through
@@ -55,12 +55,12 @@
         National Theatre and the newly established National Museum.
     </string>
 
-    <string name="narodno_pozoriste">Народно позориште</string>
-    <string name="narodno_pozoriste_detail">Народно позориште</string>
-    <string name="narodni_muzej">Народни музеј</string>
-    <string name="narodni_muzej_detail">Народни музеј</string>
-    <string name="karadjordje">Ђорђе Петровић Карађорђе</string>
-    <string name="karadjordje_detail">Ђорђе Петровић Карађорђе</string>
+    <string name="narodno_pozoriste">National Theatre</string>
+    <string name="narodno_pozoriste_detail">National Theatre</string>
+    <string name="narodni_muzej">National Museum</string>
+    <string name="narodni_muzej_detail">National Museum</string>
+    <string name="karadjordje">Đorđe Petrović Karađorđe</string>
+    <string name="karadjordje_detail">Đorđe Petrović Karađorđe</string>
 
     <!--</editor-fold>-->
 
@@ -68,7 +68,7 @@
 
     //Beogradska velika skola
     <!--<editor-fold desc="Room2">-->
-    <string name="room2Title">The Story of the Building and Grand School</string>
+    <string name="room2Title">Museum and Grand School</string>
 
     <!--<editor-fold desc="Page1">-->
     <string name="room2page1Title">The Story of the Building</string>
@@ -99,8 +99,8 @@
     <!-- Image titles-->
     <string name="maketa_zgrade">Model of the museum building</string>
     <string name="maketa_zgrade_detail">Model of the museum building</string>
-    <string name="franta_mali_tusem">Franta Mali,  Dositej’s lyceum</string>
-    <string name="franta_mali_tusem_detail">Franta Mali,  Dositej’s lyceum</string>
+    <string name="franta_mali_tusem">Dositej’s lyceum</string>
+    <string name="franta_mali_tusem_detail">Franta Mali,  Dositej’s lyceum, 1935.</string>
 
     <!--</editor-fold>-->
 
@@ -174,7 +174,7 @@
 
     <!-- Image titles-->
     <string name="manastir_hopovo">Monaster Hopovo</string>
-    <string name="manastir_hopovo_detail">Unknow author, Monaster Hopovo</string>
+    <string name="manastir_hopovo_detail">Unknown author, Monaster Hopovo</string>
     <string name="mapa_dositejevih_putovanja">The map of Dositej’s travels</string>
     <string name="mapa_dositejevih_putovanja_detail">The map of Dositej’s travels</string>
 
@@ -202,7 +202,7 @@
 
     <!-- Image titles-->
     <string name="pismo_haralampiju">Letter to Haralampije</string>
-    <string name="pismo_haralampiju_detail">Letter to Haralampije</string>
+    <string name="pismo_haralampiju_detail">Letter to Haralampije, 1783.</string>
     <string name="dositej_obradovic">Dimitrije Tirol, Dositej Obradović</string>
     <string name="dositej_obradovic_detail">Dimitrije Tirol, Dositej Obradović</string>
     <string name="zivot_prikljucenija">Life and Adventures</string>
@@ -287,7 +287,7 @@
     <string name="crvena_coka">Vuk\'s fez</string>
     <string name="crvena_coka_detail">Vuk\'s fez, part of Turkish national costume</string>
     <string name="mladi_vuk">Young Vuk Karadžić</string>
-    <string name="mladi_vuk_detail">Pavel Đurković, Young Vuk Karadžić</string>
+    <string name="mladi_vuk_detail">Pavel Đurković, Young Vuk Karadžić, 19th Century</string>
 
     <!--</editor-fold>-->
 
@@ -338,10 +338,6 @@
         Narodna serbska pesnarica and found songs that were performed by guslars Tesan Podrugovic and Filip Visnjic.
     </string>
 
-    <!-- Image titles-->
-    <string name="pjesnarica">Народна сербска песнарица</string>
-    <string name="pjesnarica_detail">Народна сербска песнарица</string>
-
     <!--</editor-fold>-->
 
     <!--<editor-fold desc="Page3">-->
@@ -360,7 +356,7 @@
 
     <!-- Image titles-->
     <string name="srpski_rjecnik">Serbian Dictionary</string>
-    <string name="srpski_rjecnik_detail">Serbian Dictionary, first edition, Vienna 1818</string>
+    <string name="srpski_rjecnik_detail">Serbian Dictionary, first edition, Vienna 1818.</string>
 
     <!--</editor-fold>-->
 
@@ -481,7 +477,7 @@
 
     <!-- Image titles-->
     <string name="sobranie">Sobranije raznih naravoučitelnih veštej</string>
-    <string name="sobranie_detail">Dositej Obradović, Sobranije raznih naravoučitelnih veštej, Viena 1793. </string>
+    <string name="sobranie_detail">Dositej Obradović, Sobranije raznih naravoučitelnih veštej, Vienna 1793.</string>
     <string name="etika">Ethics</string>
     <string name="etika_detail">Dositej Obradović, Ethics, Venice, 1803.</string>
 
@@ -511,7 +507,7 @@
     <string name="vuk_ana_detail">Vuk and Ana Karadžić</string>
     <string name="vuk_ana">Vuk and Ana Karadžić</string>
     <string name="igracke">Toys</string>
-    <string name="igracke_detail">Toys made of boxwood by Vuk Karadžić himself, Viena 19th Century</string>
+    <string name="igracke_detail">Toys made of boxwood by Vuk Karadžić himself, Vienna 19th Century</string>
 
     <!--</editor-fold>-->
 
@@ -540,7 +536,7 @@
     <string name="mina_sin">Mina Karadžić with her son Janko Vukomanović</string>
     <string name="mina_sin_detail">Mina Karadžić with her son Janko Vukomanović</string>
     <string name="dimitrije_karadzic">Dimitrije Karadžić</string>
-    <string name="dimitrije_karadzic_detail">Dimitrije Karadžić</string>
+    <string name="dimitrije_karadzic_detail">Sveta Mandić, Dimitrije Karadžić, 1858.</string>
 
     <!--</editor-fold>-->
 

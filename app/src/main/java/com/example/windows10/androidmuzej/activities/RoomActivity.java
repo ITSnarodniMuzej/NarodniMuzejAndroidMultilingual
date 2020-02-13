@@ -25,6 +25,7 @@ import android.view.animation.AnimationUtils;
 import android.widget.CompoundButton;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.ScrollView;
 import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.ToggleButton;
@@ -429,6 +430,9 @@ public class RoomActivity extends AppCompatActivity {
                 TextView tvPageTitle = findViewById(R.id.pageTitle);
                 tvPageTitle.setText(page.getTitle());
             }
+
+            ScrollView scrollView = findViewById(R.id.scrollView2);
+            scrollView.scrollTo(0,0);
 
             //Setting page text
             TextView textView = findViewById(R.id.tvPageText);
