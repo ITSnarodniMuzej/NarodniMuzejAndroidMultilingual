@@ -97,7 +97,7 @@
     <string name="maketa_zgrade">Vuk ve Dositej müze binasi maketi</string>
     <string name="maketa_zgrade_detail">Vuk ve Dositej müze binasi maketi</string>
     <string name="franta_mali_tusem">Franta Mali, Dositej\'in okulu çizimi</string>
-    <string name="franta_mali_tusem_detail">Franta Mali, Dositej\'in okulu çizimi, 1935.</string>
+    <string name="franta_mali_tusem_detail">Franta Mali, Dositej\'in okulu çizimi, çini mürekkebi, 1935.</string>
 
     <!--</editor-fold>-->
 
@@ -147,7 +147,7 @@
 
     <!-- Image titles-->
     <string name="rudolf_valec">Dositej Obradović</string>
-    <string name="rudolf_valec_detail">Rudolf Valdec, Dositej Obradović,  bronz büst 1911.</string>
+    <string name="rudolf_valec_detail">Rudolf Valdec, Dositej Obradović, bronz büst 1911.</string>
 
     <!--</editor-fold>-->
 
@@ -167,7 +167,7 @@
 
     <!-- Image titles-->
     <string name="manastir_hopovo">Hopovo Manastiri</string>
-    <string name="manastir_hopovo_detail">Hopovo Manastiri gravürü, anonim eser</string>
+    <string name="manastir_hopovo_detail">Anonim eser, Hopovo Manastiri, gravürü, Dositej zamanında</string>
     <string name="mapa_dositejevih_putovanja">Dositej\'in seyahatlerinin haritasi</string>
     <string name="mapa_dositejevih_putovanja_detail">Dositej\'in seyahatlerinin haritasi</string>
 
@@ -193,10 +193,10 @@
     <!-- Image titles-->
     <string name="pismo_haralampiju">Haralampije\'ye mektuplar</string>
     <string name="pismo_haralampiju_detail">Haralampije\'ye mektuplar, 1783.</string>
-    <string name="dositej_obradovic">Dimitrije Tirol, Dositej Obradović</string>
-    <string name="dositej_obradovic_detail">Dimitrije Tirol, Dositej Obradović</string>
+    <string name="dositej_obradovic">Dositej Obradović</string>
+    <string name="dositej_obradovic_detail">Dimitrije Tirol, Dositej Obradović, tuval üzerine yağlıboya, 1860.</string>
     <string name="zivot_prikljucenija">Hayat ve seruvenleri</string>
-    <string name="zivot_prikljucenija_detail">Hayat ve seruvenleri, Leipzig 1783.</string>
+    <string name="zivot_prikljucenija_detail">Hayat ve seruvenleri, Leipzig, 1783.</string>
 
     <!--</editor-fold>-->
 
@@ -220,7 +220,7 @@
 
     <!-- Image titles-->
     <string name="vuk_karadzic_bronza">Vuk Karadžić</string>
-    <string name="vuk_karadzic_bronza_detail">Suvorov-Velzilć,  Vuk Karadžić, yaptığı, büst 1886.</string>
+    <string name="vuk_karadzic_bronza_detail">Suvorov-Velzilć,  Vuk Karadžić, yaptığı, bronz büst 1886.</string>
     <string name="stap_stula">Sopa, Baston, Koltuk değneği</string>
     <string name="stap_stula_detail">Sopa, Baston, Koltuk değneği, Viyana, 19 yy</string>
 
@@ -301,8 +301,8 @@
     </string>
 
     <!-- Image titles-->
-    <string name="pismenica">Писменицa сербскога језика</string>
-    <string name="pismenica_detail">Вук С. Караџић, Писменицa сербскога језика по говору простога народа написану, Беч, 1815.</string>
+    <string name="pismenica">SırpçaYazmaKitabını</string>
+    <string name="pismenica_detail">Vuk S. Karadžić, SırpçaYazmaKitabını, Viyana, 1814.</string>
 
     <!--</editor-fold>-->
 
@@ -342,7 +342,7 @@
 
     <!-- Image titles-->
     <string name="srpski_rjecnik">Sirpca sözlük</string>
-    <string name="srpski_rjecnik_detail">Sirpca sözlük, Vuk S. Karadžić, Viyena 1818.</string>
+    <string name="srpski_rjecnik_detail">Vuk S. Karadžić, Sirpca sözlük, Viyena, 1818.</string>
 
     <!--</editor-fold>-->
 
@@ -374,7 +374,7 @@
         ölçüde, İngiliz alfabesini Vuk Kiril’inin modeline göre yeniden düzenleyebilen biri için
         ödül fonunda büyük miktarda para bırakan İrlandalı drama yazarı George Benard Shaw’ınifadesi var.
         Sırp dili ve alfabesinin Dositej Obradović tarafından başlatılan reformu 1847\'de gayriresmi
-        zafer kazandı. O zaman Djura Daničić’in Sırp dili ve yazım için Savaş
+        zafer kazandı. O zaman Đura Daničić’in Sırp dili ve yazım için Savaş
         (Ратзасрпскијезик и правопис )adlı bir kitap ve ve Branko Radičević\'in ilk şiir koleksiyonu
         yayınlandı; onları Vuk’un Yeni Ahit’in tercümesiyle birlikte, halk dilinde veya Vuk’in
         yazılışından yazılmış. Aynı yıl Njegoš Dağ Çelengi (Gorski vijenac), halk dilinde de
@@ -382,14 +382,14 @@
     </string>
 
     <!-- Image titles-->
-    <string name="djura_danicic">Ђура Даничић</string>
-    <string name="djura_danicic_detail">Стева Тодоровић, Ђура Даничић, уље на платну, 19. век.</string>
-    <string name="gorski_venac">Горски вијенац</string>
-    <string name="gorski_venac_detail">П.П. Његош, Горски вијенац, Беч, 1847.</string>
-    <string name="branko_radicevic">Бранко Радичевић</string>
-    <string name="branko_radicevic_detail">Непознати аутор, Бранко Радичевић, уље на платну, 19. век.</string>
-    <string name="novi_zavet">Нови завјет</string>
-    <string name="novi_zavet_detail">Нови завјет, превод Вука С. Караџића, Беч, 1847.</string>
+    <string name="djura_danicic">Đura Daničić</string>
+    <string name="djura_danicic_detail">Steva Todorović, Đura Daničić, tuval üzerine yağlıboya 19. yy</string>
+    <string name="gorski_venac">Dağ Çelengi</string>
+    <string name="gorski_venac_detail">P.P. Njegoš, Dağ Çelengi, Viyena, 1847.</string>
+    <string name="branko_radicevic">Branko Radničević</string>
+    <string name="branko_radicevic_detail">Anonim eser, Branko Radničević, tuval üzerine yağlıboya 19. yy</string>
+    <string name="novi_zavet">Yeni Ahit</string>
+    <string name="novi_zavet_detail">Yeni Ahit, çeviri Vuk S. Karadžić, Viyena, 1847.</string>
 
     <!--</editor-fold>-->
 
@@ -480,7 +480,7 @@
 
     <!-- Image titles-->
     <string name="vuk_ana">Vuk ve Ana Karadžić</string>
-    <string name="vuk_ana_detail">Vuk ve Ana Karadžić</string>
+    <string name="vuk_ana_detail">Vuk ve Ana Karadžić, J. B. Rottmayer, fotoğraf</string>
     <string name="igracke">Oyuncaklar</string>
     <string name="igracke_detail">Oyuncaklar, Viyana, 19. yy</string>
 
@@ -509,9 +509,9 @@
 
     <!-- Image titles-->
     <string name="mina_sin">Mina, oğlu Janko ile birlikte</string>
-    <string name="mina_sin_detail">Mina, oğlu Janko ile birlikte</string>
+    <string name="mina_sin_detail">Heinrich Hermsen, Mina, oğlu Janko ile birlikte, fotoğraf, 1865.</string>
     <string name="dimitrije_karadzic">Dimitrije Kradžić, 1958</string>
-    <string name="dimitrije_karadzic_detail">Sveta Mandić, Dimitrije Kradžić, 1858.</string>
+    <string name="dimitrije_karadzic_detail">Sveta Mandić, Dimitrije Kradžić, tuval üzerine yağlıboya, 1858.</string>
 
     <!--</editor-fold>-->
 

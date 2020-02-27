@@ -100,7 +100,7 @@
     <string name="maketa_zgrade">Model of the museum building</string>
     <string name="maketa_zgrade_detail">Model of the museum building</string>
     <string name="franta_mali_tusem">Dositej’s lyceum</string>
-    <string name="franta_mali_tusem_detail">Franta Mali,  Dositej’s lyceum, 1935.</string>
+    <string name="franta_mali_tusem_detail">Franta Mali,  Dositej’s lyceum, india ink, 1935.</string>
 
     <!--</editor-fold>-->
 
@@ -173,9 +173,9 @@
     </string>
 
     <!-- Image titles-->
-    <string name="manastir_hopovo">Monaster Hopovo</string>
-    <string name="manastir_hopovo_detail">Unknown author, Monaster Hopovo</string>
-    <string name="mapa_dositejevih_putovanja">The map of Dositej’s travels</string>
+    <string name="manastir_hopovo">Monastery Hopovo</string>
+    <string name="manastir_hopovo_detail">Unknown author, Monastery Hopovo, woodcut, in Dositej\'s time</string>
+    <string name="mapa_dositejevih_putovanja">The map of Dositej\'s travels</string>
     <string name="mapa_dositejevih_putovanja_detail">The map of Dositej’s travels</string>
 
     <!--</editor-fold>-->
@@ -203,8 +203,8 @@
     <!-- Image titles-->
     <string name="pismo_haralampiju">Letter to Haralampije</string>
     <string name="pismo_haralampiju_detail">Letter to Haralampije, 1783.</string>
-    <string name="dositej_obradovic">Dimitrije Tirol, Dositej Obradović</string>
-    <string name="dositej_obradovic_detail">Dimitrije Tirol, Dositej Obradović</string>
+    <string name="dositej_obradovic">Dositej Obradović</string>
+    <string name="dositej_obradovic_detail">Dimitrije Tirol, Dositej Obradović, oil on canvas, 1860.</string>
     <string name="zivot_prikljucenija">Life and Adventures</string>
     <string name="zivot_prikljucenija_detail">Life and Adventures, Leipzig 1783.</string>
 
@@ -234,7 +234,7 @@
 
     <!-- Image titles-->
     <string name="vuk_karadzic_bronza">Vuk Karadžić</string>
-    <string name="vuk_karadzic_bronza_detail">Surov - Vezilić, Vuk Karadžić, bust, bronze, 1886</string>
+    <string name="vuk_karadzic_bronza_detail">Surov - Vezilić, Vuk Karadžić, bust, bronze, 1886.</string>
     <string name="stap_stula">Vuk’s crutch, peg leg and cane</string>
     <string name="stap_stula_detail">Vuk’s crutch, peg leg and cane, leather and wood, Vienna, 19th Century</string>
 
@@ -287,7 +287,7 @@
     <string name="crvena_coka">Vuk\'s fez</string>
     <string name="crvena_coka_detail">Vuk\'s fez, part of Turkish national costume</string>
     <string name="mladi_vuk">Young Vuk Karadžić</string>
-    <string name="mladi_vuk_detail">Pavel Đurković, Young Vuk Karadžić, 19th Century</string>
+    <string name="mladi_vuk_detail">Pavel Đurković, Young Vuk Karadžić, oil on canvas, 19th Century</string>
 
     <!--</editor-fold>-->
 
@@ -316,8 +316,8 @@
     </string>
 
     <!-- Image titles-->
-    <string name="pismenica">Писменицa сербскога језика</string>
-    <string name="pismenica_detail">Вук С. Караџић, Писменицa сербскога језика по говору простога народа написану, Беч, 1815.</string>
+    <string name="pismenica">Pismenica serbskoga jezika</string>
+    <string name="pismenica_detail">Vuk S. Karadžić, Pismenica serbskoga jezika po govoru prostoga naroda napisana, Vienna, 1814.</string>
 
     <!--</editor-fold>-->
 
@@ -403,11 +403,11 @@
     <string name="djura_danicic">Đura Daničić</string>
     <string name="djura_danicic_detail">Steva Todorović, Đura Daničić, oil on canvas, 19th century.</string>
     <string name="gorski_venac">Goski Vijenac</string>
-    <string name="gorski_venac_detail">Petar II Petrović Njegoš, Goski Vijenac Vienna 1847.</string>
+    <string name="gorski_venac_detail">Petar II Petrović Njegoš, Goski Vijenac, Vienna, 1847.</string>
     <string name="branko_radicevic">Branko Radičević</string>
     <string name="branko_radicevic_detail">Unknown author, Branko Radičević, oil on canvas, 19th Century </string>
     <string name="novi_zavet">Bible</string>
-    <string name="novi_zavet_detail">Bible, translation by Vuk Karadžić, Vienna 1818.</string>
+    <string name="novi_zavet_detail">Bible, translation by Vuk Karadžić, Vienna, 1818.</string>
 
     <!--</editor-fold>-->
 
@@ -477,7 +477,7 @@
 
     <!-- Image titles-->
     <string name="sobranie">Sobranije raznih naravoučitelnih veštej</string>
-    <string name="sobranie_detail">Dositej Obradović, Sobranije raznih naravoučitelnih veštej, Vienna 1793.</string>
+    <string name="sobranie_detail">Dositej Obradović, Sobranije raznih naravoučitelnih veštej, Vienna, 1793.</string>
     <string name="etika">Ethics</string>
     <string name="etika_detail">Dositej Obradović, Ethics, Venice, 1803.</string>
 
@@ -504,8 +504,8 @@
     </string>
 
     <!-- Image titles-->
-    <string name="vuk_ana_detail">Vuk and Ana Karadžić</string>
     <string name="vuk_ana">Vuk and Ana Karadžić</string>
+    <string name="vuk_ana_detail">J. B. Rottmayer, Vuk and Ana Karadžić, photograph, Vienna</string>
     <string name="igracke">Toys</string>
     <string name="igracke_detail">Toys made of boxwood by Vuk Karadžić himself, Vienna 19th Century</string>
 
@@ -533,10 +533,10 @@
     </string>
 
     <!-- Image titles-->
-    <string name="mina_sin">Mina Karadžić with her son Janko Vukomanović</string>
-    <string name="mina_sin_detail">Mina Karadžić with her son Janko Vukomanović</string>
+    <string name="mina_sin">Mina Karadžić with her son Janko</string>
+    <string name="mina_sin_detail">Heinrich Hermsen, Mina Karadžić with her son Janko Vukomanović, photograph, 1865.</string>
     <string name="dimitrije_karadzic">Dimitrije Karadžić</string>
-    <string name="dimitrije_karadzic_detail">Sveta Mandić, Dimitrije Karadžić, 1858.</string>
+    <string name="dimitrije_karadzic_detail">Sveta Mandić, Dimitrije Karadžić, oil on canvas, 1858.</string>
 
     <!--</editor-fold>-->
 
@@ -558,7 +558,7 @@
 
     <!-- Image titles-->
     <string name="mina_karadzic">Mina Karadžić</string>
-    <string name="mina_karadzic_detail">Mina Karadžić as a 16 year old girl</string>
+    <string name="mina_karadzic_detail">Mina Karadžić, 1845.</string>
 
     <!--</editor-fold>-->
 

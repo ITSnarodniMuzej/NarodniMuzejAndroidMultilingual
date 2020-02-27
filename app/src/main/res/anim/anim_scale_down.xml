@@ -1,21 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <set xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--
+        toXScale = 1 / (start X position / end X position)
+        toYScale = 1 / (start Y position / end Y position)
+
+        toXDelta = start X position - end X position (look at margins margins)
+        toYDelta = start Y position - end Y position (look at margins margins)
+     -->
     <scale
         android:duration="@android:integer/config_mediumAnimTime"
 
         android:fromXScale="100%"
-        android:toXScale="62%"
+        android:toXScale="70.5%"
 
         android:fromYScale="100%"
-        android:toYScale="62%"
+        android:toYScale="70.5%"
         />
     <translate
         android:duration="@android:integer/config_mediumAnimTime"
 
         android:fromXDelta="0"
-        android:toXDelta="291"
+        android:toXDelta="290"
 
         android:fromYDelta="0"
-        android:toYDelta="270"
+        android:toYDelta="282"
         />
 </set>

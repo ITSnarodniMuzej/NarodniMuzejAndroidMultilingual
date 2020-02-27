@@ -34,26 +34,26 @@
     </string-array>
 
     <!--<editor-fold desc="ITS">-->
-    <string name="its_title" translatable="false">ИТС (ITS)\nВисока струковна школа за информационе технологије</string>\
+    <string name="its_title" translatable="false">ITS\nVisoka strukovna škola za informacione tehnologije</string>\
     <string name="its_logo" translatable="false">its_logo</string>
     <string-array name="its_names" translatable="false">
-        <item>Милош Доброта</item>
-        <item>Јована Јаношевић</item>
-        <item>Ђорђе Ђорђевић</item>
-        <item>Стефан Цекић</item>
-        <item>Адам Константиновић</item>
+        <item>Miloš Dobrota</item>
+        <item>Jovana Janošević</item>
+        <item>Đorđe Đorđević</item>
+        <item>Stefan Cekić</item>
+        <item>Adam Konstantinović</item>
     </string-array>
     <string-array name="its_roles" translatable="false">
-        <item>координатор</item>
-        <item>дизајнер</item>
-        <item>програмер</item>
-        <item>програмер</item>
-        <item>програмер</item>
+        <item>koordinator</item>
+        <item>dizajner</item>
+        <item>programer</item>
+        <item>programer</item>
+        <item>programer</item>
     </string-array>
     <!--</editor-fold>-->
 
     <!--<editor-fold desc="Filoloski fakultet">-->
-    <string name="fil_title" translatable="false">Филолошки факултет</string>\
+    <string name="fil_title" translatable="false">Filološki fakultet</string>\
     <string name="fil_logo" translatable="false">fil_logo</string>
     <string-array name="fil_names" translatable="false">
     </string-array>
@@ -62,63 +62,63 @@
     <!--</editor-fold>-->
 
     <!--<editor-fold desc="Savez gluvih i nagluvih Srbije">-->
-    <string name="sgns_title" translatable="false">Савез глувих и наглувих Србије</string>\
+    <string name="sgns_title" translatable="false">Savez gluvih i nagluvih Srbije</string>\
     <string name="sgns_logo" translatable="false">its_logo</string>
     <string-array name="sgns_names" translatable="false">
-        <item>Ана Лукић</item>
+        <item>Ana Lukić</item>
     </string-array>
     <string-array name="sgns_roles" translatable="false">
-        <item>тумач за знаковни српски језик</item>
+        <item>tumač za znakovni jezik</item>
     </string-array>
     <!--</editor-fold>-->
 
     <!--<editor-fold desc="Savez slepih i slabovidih Srbije">-->
-    <string name="ssss_title" translatable="false">Савез слепих и слабовидих Србије</string>\
+    <string name="ssss_title" translatable="false">Savez slepih i slabovidih Srbije</string>\
     <string name="ssss_logo" translatable="false" >ssss_logo</string>
     <string-array name="ssss_names" translatable="false">
+        <item>Boris Dončić</item>
     </string-array>
     <string-array name="ssss_roles" translatable="false">
+        <item>snimatelj audio zapisa</item>
     </string-array>
     <!--</editor-fold>-->
 
     <!--<editor-fold desc="Interpretatori i prevodioci">-->
-    <string name="iip_title" translatable="false">Интерпретатори и преводиоци за аудио водич</string>\
+    <string name="iip_title" translatable="false">Interpretatori i prevodioci za audio vodič</string>\
     <string name="iip_logo" translatable="false" />
     <string-array name="iip_names" translatable="false">
-        <item>Рада Ђурачин</item>
-        <item>Дубравка Дуца Марковић</item>
-        <item>Милан Цаци Михаиловић</item>
-        <item>Др Светлана Белић Малиновић</item>
+        <item>Rada Đuračin</item>
+        <item>Dubravka Daca Marković</item>
+        <item>Milan Caci Mihailović</item>
+        <item>Dr Svetlana Belić Malinić</item>
         <item>Sinem Yollu</item>
     </string-array>
     <string-array name="iip_roles" translatable="false">
-        <item>аудио запис Ана Марија Краус Караџић</item>
-        <item>аудио запис водича</item>
-        <item>аудио запис Доситеј Обрадовић</item>
-        <item>превод на енглески језик и \nаудио запис водича,\n сарадник ФСУ (FSU)</item>
-        <item>превод на турски језик и аудио запис водича</item>
-    </string-array>
-    <!--</editor-fold>-->
-
-    <!--<editor-fold desc="Savez slepih i slabovidih Srbije">-->
-    <string name="date_title" translatable="false">Фебруар 2020</string>\
-    <string name="date_logo" translatable="false" />
-    <string-array name="date_names" translatable="false">
-    </string-array>
-    <string-array name="date_roles" translatable="false">
+        <item>audio zapis Ana Marija Kraus Karadžić</item>
+        <item>audio zapis vodiča</item>
+        <item>audio zapis Dositej Obradović</item>
+        <item>prevod na engleski jezik i\naudio zapis vodiča,\nsaradnik FSU</item>
+        <item>prevod na turski jezik i audio zapis vodiča</item>
     </string-array>
     <!--</editor-fold>-->
 
     <!--<editor-fold desc="Tonska obrada">-->
-    <string name="to_title" translatable="false">Тонска обрада аудио записа</string>\
+    <string name="to_title" translatable="false">Tonska obrada audio zapisa</string>\
     <string name="to_logo" translatable="false"/>
     <string-array name="to_names" translatable="false">
-        <item>Урош Крстовић</item>
-        <item>Ворис Доничић</item>
+        <item>Uroš Krstović</item>
     </string-array>
     <string-array name="to_roles" translatable="false">
-        <item>сниматељ аудио записа</item>
-        <item>сниматељ аудио записа</item>
+        <item>snimatelj audio zapisa</item>
+    </string-array>
+    <!--</editor-fold>-->
+
+    <!--<editor-fold desc="Datum">-->
+    <string name="date_title" translatable="false">Februar 2020</string>\
+    <string name="date_logo" translatable="false" />
+    <string-array name="date_names" translatable="false">
+    </string-array>
+    <string-array name="date_roles" translatable="false">
     </string-array>
     <!--</editor-fold>-->
 
@@ -218,7 +218,7 @@
     <string name="maketa_zgrade">Макета зграде Музеја Вука и Доситеја</string>
     <string name="maketa_zgrade_detail">Макета зграде Музеја Вука и Доситеја</string>
     <string name="franta_mali_tusem">Доситејев лицеј</string>
-    <string name="franta_mali_tusem_detail">Франта Мали, Доситејев лицеј, цртеж тушем, 1935, и.б. 19/Л</string>
+    <string name="franta_mali_tusem_detail">Франта Мали, Доситејев лицеј,\nцртеж тушем, 1935. год</string>
 
     <!--</editor-fold>-->
 
@@ -267,7 +267,7 @@
 
     <!-- Image titles-->
     <string name="rudolf_valec">Доситеј Обрадовић</string>
-    <string name="rudolf_valec_detail">Рудолф Валдец, Доситеј Обрадовић,бронза, 1911, и.б. 35/л.</string>
+    <string name="rudolf_valec_detail">Рудолф Валдец, Доситеј Обрадовић,\nбронза, 1911. год</string>
 
     <!--</editor-fold>-->
 
@@ -288,7 +288,7 @@
 
     <!-- Image titles-->
     <string name="manastir_hopovo">Манастир Хопово</string>
-    <string name="manastir_hopovo_detail">Непознати аутор, Манастир Хопово, дрворез, б.д., и.б. 64/Л</string>
+    <string name="manastir_hopovo_detail">Непознати аутор, Манастир Хопово,\nдрворез, у Доситејево време</string>
     <string name="mapa_dositejevih_putovanja">Мапа Доситејевих путовања</string>
     <string name="mapa_dositejevih_putovanja_detail">Мапа Доситејевих путовања</string>
 
@@ -315,9 +315,9 @@
     <string name="pismo_haralampiju">Писмо Харалампију</string>
     <string name="pismo_haralampiju_detail">Писмо Харалампију, 1783. год</string>
     <string name="dositej_obradovic">Доситеј Обрадовић</string>
-    <string name="dositej_obradovic_detail">Димитрије Тирол, Доситеј Обрадовић</string>
+    <string name="dositej_obradovic_detail">Димитрије Тирол, Доситеј Обрадовић,\nуље на платну, 1860. год</string>
     <string name="zivot_prikljucenija">Живот и прикљученија</string>
-    <string name="zivot_prikljucenija_detail">Живот и прикљученија, Лајпциг, 1783</string>
+    <string name="zivot_prikljucenija_detail">Живот и прикљученија, Лајпциг, 1783. год</string>
 
     <!--</editor-fold>-->
 
@@ -342,10 +342,9 @@
 
     <!-- Image titles-->
     <string name="vuk_karadzic_bronza">Вук Караџић</string>
-    <string name="vuk_karadzic_bronza_detail">Суров – Везилић, Вук Караџић, попрсје, бронза, 1886, и.б.37/Л.</string>
+    <string name="vuk_karadzic_bronza_detail">Суров – Везилић, Вук Караџић,\nпопрсје, бронза, 1886. год</string>
     <string name="stap_stula">Штап, штула и штака</string>
-    <string name="stap_stula_detail">Штап, штула и штака, кожа и дрво, Беч, 19. век, и.б. 14, 15, 16/И.</string>
-
+    <string name="stap_stula_detail">Штап, штула и штака,\nкожа и дрво, Беч, 19. век</string>
     <!--</editor-fold>-->
 
     <!--<editor-fold desc="Page2">-->
@@ -385,13 +384,13 @@
 
     <!-- Image titles-->
     <string name="vukova_diploma">Вукова диплома Московског универзитета</string>
-    <string name="vukova_diploma_detail">Вукова диплома Московског универзитета,Москва, 14. III 1828 и.б. 275/И.</string>
+    <string name="vukova_diploma_detail">Вукова диплома Московског универзитета, Москва, 14. III 1828. год</string>
     <string name="putna_torba">Путна торба</string>
-    <string name="putna_torba_detail">Путна торба, кожа и дрво, Беч, 19. век, и.б. 40/И</string>
+    <string name="putna_torba_detail">Путна торба, кожа и дрво, Беч, 19. век</string>
     <string name="crvena_coka">Фес, црвена чоха са кићанком</string>
-    <string name="crvena_coka_detail">Фес, црвена чоха са кићанком од плавог конца, Србија, 19. век, и.б. 9/И</string>
+    <string name="crvena_coka_detail">Фес, црвена чоха са кићанком\nод плавог конца, Србија, 19. век</string>
     <string name="mladi_vuk">Млади Вук</string>
-    <string name="mladi_vuk_detail">Павел Ђурковић, Млади Вук, уље на платну, 19. век.</string>
+    <string name="mladi_vuk_detail">Павел Ђурковић, Млади Вук,\nуље на платну, 19. век.</string>
 
     <!--</editor-fold>-->
 
@@ -419,7 +418,7 @@
 
     <!-- Image titles-->
     <string name="pismenica">Писменицa сербскога језика</string>
-    <string name="pismenica_detail">Вук С. Караџић, Писменицa сербскога језика по говору простога народа написану, Беч, 1815.</string>
+    <string name="pismenica_detail">Вук С. Караџић, Писменицa сербскога језика,\nпрва Вукова граматика,\nБеч, 1814. год</string>
 
     <!--</editor-fold>-->
 
@@ -456,7 +455,7 @@
 
     <!-- Image titles-->
     <string name="srpski_rjecnik">Српски рјечник</string>
-    <string name="srpski_rjecnik_detail">Вук С. Караџић, Српски рјечник, Беч, 1818.</string>
+    <string name="srpski_rjecnik_detail">Вук С. Караџић, Српски рјечник,\nБеч, 1818. год</string>
 
     <!--</editor-fold>-->
 
@@ -501,13 +500,13 @@
 
     <!-- Image titles-->
     <string name="djura_danicic">Ђура Даничић</string>
-    <string name="djura_danicic_detail">Стева Тодоровић, Ђура Даничић, уље на платну, 19. век.</string>
+    <string name="djura_danicic_detail">Стева Тодоровић, Ђура Даничић,\nуље на платну, 19. век.</string>
     <string name="gorski_venac">Горски вијенац</string>
-    <string name="gorski_venac_detail">П.П. Његош, Горски вијенац, Беч, 1847.</string>
+    <string name="gorski_venac_detail">П.П. Његош, Горски вијенац, Беч, 1847. год</string>
     <string name="branko_radicevic">Бранко Радичевић</string>
-    <string name="branko_radicevic_detail">Непознати аутор, Бранко Радичевић, уље на платну, 19. век.</string>
+    <string name="branko_radicevic_detail">Непознати аутор, Бранко Радичевић,\nуље на платну, 19. век.</string>
     <string name="novi_zavet">Нови завјет</string>
-    <string name="novi_zavet_detail">Нови завјет, превод Вука С. Караџића, Беч, 1847.</string>
+    <string name="novi_zavet_detail">Нови завјет, превод Вука С. Караџића,\nБеч, 1847. год</string>
 
     <!--</editor-fold>-->
 
@@ -552,9 +551,9 @@
 
     <!-- Image titles-->
     <string name="sovjeti">Совјети здравог разума</string>
-    <string name="sovjeti_detail">Совјети здравог разума, Лајпциг, 1784.</string>
+    <string name="sovjeti_detail">Совјети здравог разума, Лајпциг, 1784. год</string>
     <string name="basne">Басне</string>
-    <string name="basne_detail">Басне, Лајпциг, 1788.</string>
+    <string name="basne_detail">Басне, Лајпциг, 1788. год</string>
 
     <!--</editor-fold>-->
 
@@ -578,9 +577,9 @@
 
     <!-- Image titles-->
     <string name="sobranie">Собраније разних наравоучителних вешчеј</string>
-    <string name="sobranie_detail">Собраније разних наравоучителних вешчеј, Беч, 1793.</string>
+    <string name="sobranie_detail">Собраније разних наравоучителних вешчеј,\nБеч, 1793. год</string>
     <string name="etika">Етика</string>
-    <string name="etika_detail">Етика, Венеција, 1803.</string>
+    <string name="etika_detail">Етика, Венеција, 1803. год</string>
 
     <!--</editor-fold>-->
 
@@ -606,9 +605,9 @@
 
     <!-- Image titles-->
     <string name="vuk_ana">Вук и Ана Караџић</string>
-    <string name="vuk_ana_detail">Вук и Ана Караџић,фотографија J. B. Rottmayer-a, Беч, 564/И</string>
+    <string name="vuk_ana_detail">Ј. Б. Ротмајер, Вук и Ана Караџић,\nфотографија, Беч</string>
     <string name="igracke">Играчке</string>
-    <string name="igracke_detail">Играчке (Минијатурни пољопривредни и занатлијски алат,оружје – 31 ком., Вукове рукотворине),шимширово дрво, Беч, 19. век</string>
+    <string name="igracke_detail">Играчке (Вукове рукотворине),\nшимширово дрво, Беч, 19. век</string>
 
     <!--</editor-fold>-->
 
@@ -635,9 +634,9 @@
 
     <!-- Image titles-->
     <string name="mina_sin">Мина са сином Јанком</string>
-    <string name="mina_sin_detail">Мина са сином Јанком,рад бечког фотографа Ј. Б. Ротмајера(J. B. Rottmayer), 573/И</string>
+    <string name="mina_sin_detail">Хајнрих Хармсен, Мина са сином Јанком, фотографија, Беч 1864. год</string>
     <string name="dimitrije_karadzic">Димитрије Караџић</string>
-    <string name="dimitrije_karadzic_detail">Света Мандић, Димитрије Караџић,(по Мини Вукомановић), уље на платну, 1858.</string>
+    <string name="dimitrije_karadzic_detail">Света Мандић, Димитрије Караџић,\nуље на платну, 1858. год</string>
 
     <!--</editor-fold>-->
 
@@ -658,7 +657,7 @@
 
     <!-- Image titles-->
     <string name="mina_karadzic">Мина Караџић</string>
-    <string name="mina_karadzic_detail">Мина Караџић, снимљено око 1845, и.б. 755/И.</string>
+    <string name="mina_karadzic_detail">Мина Караџић, снимљено око 1845. год</string>
 
     <!--</editor-fold>-->
 

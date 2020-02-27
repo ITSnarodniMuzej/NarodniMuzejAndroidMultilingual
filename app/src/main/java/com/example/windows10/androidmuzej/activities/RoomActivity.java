@@ -1012,9 +1012,9 @@ public class RoomActivity extends AppCompatActivity {
                 public void onAnimationEnd(Animation animation) {
 
                     overlayLayoutParams.leftMargin = 899;
-                    overlayLayoutParams.topMargin = 502;
-                    overlayLayoutParams.rightMargin = 48;
-                    overlayLayoutParams.bottomMargin = 48;
+                    overlayLayoutParams.topMargin = 514;
+                    overlayLayoutParams.rightMargin = 0;
+                    overlayLayoutParams.bottomMargin = 0;
 
                     overlayPlayButtonLayoutParams.width = 90;
                     overlayPlayButtonLayoutParams.height = 102;
